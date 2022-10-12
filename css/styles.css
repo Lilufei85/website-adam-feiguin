@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*hace que todos los elementos se mantengan dentro y no se genere un scroll horizontal*/
+}
+
+
+
+
+/*REGLAS DE COLOR DE TEXTO*/
+
+.texto__gris {
+    color: #5b6972;
+}
+.texto__gris ul li {
+    color: #5b6972;
+}
+
+.texto__azul {
+    color: #153c50;
+}
+/*Fin reglas color de texto*/
+
+
+
+
+/*REGLAS COLOR BACKGROUND*/
+.bacground__greengrayish {
+    background-color: #f2f4f3;
+}
+/*Fin reglas color background*/
+
+
+
+
+/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
+
+nav {
+    margin: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.pages__nav__a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;  
+    font-size: 200%; 
+}
+
+.pages__nav__a:hover {
+    font-size: 250%;
+}
+
+/*fin reglas del nav*/
+
+
+
+
+
+/*REGLAS DEL BODY*/
+
+h1 {
+    text-align: center; /*titulos de las paginas centrados */
+    padding: 30px;
+    /*font-family: 'Anton', sans-serif; probemos otra*/
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 500; 
+    font-size: 300%;
+    color: #153c50;
+    letter-spacing: 15px;
+}
+
+div h2 {
+    padding: 15px;
+    text-align: center;
+    /*position: sticky;*/
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5b6972;
+}
+/*fin reglas del body*/
+
+
+
+
+/*REGLAS DEL FOOTER*/
+
+footer {
+    color: #153c50;
+    background-color: #f2f4f3;
+    text-align: center;
+    padding: 70px;
+    
+}
+
+footer ul {
+    align-items: center; 
+    text-align: center;
+    size: adjust 100px; 
+    list-style: none;
+}
+
+footer ul a {
+    text-decoration: none; /*con esto quité el subrayado de las imágenes con links a redes */
+}
+/*fin reglas del footer*/
+
+
+
+
+
+
+/*REGLAS ESPECIALES INDEX*/
+
+.background__index {
+    background-color: #0b1f2a   ;
+    background-image: url(/assets/img/desktop/foto2.jpg);
+    object-fit: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.adam {
+    letter-spacing: 14px;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 800%;
+    color: #0b1f2a;
+}
+
+.feiguin {
+    letter-spacing: 16px;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 500%;
+    color: #153c50;
+}
+
+
+.altura__main__index {
+    height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
+}
+
+.index__nav__a {
+    background-color: #f2f4f3;
+    color: #153c50;
+    font-family: 'Rubik Dirt', cursive;
+    text-shadow: 0in;
+    font-size: 200%;
+    text-align: center;
+    text-decoration: none;
+}
+/*fin reglas especiales index*/
+
+
+
+/*REGLAS ESPECIALES SOBRE MI*/
+.fotoBio {
+    width: 50vw;
+}
+/*Fin reglas especiales sobre mi*/
+
+
+
+
+/*REGLAS ESPECIALES GALERIA*/
+
+.imgGalery div img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+
+.video__styling {    
+    width:580px; 
+    height: 326px; 
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: px;
+    padding: 5px;
+}
+/*Fin reglas especiales galeria*/
+
+
+
+
+
+
+/*REGLAS ESPECIALES CONTACTO*/
+
+.formulario__contacto {
+    width:fit-content; 
+    background-color: #f2f4f3;
+    text-align: left;
+    padding: 10px;
+    color: black;
+    line-height: 40px;
+}
+
+.formulario__contacto ul li {
+    list-style: none;
+}
+/*fin reglas especiales contacto*/
+
+
+
+
+
+/*REGLAS ESPECIALES AGENDA*/
+
+.card__workshop {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 310px;
+}
+
+.img__workshop {
+    width: 300px;
+}
+
+/*Fin reglas especiales agenda*/
+
+
+
+/*comentario */

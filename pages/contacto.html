@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Feiguin</title>
+    <link rel="shortcut icon" href="../assets/img/campo2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--PT SANS NORROW BOLD-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet"> 
+    <!--PT SANS NARROW-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"/>
+    <script
+      src="https://kit.fontawesome.com/b8e2cf14f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="pages__nav__a texto__gris">Inicio</a></li>
+            <li><a href="../pages/sobremi.html" class="pages__nav__a texto__gris"> Sobre mi</a> </li>
+            <li><a href="../pages/galeria.html" class="pages__nav__a texto__gris">Galería</a> </li>
+            <li><a href="../pages/agenda.html" class="pages__nav__a texto__gris">Agenda</a> </li>
+            <li><a href="../pages/contacto.html" class="pages__nav__a texto__azul">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1>HOLA</h1>
+    </header>
+
+    <main>
+      <form action="" class="formulario__contacto">
+        <!--fieldset engrupa a los elementos del form
+        <fieldset> -->
+          <ul class="formulario__contacto display__inlineblock listas__invisibles" >
+            <li class="listas__invisibles">
+              <label for="nombrecompleto">Nombre Completo:</label>
+              <input
+                type="text"
+                name="nombrecompleto"
+                value="Ingresa tu nombre"
+              />
+            </li>
+        
+            <li></li>
+              <label for="residencia">Lugar de Residencia</label>
+              <select name="residencia" id="residencia">
+                Lugar de Residencia
+                <option value="caba">Ciudad Autonoma de Bs As</option>
+                <option value="granbsas">Provincia de Buenos Aires</option>
+                <option value="otroarg">Otras pronvicias de Argentina</option>
+                <option value="otropais">Otro pais que no es Argentina</option>
+              </select>
+            </li>
+          
+            <li></li>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" />
+            </li>
+        
+            <li></li>
+            
+              <label for="mensaje"></label> Mensaje: <!--ME INTERESA SABER SI ESTA PARTE QUE LA HICE CON GOOGLE ES CORRECTA-->
+              <textarea name="mensaje" id="" cols="30" rows="10"></textarea> 
+            </li>
+
+            <li></li>
+              Deseo recibir el newsletter
+              <input type="checkbox" name="newsletter" id="1" />
+            </li>
+        
+          </ul>
+
+          <button type="submit" >Enviar</button>
+        <!--
+        </fieldset> -->
+      </form>
+    
+      <footer>
+        <div> <!--div iconos redes-->
+          <ul>
+            <a target="_blank" href="https://instagram.com/adamfeiguin?igshid=NmNmNjAwNzg="><img src="../assets/icons/instagram.png" alt="Instagra"> </a>   
+            <a target="_blank" href="https://www.facebook.com/adam.feiguin"> <img src="../assets/icons/facebook.png" alt="Facebook"> </a>
+            <a target="_blank" href="mailto:adamfeiguin@gmail.com"> <img src="../assets/icons/email.png" alt="Email"> </a>
+            <a target="_blank" href="https://wa.me/5491160104592?text=Hola"> <img src="../assets/icons/whatsapp.png" alt="Whatsapp"> </a>
+          </ul>
+        </div>  
+        <p>&copy; 2022. Adam Feiguin. Todos los derechos reservados</p>
+      </footer> 
+  </body>
+</html>
