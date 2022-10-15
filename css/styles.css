@@ -35,6 +35,14 @@
 
 /*REGLAS DEL NAV, BARRA DE NAVEGACION*/
 
+.navBar { /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
 nav {
     margin: 20px;
 }
@@ -43,14 +51,20 @@ nav ul li {
     list-style: none;
 }
 
+.navBar li {
+    transition: transform 700ms 0s;
+}
+
 .pages__nav__a {
     text-decoration: none;
     font-family: 'Anton', sans-serif;  
     font-size: 200%; 
+    transition: transform 700ms 1s;
 }
 
-.pages__nav__a:hover {
-    font-size: 250%;
+.navBar li:hover {
+    transform: scale(1.1);
+    
 }
 
 /*fin reglas del nav*/
@@ -75,7 +89,6 @@ h1 {
 div h2 {
     padding: 15px;
     text-align: center;
-    /*position: sticky;*/
 }
 
 p {
@@ -97,15 +110,20 @@ footer {
     color: #153c50;
     background-color: #f2f4f3;
     text-align: center;
-    padding: 70px;
+    padding: 40px;
     
 }
 
-footer ul {
-    align-items: center; 
+footer ul { /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
     text-align: center;
     size: adjust 100px; 
     list-style: none;
+    margin-bottom: 10px;
 }
 
 footer ul a {
@@ -141,7 +159,7 @@ footer ul a {
     letter-spacing: 16px;
     font-family: 'Rubik Dirt', cursive;
     font-size: 500%;
-    color: #153c50;
+    color: #0b1f2a;
 }
 
 
@@ -173,20 +191,224 @@ footer ul a {
 
 /*REGLAS ESPECIALES GALERIA*/
 
+
+.imgGallery { /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+} 
+
+
 .imgGalery div img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 300px;
+    width: 400px;
+}*/
+
+
+.imgGallery h2 {
+    text-align: center;
 }
 
+
+.container-fotos { /***  G R I D S  ***/
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+    "foto-1 foto-2 foto-3" 
+    "foto-4 foto-5 foto-6"
+    "foto-7 foto-8 foto-9"
+    "foto-10 foto-11 foto-12"
+    "foto-13 foto-14 foto-15"
+    "foto-16 foto-17 foto-18"
+    "foto-19 foto-20 foto-21"
+    "foto-22 foto-23 foto-24"
+    ;
+}
+
+
+
+.foto {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+} 
+
+
+
+.container-fotos img:hover  {
+    transform: scale(1.2);
+    /*-webkit-animation: 700ms ease-in both;
+    animation: 700ms ease-in both;*/
+}
+
+
+.foto-1 {
+    grid-area: foto-1;
+    transition: transform 700ms 0s;
+    /*esta transition afecta al transform, tiempo de duracion, delay*/
+}
+
+
+.foto-2 {
+    grid-area: foto-2;
+    transition: transform 700ms 0s;
+}
+
+.foto-3 {
+    grid-area: foto-3;
+    transition: transform 700ms 0s;
+}
+
+.foto-4 {
+    grid-area: foto-4;
+    transition: transform 700ms 0s;
+}
+
+.foto-5 {
+    grid-area: foto-5;
+    transition: transform 700ms 0s;
+}
+
+.foto-6 {
+    grid-area: foto-6;
+    transition: transform 700ms 0s;
+}
+
+.foto-7 {
+    grid-area: foto-7;
+    transition: transform 700ms 0s;
+}
+
+.foto-8 {
+    grid-area: foto-8;
+    transition: transform 700ms 0s;
+}
+
+.foto-9 {
+    grid-area: foto-9;
+    transition: transform 700ms 0s;
+}
+
+.foto-10 {
+    grid-area: foto-10;
+    transition: transform 700ms 0s;
+}
+
+.foto-11 {
+    grid-area: foto-11;
+    transition: transform 700ms 0s;
+}
+
+.foto-12 {
+    grid-area: foto-12;
+    transition: transform 700ms 0s;
+}
+
+.foto-13 {
+    grid-area: foto-13;
+    transition: transform 700ms 0s;
+}
+
+.foto-14 {
+    grid-area: foto-14;
+    transition: transform 700ms 0s;
+}
+
+.foto-15 {
+    grid-area: foto-15;
+    transition: transform 700ms 0s;
+}
+
+.foto-16 {
+    grid-area: foto-16;
+    transition: transform 700ms 0s;
+}
+
+.foto-17 {
+    grid-area: foto-17;
+    transition: transform 700ms 0s;
+}
+
+.foto-18 {
+    grid-area: foto-18;
+    transition: transform 700ms 0s;
+}
+
+.foto-19 {
+    grid-area: foto-19;
+    transition: transform 700ms 0s;
+}
+
+.foto-20 {
+    grid-area: foto-20;
+    transition: transform 700ms 0s;
+}
+
+.foto-21 {
+    grid-area: foto-21;
+    transition: transform 700ms 0s;
+}
+
+.foto-22 {
+    grid-area: foto-22;
+    transition: transform 700ms 0s;
+}
+
+.foto-23 {
+    grid-area: foto-23;
+    transition: transform 700ms 0s;
+}
+
+.foto-24 {
+    grid-area: foto-24;
+    transition: transform 700ms 0s;
+}
+
+
+
+.container-videos { /***  G R I D S  ***/
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "video-1 video-2" 
+    "video-3 video-4"
+}
+
+.video-1 {
+    grid-area: video-1;
+}
+
+.video-2 {
+    grid-area: video-2;
+}
+
+.video-3 {
+    grid-area: video-3;
+}
+
+.video-4 {
+    grid-area: video-4;
+}
+
+
 .video__styling {    
-    width:580px; 
+    width:40vw; 
     height: 326px; 
     border-radius: 8px;
     border: 1px solid #ddd;
     border-radius: px;
     padding: 5px;
+    margin: 5px;
 }
 /*Fin reglas especiales galeria*/
 
