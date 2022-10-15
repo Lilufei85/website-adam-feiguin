@@ -5,12 +5,15 @@
 }
 
 
+/*object-fit: fill; 
+https://www.w3schools.com/css/css3_object-fit.asp*/
 
 
 /*REGLAS DE COLOR DE TEXTO*/
 
 .texto__gris {
     color: #5b6972;
+
 }
 .texto__gris ul li {
     color: #5b6972;
@@ -24,7 +27,7 @@
 
 
 
-/*REGLAS COLOR BACKGROUND*/
+/*REGLAS COLOR BACKGROUND*/ /*
 .bacground__greengrayish {
     background-color: #f2f4f3;
 }
@@ -89,14 +92,22 @@ h1 {
 div h2 {
     padding: 15px;
     text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
-    margin-left: 50px;
+    /*margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: large;*/
+    font-family: 'Adamina', serif;
     color: #5b6972;
 }
 /*fin reglas del body*/
@@ -110,8 +121,10 @@ footer {
     color: #153c50;
     background-color: #f2f4f3;
     text-align: center;
-    padding: 40px;
-    
+    padding: 20px;
+    font-family: 'Adamina', serif;  
+    margin-top: 30px;
+
 }
 
 footer ul { /***  F L E X B O X  ***/
@@ -146,33 +159,56 @@ footer ul a {
     background-repeat: no-repeat;
 }
 
-
+.container-index {
+    height: 930px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
 
 .adam {
     letter-spacing: 14px;
     font-family: 'Rubik Dirt', cursive;
-    font-size: 800%;
+    font-size: 8.2rem;
     color: #0b1f2a;
+    border: 1px solid black;
+    grid-column: 2/6;
+    grid-row: 6/8;
 }
 
 .feiguin {
     letter-spacing: 16px;
     font-family: 'Rubik Dirt', cursive;
-    font-size: 500%;
+    font-size: 5.1rem;
     color: #0b1f2a;
+    border: 1px solid black;
+    grid-column: 2/6;
+    grid-row: 8/9;
+
 }
 
-
+/*
 .altura__main__index {
-    height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
+    height: 930px; /*definí un altura de main para que se vea la imagen completa del background
+}*/
+
+.nav-index {
+    width: 100vw;
+    padding: 5px;
+    padding-top: 7px;
+    margin: 0px;
+    background-color: #f2f4f3;
+    opacity: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .index__nav__a {
-    background-color: #f2f4f3;
     color: #153c50;
     font-family: 'Rubik Dirt', cursive;
     text-shadow: 0in;
-    font-size: 200%;
+    font-size: 2.0rem;
     text-align: center;
     text-decoration: none;
 }
@@ -181,31 +217,48 @@ footer ul a {
 
 
 /*REGLAS ESPECIALES SOBRE MI*/
-.fotoBio {
-    width: 50vw;
+
+.container-bio {
+    display: flex;
+    flex-direction: column;
 }
+
+.foto-bio {
+    width: 100vw;
+    align-self: center;
+}
+
+.texto-bio {
+    align-self: flex-start;
+    margin: 30px;
+}
+
+
+.download-cv {
+    align-self: flex-start;
+    margin-left: 30px;
+}
+/*
+.box-22 {
+    background-image: url(img.JPG);
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row: 1/3;
+    /*aca arranco a usar flex dentro del grid para ordenar
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+}
+*/
+
 /*Fin reglas especiales sobre mi*/
 
 
 
 
 /*REGLAS ESPECIALES GALERIA*/
-
-
-.imgGallery { /***  F L E X B O X  ***/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-} 
-
-
-.imgGalery div img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 400px;
-}*/
 
 
 .imgGallery h2 {
@@ -215,10 +268,11 @@ footer ul a {
 
 .container-fotos { /***  G R I D S  ***/
     display: grid;
-    width: 80%;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5px;
-    column-gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 15px;
     justify-content: center;
     justify-items: center;
     grid-template-areas:
@@ -245,8 +299,8 @@ footer ul a {
 
 
 .container-fotos img:hover  {
-    transform: scale(1.2);
-    /*-webkit-animation: 700ms ease-in both;
+    transform: scale(1.1);
+    /*-webkit-animation: 700ms ease-in;
     animation: 700ms ease-in both;*/
 }
 
@@ -255,6 +309,8 @@ footer ul a {
     grid-area: foto-1;
     transition: transform 700ms 0s;
     /*esta transition afecta al transform, tiempo de duracion, delay*/
+    /*background-image: url("../assets/img/desktop/domo1.jpg");*/
+    
 }
 
 
@@ -377,8 +433,12 @@ footer ul a {
 
 .container-videos { /***  G R I D S  ***/
     display: grid;
-    width: 80%;
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-template-columns: repeat(2, 250);
+    row-gap: 5px;
+    column-gap: 8px;
+    justify-content: center;
+    justify-items: center;
     grid-template-areas:
     "video-1 video-2" 
     "video-3 video-4"
@@ -402,7 +462,7 @@ footer ul a {
 
 
 .video__styling {    
-    width:40vw; 
+    width:39vw; 
     height: 326px; 
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -417,41 +477,122 @@ footer ul a {
 
 
 
-/*REGLAS ESPECIALES CONTACTO*/
-
-.formulario__contacto {
-    width:fit-content; 
-    background-color: #f2f4f3;
-    text-align: left;
-    padding: 10px;
-    color: black;
-    line-height: 40px;
-}
-
-.formulario__contacto ul li {
-    list-style: none;
-}
-/*fin reglas especiales contacto*/
-
-
-
-
-
 /*REGLAS ESPECIALES AGENDA*/
+
+.contenedor-agenda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 25px;
+    margin-bottom: 25px;
+}
 
 .card__workshop {
     border-radius: 8px;
     border: 1px solid #ddd;
     padding: 5px;
     width: 310px;
+    font-family: 'Adamina', serif;
+    color: #5b6972;
 }
 
 .img__workshop {
     width: 300px;
 }
 
+.button-info {
+    background-color: #F2F4F3;
+    color: #153c50;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Adamina', serif;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
 /*Fin reglas especiales agenda*/
 
 
 
-/*comentario */
+
+/*REGLAS ESPECIALES CONTACTO*/
+
+.contendor-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulario__contacto {
+    width:50vw; 
+    background-color: #f2f4f3;
+    padding: 10px;
+    color: black;
+    line-height: 40px;
+    text-align: left;   
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    border: none;
+    height: 25px;
+    width: 70%;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #d7dee1;
+}
+
+textarea {
+    border: none;
+    width: 70%;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #d7dee1;
+}
+
+select {
+    border: none;
+    height: 25px;
+    width: 70%;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #d7dee1;
+}
+
+
+.newsletter {
+    align-self: center;
+}
+
+.button-contacto {
+    background-color: #5b6972;
+    color: #f2f4f3;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Adamina', serif;
+    font-size: 1.0rem;
+    font-weight: 4  00;
+    width: 70px;
+    height: 30px;
+    align-self: flex-end;
+}
+/*fin reglas especiales contacto*/

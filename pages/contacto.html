@@ -26,7 +26,7 @@
     <header>
       <div>
         <nav>
-          <ul>
+          <ul class="navBar">
             <li><a href="../index.html" class="pages__nav__a texto__gris">Inicio</a></li>
             <li><a href="../pages/sobremi.html" class="pages__nav__a texto__gris"> Sobre mi</a> </li>
             <li><a href="../pages/galeria.html" class="pages__nav__a texto__gris">Galería</a> </li>
@@ -39,52 +39,38 @@
     </header>
 
     <main>
-      <form action="" class="formulario__contacto">
-        <!--fieldset engrupa a los elementos del form
-        <fieldset> -->
-          <ul class="formulario__contacto display__inlineblock listas__invisibles" >
-            <li class="listas__invisibles">
-              <label for="nombrecompleto">Nombre Completo:</label>
-              <input
-                type="text"
-                name="nombrecompleto"
-                value="Ingresa tu nombre"
-              />
-            </li>
-        
-            <li></li>
-              <label for="residencia">Lugar de Residencia</label>
-              <select name="residencia" id="residencia">
-                Lugar de Residencia
-                <option value="caba">Ciudad Autonoma de Bs As</option>
-                <option value="granbsas">Provincia de Buenos Aires</option>
-                <option value="otroarg">Otras pronvicias de Argentina</option>
-                <option value="otropais">Otro pais que no es Argentina</option>
-              </select>
-            </li>
-          
-            <li></li>
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" />
-            </li>
-        
-            <li></li>
-            
-              <label for="mensaje"></label> Mensaje: <!--ME INTERESA SABER SI ESTA PARTE QUE LA HICE CON GOOGLE ES CORRECTA-->
-              <textarea name="mensaje" id="" cols="30" rows="10"></textarea> 
-            </li>
-
-            <li></li>
-              Deseo recibir el newsletter
-              <input type="checkbox" name="newsletter" id="1" />
-            </li>
-        
-          </ul>
-
-          <button type="submit" >Enviar</button>
-        <!--
-        </fieldset> -->
-      </form>
+      <section class="contendor-formulario">
+        <form action="" class="formulario__contacto">
+          <div>
+            <label for="nombrecompleto">Nombre Completo:</label>
+            <input type="text"name="nombrecompleto"/>  
+          </div>
+          <div>
+            <label for="residencia">Lugar de Residencia</label>
+            <select name="residencia" id="residencia">
+            Lugar de Residencia
+            <option value="caba">Ciudad Autonoma de Bs As</option>
+            <option value="granbsas">Provincia de Buenos Aires</option>
+            <option value="otroarg">Otras pronvicias de Argentina</option>
+            <option value="otropais">Otro pais que no es Argentina</option>
+            </select>
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="mensaje"></label> Mensaje: <!--ME INTERESA SABER SI ESTA PARTE QUE LA HICE CON GOOGLE ES CORRECTA-->
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> 
+          </div>
+          <div class="newsletter">
+            Deseo recibir el newsletter <input type="checkbox" name="newsletter" id="1" />
+          </div>
+          <button type="submit" class="button-contacto">Enviar</button>
+        </form>
+      </section>
+      
+      
     
       <footer>
         <div> <!--div iconos redes-->
