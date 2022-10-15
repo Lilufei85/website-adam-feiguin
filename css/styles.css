@@ -152,8 +152,8 @@ footer ul a {
 /*REGLAS ESPECIALES INDEX*/
 
 .background__index {
-    background-color: #0b1f2a   ;
-    background-image: url(/assets/img/desktop/foto2.jpg);
+    /*background-color: #0b1f2a;*/
+    background-image: url(../assets/img/desktop/foto2.jpg);
     object-fit: contain;
     background-size: 100%;
     background-repeat: no-repeat;
