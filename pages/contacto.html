@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Feiguin</title>
-    <link rel="shortcut icon" href="../assets/img/campo2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,13 +41,13 @@
     <main>
       <section class="contendor-formulario">
         <form action="" class="formulario__contacto">
-          <div>
-            <label for="nombrecompleto">Nombre Completo:</label>
-            <input type="text"name="nombrecompleto"/>  
+          <div class="container-linea-form">
+            <label for="nombrecompleto" class="label-nombre">Nombre Completo:</label>
+            <input type="text"name="nombrecompleto" class="input-nombre"/>  
           </div>
-          <div>
-            <label for="residencia">Lugar de Residencia</label>
-            <select name="residencia" id="residencia">
+          <div class="container-linea-form">
+            <label for="residencia" class="label-residencia">Lugar de Residencia</label>
+            <select name="residencia" id="residencia" class="select-residencia">
             Lugar de Residencia
             <option value="caba">Ciudad Autonoma de Bs As</option>
             <option value="granbsas">Provincia de Buenos Aires</option>
@@ -55,15 +55,15 @@
             <option value="otropais">Otro pais que no es Argentina</option>
             </select>
           </div>
-          <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" />
+          <div class="container-linea-form">
+            <label for="email" class="label-email">E-mail:</label>
+            <input type="email" id="email" name="email" class="input-email"/>
           </div>
-          <div>
-            <label for="mensaje"></label> Mensaje: <!--ME INTERESA SABER SI ESTA PARTE QUE LA HICE CON GOOGLE ES CORRECTA-->
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea> 
+          <div class="container-linea-form">
+            <label for="mensaje" class="label-msje"></label> Mensaje: <!--ME INTERESA SABER SI ESTA PARTE QUE LA HICE CON GOOGLE ES CORRECTA-->
+            <textarea name="mensaje" id="" cols="30" rows="10" class="text-msje"></textarea> 
           </div>
-          <div class="newsletter">
+          <div class="newsletter" class="container-linea-form">
             Deseo recibir el newsletter <input type="checkbox" name="newsletter" id="1" />
           </div>
           <button type="submit" class="button-contacto">Enviar</button>
