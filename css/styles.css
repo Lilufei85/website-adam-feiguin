@@ -55,8 +55,11 @@ nav ul li {
     text-decoration: none;
     font-family: 'Anton', sans-serif;  
     font-size: 200%; 
-    transition: transform 700ms 1s;
+    transition: transform 700ms 1s;   
 }
+
+
+
 
 .navBar li:hover { /***  T R A N S I C I O N  ***/
     transform: scale(1.1);
@@ -200,7 +203,39 @@ footer ul a {
     font-size: 2.0rem;
     text-align: center;
     text-decoration: none;
+    animation-name: zoomInIndex;
+    animation-duration: 1s;
 }
+
+.link-2 {
+    animation-delay: 400ms;
+}
+.link-3 {
+    animation-delay: 800ms;
+}
+.link-4 {
+    animation-delay: 1200ms;
+    /*animation-duration: 4s;*/
+}
+.link-5 {  
+    animation-delay: 1600ms;  
+    /*animation-duration: 5s;*/
+}
+
+
+
+@-webkit-keyframes zoomInIndex {
+    from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.1, 0.1, 0.1);
+    }
+    50% {
+    opacity: 1;
+    }
+}
+
+
 /*fin reglas especiales index*/
 
 
@@ -215,6 +250,24 @@ footer ul a {
 .foto-bio {
     width: 100vw;
     align-self: center;
+    animation-name: slideInBio;
+    animation-duration: 3s;
+}
+
+.slideInUpBio {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slideInBio {
+    0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    }
+    100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    }
 }
 
 .texto-bio {
@@ -222,13 +275,47 @@ footer ul a {
     margin: 80px;
     text-align: justify;
     line-height: 1.5;
+    margin-bottom: 2.0rem;
 }
 
 
 .download-cv {
     align-self: flex-start;
     margin-left: 80px;
+    animation-name: vibrarCv;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes vibrarCv {
+    0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+    20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+    }
+    40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+    }
+    60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+    }
+    80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+    }
+    100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+}
+
+
+
 /*Fin reglas especiales sobre mi*/
 
 
