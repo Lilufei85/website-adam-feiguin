@@ -27,13 +27,6 @@ https://www.w3schools.com/css/css3_object-fit.asp*/
 
 
 
-/*REGLAS COLOR BACKGROUND*/ /*
-.bacground__greengrayish {
-    background-color: #f2f4f3;
-}
-/*Fin reglas color background*/
-
-
 
 
 /*REGLAS DEL NAV, BARRA DE NAVEGACION*/
@@ -65,7 +58,7 @@ nav ul li {
     transition: transform 700ms 1s;
 }
 
-.navBar li:hover {
+.navBar li:hover { /***  T R A N S I C I O N  ***/
     transform: scale(1.1);
     
 }
@@ -81,7 +74,6 @@ nav ul li {
 h1 {
     text-align: center; /*titulos de las paginas centrados */
     padding: 30px;
-    /*font-family: 'Anton', sans-serif; probemos otra*/
     font-family: 'Rubik Dirt', cursive;
     font-weight: 500; 
     font-size: 300%;
@@ -103,10 +95,6 @@ div h2 {
 }
 
 p {
-    /*margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    font-size: large;*/
     font-family: 'Adamina', serif;
     color: #5b6972;
 }
@@ -140,7 +128,8 @@ footer ul { /***  F L E X B O X  ***/
 }
 
 footer ul a {
-    text-decoration: none; /*con esto quité el subrayado de las imágenes con links a redes */
+    text-decoration: none; 
+    /*con esto quité el subrayado de las imágenes con links a redes */
 }
 /*fin reglas del footer*/
 
@@ -152,14 +141,14 @@ footer ul a {
 /*REGLAS ESPECIALES INDEX*/
 
 .background__index {
-    /*background-color: #0b1f2a;*/
+    background-color: #0b1f2a;
     background-image: url(../assets/img/desktop/foto2.jpg);
     object-fit: contain;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.container-index {
+.container-index { /***  G R I D S  ***/
     height: 930px;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -192,7 +181,7 @@ footer ul a {
     height: 930px; /*definí un altura de main para que se vea la imagen completa del background
 }*/
 
-.nav-index {
+.nav-index { /***  F L E X B O X  ***/
     width: 100vw;
     padding: 5px;
     padding-top: 7px;
@@ -218,7 +207,7 @@ footer ul a {
 
 /*REGLAS ESPECIALES SOBRE MI*/
 
-.container-bio {
+.container-bio { /***  F L E X B O X  ***/
     display: flex;
     flex-direction: column;
 }
@@ -230,29 +219,16 @@ footer ul a {
 
 .texto-bio {
     align-self: flex-start;
-    margin: 30px;
+    margin: 80px;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 
 .download-cv {
     align-self: flex-start;
-    margin-left: 30px;
+    margin-left: 80px;
 }
-/*
-.box-22 {
-    background-image: url(img.JPG);
-    background-size: cover;
-    grid-column: 1/5;
-    grid-row: 1/3;
-    /*aca arranco a usar flex dentro del grid para ordenar
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 10px;
-}
-*/
-
 /*Fin reglas especiales sobre mi*/
 
 
@@ -288,7 +264,6 @@ footer ul a {
 }
 
 
-
 .foto {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -298,7 +273,7 @@ footer ul a {
 
 
 
-.container-fotos img:hover  {
+.container-fotos img:hover  { /***  T R A N S I C I O N  ***/
     transform: scale(1.1);
     /*-webkit-animation: 700ms ease-in;
     animation: 700ms ease-in both;*/
@@ -479,7 +454,7 @@ footer ul a {
 
 /*REGLAS ESPECIALES AGENDA*/
 
-.contenedor-agenda {
+.contenedor-agenda { /***  F L E X B O X  ***/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -501,7 +476,7 @@ footer ul a {
     width: 300px;
 }
 
-.contenedor-button {
+.contenedor-button { /***  F L E X B O X  ***/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -528,13 +503,13 @@ footer ul a {
 
 /*REGLAS ESPECIALES CONTACTO*/
 
-.contendor-formulario {
+.contendor-formulario { /***  F L E X B O X  ***/
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.formulario__contacto {
+.formulario__contacto { /***  F L E X B O X  ***/
     width:50vw; 
     background-color: #f2f4f3;
     padding: 10px;
@@ -545,7 +520,7 @@ footer ul a {
     flex-direction: column;
 }
 
-.container-linea-form {
+.container-linea-form { /***  G R I D S  ***/
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -641,3 +616,171 @@ select:focus {
     align-self: flex-end;
 }
 /*fin reglas especiales contacto*/
+
+
+
+
+
+@media (max-width: 768px) {  /***  RESPONSIVE A TABLET  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+    nav {
+        margin: 20px;
+    }
+    .pages__nav__a {
+        font-size: 1.5rem; 
+    }
+    /*fin reglas del nav TABLET*/
+    
+    
+    /*REGLAS DEL BODY - TABLET*/
+    h1 {
+        padding: 30px;
+        font-size: 2.0rem;
+        letter-spacing: 15px;
+    }
+    /*fin reglas del body -TABBLET */
+
+
+    /*REGLAS ESPECIALES INDEX - TABLET*/
+    .container-index { /***  G R I D S  ***/
+        height: 100vh;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(12,1fr);
+        align-items: center;
+    }
+
+    .adam {
+        letter-spacing: 1.5rem;
+        font-size: 4.2rem;
+        color: #5b6972;
+        grid-column: 3/5;
+        grid-row: 9/11;
+    }
+
+    .feiguin {
+        letter-spacing: 1.3rem;
+        font-size: 3.0rem;
+        color:#5b6972;
+        grid-column: 4/8;
+        grid-row: 10/12;
+    }
+
+    .index__nav__a {
+        font-size: 1.0rem;
+    }
+    /*fin reglas especiales index - TABLET */
+
+
+
+    /*REGLAS ESPECIALES GALERIA - TABLET*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 180px);
+        row-gap: 3px;
+        column-gap: 3px;
+        ;
+    }
+
+    .foto {
+        padding: 3px;
+        width: 170px;
+    } 
+
+    .container-videos { /***  F L E X B O X  ***/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .video__styling {    
+        width:500px; 
+    }
+    /*Fin reglas especiales galeria TABLET*/
+
+
+    /*REGLAS ESPECIALES AGENDA - TABLET*/
+    .contenedor-agenda { /***  F L E X B O X  ***/
+        row-gap: 25px;
+        margin-bottom: 25px;
+    }
+    .card__workshop {
+        width: 290px;
+        font-size: 0.9rem;
+    }
+    .img__workshop {
+        width: 280px;
+    }
+    .button-info {
+        font-size: 0.9rem;
+    }
+    /*Fin reglas especiales agenda TABLET*/
+
+
+    
+    /*REGLAS ESPECIALES CONTACTO - TABLET*/
+
+    .formulario__contacto { /***  F L E X B O X  ***/ 
+        display: block;
+    }*/
+
+    .container-linea-form { /***  AYUDAAAAAAAA cambié a flexbox pero no me lo está tomando ***/
+        /*display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;*/
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+
+    }  
+
+
+    .label-nombre {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .input-nombre {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .label-residencia {
+        grid-column: 1/2;
+
+    }
+    .select-residencia {
+        grid-column: 1/2;
+
+    }
+
+    .label-email {
+        grid-column: 1/2;
+    }
+
+    .input-email {
+        grid-column: 1/2;
+    }
+
+    .label-msje {
+        grid-column: 1/2;
+    }
+
+    .text-msje {
+        grid-column: 1/2;
+    }
+
+    /*fin reglas especiales contacto TABLET*/
+
+
+
+}
+/*Fin responsive a tablet*/
+
+
+
+
+@media (max-width: 576px) {   /***  RESPONSIVE A MOBILE  ***/
+    
+}
