@@ -649,7 +649,6 @@ select:focus {
         grid-template-rows: repeat(12,1fr);
         align-items: center;
     }
-
     .adam {
         letter-spacing: 1.5rem;
         font-size: 4.2rem;
@@ -657,7 +656,6 @@ select:focus {
         grid-column: 3/5;
         grid-row: 9/11;
     }
-
     .feiguin {
         letter-spacing: 1.3rem;
         font-size: 3.0rem;
@@ -665,12 +663,10 @@ select:focus {
         grid-column: 4/8;
         grid-row: 10/12;
     }
-
     .index__nav__a {
         font-size: 1.0rem;
     }
     /*fin reglas especiales index - TABLET */
-
 
 
     /*REGLAS ESPECIALES GALERIA - TABLET*/
@@ -680,12 +676,10 @@ select:focus {
         column-gap: 3px;
         ;
     }
-
     .foto {
         padding: 3px;
         width: 170px;
     } 
-
     .container-videos { /***  F L E X B O X  ***/
         display: flex;
         flex-direction: column;
@@ -693,7 +687,6 @@ select:focus {
         justify-items: center;
         align-items: center;
     }
-
     .video__styling {    
         width:500px; 
     }
@@ -720,11 +713,9 @@ select:focus {
 
     
     /*REGLAS ESPECIALES CONTACTO - TABLET*/
-
     .formulario__contacto { /***  F L E X B O X  ***/ 
         display: block;
     }*/
-
     .container-linea-form { /***  AYUDAAAAAAAA cambié a flexbox pero no me lo está tomando ***/
         /*display: flex;
         flex-direction: column;
@@ -732,7 +723,6 @@ select:focus {
         align-items: flex-start;*/
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
-
     }  
 
 
@@ -773,8 +763,6 @@ select:focus {
 
     /*fin reglas especiales contacto TABLET*/
 
-
-
 }
 /*Fin responsive a tablet*/
 
@@ -782,5 +770,128 @@ select:focus {
 
 
 @media (max-width: 576px) {   /***  RESPONSIVE A MOBILE  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+    .navBar { /***  F L E X B O X  ***/
+        gap: 10px;
+    }
+    nav {
+        margin: 10px;
+    }
+    .pages__nav__a {
+        font-size: 1.0rem; 
+        transition: transform 700ms 1s;
+    }
+    /*fin reglas del nav MOBILE*/  
+
     
+    /*REGLAS DEL BODY - MOBILE*/
+    h1 {
+        padding: 30px;
+        font-size: 2.0rem;
+        letter-spacing: 0.6rem;
+    }
+    /*fin reglas del body -MOBILE */
+
+
+    /*REGLAS DEL FOOTER - MOBILE*/
+    footer {
+        padding: 15px;
+        font-size: 0.7rem;
+        margin-top: 20px;
+        padding-bottom: 5px;
+    }
+    footer ul { /***  F L E X B O X  ***/
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+    /*fin reglas especiales footer MOBILE*/
+
+
+    /*REGLAS ESPECIALES INDEX - MOBILE*/
+    .background__index {
+        background-color: #0b1f2a;
+        background-image: url(../assets/img/mobile/fotoindex-mobile-1.jpg);
+        object-fit: fill;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .container-index { /***  G R I D S  ***/
+        height: 100vh;
+        width: 100vw;
+    }
+    .adam {
+        /*letter-spacing: 1.5rem;
+        font-size: 4.2rem;
+        color: #5b6972;
+        grid-column: 3/5;
+        grid-row: 9/11;*/
+        display: none;
+    }
+    .feiguin {
+        /*letter-spacing: 1.3rem;
+        font-size: 3.0rem;
+        color:#5b6972;
+        grid-column: 4/8;
+        grid-row: 10/12;*/
+        display: none;
+    }
+    .index__nav__a {
+        font-size: 1.0rem;
+    }
+    /*fin reglas especiales index - MOBILE */
+
+
+
+    /*REGLAS ESPECIALES GALERIA - MOBILE*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 130px);
+        row-gap: 2px;
+        column-gap: 1px;
+        justify-content: center;
+        justify-items: center;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 120px;
+    } 
+    .video__styling {    
+        width:380px; 
+        height: auto;
+    }
+    /*Fin reglas especiales galeria MOBILE*/
+
+    
+
+
+    /*REGLAS ESPECIALES AGENDA - MOBILE*/
+    .card__workshop {
+        width: 260px;
+        font-size: 0.8rem;
+    }
+    .img__workshop {
+        width: 250px;
+    }
+    .button-info {
+        font-size: 0.7rem;
+    }
+    /*Fin reglas especiales agenda MOBILE*/
+
+
+    
+    /*REGLAS ESPECIALES CONTACTO - MOBILE*/
+    .formulario__contacto { /***  F L E X B O X  ***/
+        width:90vw; 
+    }
+    /*fin reglas especiales contacto MOBILE*/
+
+
+    
+
+
+
 }
+/*Fin responsive a tablet*/
+
+    /*fin reglas del footer MOBILE*/    
