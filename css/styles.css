@@ -22,6 +22,8 @@ https://www.w3schools.com/css/css3_object-fit.asp*/
 .texto__azul {
     color: #153c50;
 }
+
+
 /*Fin reglas color de texto*/
 
 
@@ -185,7 +187,7 @@ footer ul a {
 }*/
 
 .nav-index { /***  F L E X B O X  ***/
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     padding-top: 7px;
     margin: 0px;
@@ -199,42 +201,57 @@ footer ul a {
 .index__nav__a {
     color: #153c50;
     font-family: 'Rubik Dirt', cursive;
-    text-shadow: 0in;
     font-size: 2.0rem;
     text-align: center;
     text-decoration: none;
     animation-name: zoomInIndex;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .link-2 {
-    animation-delay: 400ms;
+    animation-duration: 6s;
+    /*animation-delay: 400ms;*/
+    animation-fill-mode: both;
 }
 .link-3 {
-    animation-delay: 800ms;
+    animation-duration: 9s;
+    /*animation-delay: 800ms;*/
+    animation-fill-mode: both;
 }
 .link-4 {
-    animation-delay: 1200ms;
-    /*animation-duration: 4s;*/
+    /*animation-delay: 1200ms;*/
+    animation-duration: 12s;
+    animation-fill-mode: both;
 }
 .link-5 {  
-    animation-delay: 1600ms;  
-    /*animation-duration: 5s;*/
+    /*animation-delay: 1600ms;*/  
+    animation-duration: 15s;
+    animation-fill-mode: both;
 }
 
 
 
 @-webkit-keyframes zoomInIndex {
-    from {
+    0% {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.1, 0.1, 0.1);
+    /*-webkit-transform: scale3d(0.8, 0.8, 0.8);
+    transform: scale3d(0.1, 0.1, 0.1);*/
     }
-    50% {
+    100% {
     opacity: 1;
     }
 }
 
+@keyframes zoomInIndex {
+    0% {
+    opacity: 0;
+    /*-webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.1, 0.1, 0.1);*/
+    }
+    100% {
+    opacity: 1;
+    }
+}
 
 /*fin reglas especiales index*/
 
@@ -248,7 +265,7 @@ footer ul a {
 }
 
 .foto-bio {
-    width: 100vw;
+    width: 100%;
     align-self: center;
     animation-name: slideInBio;
     animation-duration: 3s;
@@ -285,6 +302,10 @@ footer ul a {
     animation-name: vibrarCv;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    background-color: #5b69722b;
+    color: #f2f4f3;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 @keyframes vibrarCv {
@@ -597,22 +618,38 @@ footer ul a {
 }
 
 .formulario__contacto { /***  F L E X B O X  ***/
-    width:50vw; 
+    width:50%; 
     background-color: #f2f4f3;
-    padding: 10px;
+    padding: 25px;
     color: black;
     line-height: 40px;
     text-align: left;   
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
-.container-linea-form { /***  G R I D S  ***/
+
+
+/*
+.container-linea-form { 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
 }   
+
+.container-linea-form-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
 
 .label-nombre {
     grid-column: 1/3;
@@ -638,20 +675,20 @@ footer ul a {
 .input-email {
     grid-column: 3/8;
 }
-
+/*
 .label-msje {
     grid-column: 1/3;
 }
 
 .text-msje {
-    grid-column: 3/8;
-}
+    grid-column: 2/3;
+}*/
 
 
 input {
     border: none;
     height: 25px;
-    width: 70%;
+    width: 90%;
 }
 
 input:focus {
@@ -661,7 +698,7 @@ input:focus {
 
 textarea {
     border: none;
-    width: 70%;
+    width: 90%;
 }
 
 textarea:focus {
@@ -672,7 +709,7 @@ textarea:focus {
 select {
     border: none;
     height: 25px;
-    width: 70%;
+    width: 90%;
 }
 
 select:focus {
@@ -755,7 +792,7 @@ select:focus {
     }
     /*fin reglas especiales index - TABLET */
 
-
+    
     /*REGLAS ESPECIALES GALERIA - TABLET*/
     .container-fotos { /***  G R I D S  ***/
         grid-template-columns: repeat(3, 180px);
@@ -799,18 +836,23 @@ select:focus {
 
 
     
-    /*REGLAS ESPECIALES CONTACTO - TABLET*/
-    .formulario__contacto { /***  F L E X B O X  ***/ 
+    /*REGLAS ESPECIALES CONTACTO - TABLET
+    .formulario__contacto {  
         display: block;
-    }*/
-    .container-linea-form { /***  AYUDAAAAAAAA cambié a flexbox pero no me lo está tomando ***/
-        /*display: flex;
+    }
+
+    .container-linea-form { /***  AYUDAAAAAAAA cambié a flexbox pero no me lo está tomando
+        display: flex;
+        flex-direction: row;
+    }    
+    
+    .container-linea-form-area {
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-start;*/
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-    }  
+        align-items: flex-start;
+    }
+    
 
 
     .label-nombre {
@@ -905,7 +947,7 @@ select:focus {
     }
     .container-index { /***  G R I D S  ***/
         height: 100vh;
-        width: 100vw;
+        width: 100%;
     }
     .adam {
         /*letter-spacing: 1.5rem;
@@ -928,6 +970,13 @@ select:focus {
     }
     /*fin reglas especiales index - MOBILE */
 
+
+    /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
+    .texto-bio {
+        margin: 40px;
+        margin-bottom: 2.0rem;
+    }
+    /*fin reglas especiales sobre-mi - MOBILE */
 
 
     /*REGLAS ESPECIALES GALERIA - MOBILE*/
