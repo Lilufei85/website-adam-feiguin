@@ -23,6 +23,9 @@ https://www.w3schools.com/css/css3_object-fit.asp*/
     color: #153c50;
 }
 
+.texto-negrita {
+    font-weight: bold;
+}
 
 /*Fin reglas color de texto*/
 
@@ -59,9 +62,6 @@ nav ul li {
     font-size: 200%; 
     transition: transform 700ms 1s;   
 }
-
-
-
 
 .navBar li:hover { /***  T R A N S I C I O N  ***/
     transform: scale(1.1);
@@ -117,7 +117,6 @@ footer {
     padding: 20px;
     font-family: 'Adamina', serif;  
     margin-top: 30px;
-
 }
 
 footer ul { /***  F L E X B O X  ***/
@@ -154,7 +153,7 @@ footer ul a {
 }
 
 .container-index { /***  G R I D S  ***/
-    height: 930px;
+    height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
@@ -181,10 +180,6 @@ footer ul a {
 
 }
 
-/*
-.altura__main__index {
-    height: 930px; /*definí un altura de main para que se vea la imagen completa del background
-}*/
 
 .nav-index { /***  F L E X B O X  ***/
     width: 100%;
@@ -205,27 +200,27 @@ footer ul a {
     text-align: center;
     text-decoration: none;
     animation-name: zoomInIndex;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 .link-2 {
-    animation-duration: 6s;
-    /*animation-delay: 400ms;*/
+    /*animation-duration: 6s;*/
+    animation-delay: 1000ms;
     animation-fill-mode: both;
 }
 .link-3 {
-    animation-duration: 9s;
-    /*animation-delay: 800ms;*/
+    /*animation-duration: 9s;*/
+    animation-delay: 2000ms;
     animation-fill-mode: both;
 }
 .link-4 {
-    /*animation-delay: 1200ms;*/
-    animation-duration: 12s;
+    animation-delay: 3000ms;
+    /*animation-duration: 12s;*/
     animation-fill-mode: both;
 }
 .link-5 {  
-    /*animation-delay: 1600ms;*/  
-    animation-duration: 15s;
+    animation-delay: 4000ms; 
+    /*animation-duration: 15s;*/
     animation-fill-mode: both;
 }
 
@@ -234,8 +229,8 @@ footer ul a {
 @-webkit-keyframes zoomInIndex {
     0% {
     opacity: 0;
-    /*-webkit-transform: scale3d(0.8, 0.8, 0.8);
-    transform: scale3d(0.1, 0.1, 0.1);*/
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0, 0, 0);
     }
     100% {
     opacity: 1;
@@ -245,14 +240,13 @@ footer ul a {
 @keyframes zoomInIndex {
     0% {
     opacity: 0;
-    /*-webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.1, 0.1, 0.1);*/
+    -webkit-transform: scale3d(5.3, 5.3, 5.3);
+    transform: scale3d(0, 0, 0 );
     }
-    100% {
+    50% {
     opacity: 1;
     }
 }
-
 /*fin reglas especiales index*/
 
 
@@ -271,12 +265,12 @@ footer ul a {
     animation-duration: 3s;
 }
 
-.slideInUpBio {
+.slideInUpBio { /*** A N I M A C I O N    F O T O    B I O ***/
     -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes slideInBio {
+@keyframes slideInBio { /*** A N I M A C I O N    F O T O    B I O ***/
     0% {
     -webkit-transform: translateY(500px);
     transform: translateY(500px);
@@ -299,7 +293,7 @@ footer ul a {
 .download-cv {
     align-self: flex-start;
     margin-left: 80px;
-    animation-name: vibrarCv;
+    animation-name: vibrarCv; /*** A N I M A C I O N   D E S C A R G A    C V ***/
     animation-duration: 3s;
     animation-iteration-count: infinite;
     background-color: #5b69722b;
@@ -308,7 +302,7 @@ footer ul a {
     border-radius: 3px;
 }
 
-@keyframes vibrarCv {
+@keyframes vibrarCv { /*** A N I M A C I O N   D E S C A R G A    C V ***/
     0% {
     -webkit-transform: translate(0);
     transform: translate(0);
@@ -388,7 +382,7 @@ footer ul a {
 }
 
 
-.foto-1 {
+.foto-1 { 
     grid-area: foto-1;
     transition: transform 700ms 0s;
     /*esta transition afecta al transform, tiempo de duracion, delay*/
@@ -630,7 +624,21 @@ footer ul a {
     align-content: center;
 }
 
+.flex-newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.label-newsletter {
+    white-space: nowrap; /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/
+}
+
+.checkbox {
+    width: auto;
+    margin-left: 5px;
+}
 
 /*
 .container-linea-form { 
