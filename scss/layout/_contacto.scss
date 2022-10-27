@@ -5,14 +5,17 @@ input {
     border: none;
     height: 25px;
     width: 90%;
+    @include typos ($font-3, 1.0rem, $color-1); 
     &:focus {
         @include focus-formulario;
     }
+    
 }
 
 textarea {
     border: none;
     width: 90%;
+    @include typos ($font-3, 1.0rem, $color-1); 
     &:focus {
         @include focus-formulario;
     }
@@ -32,11 +35,13 @@ select {
     width:50%; 
     background-color: $color-4;
     padding: 25px;
-    color: black;
     line-height: 40px;
     text-align: left;   
     @include flex (column,space-evenly);
     align-content: center;
+    label {
+        @include typos ($font-3, 1.1rem, $color-1); 
+    }
 }
 
 .flex-newsletter {
@@ -61,17 +66,16 @@ select {
     background-color: $color-1;
     color: $color-4;
     border: none;
+    border-radius: 2px;
     text-decoration: none;
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 0px;
-    padding-bottom: 5px;
     font-family: 'Adamina', serif;
     font-size: 1.0rem;
     font-weight: 400;
     width: 70px;
-    height: 30px;
+    height: 38px;
     align-self: flex-end;
 }
 /*fin reglas especiales contacto*/

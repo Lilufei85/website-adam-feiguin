@@ -33,6 +33,12 @@
     width: $width;
 }
 
+@mixin typos ($family, $size, $color) {
+    font-family: $family;
+    font-size: $size;
+    color:$color;
+}
+
 @mixin medidas ($width, $height, $padd, $margin){
     width: $width;
     height: $height;

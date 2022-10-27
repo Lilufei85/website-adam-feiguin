@@ -197,6 +197,12 @@ footer {
   color: #f2f4f3;
   padding: 5px;
   border-radius: 3px; }
+  .download-cv a {
+    text-decoration: none;
+    font-family: "Adamina", serif;
+    font-size: 1rem;
+    color: #153c50;
+    font-weight: 500; }
 
 @keyframes vibrarCv {
   /*** A N I M A C I O N   D E S C A R G A    C V ***/
@@ -425,14 +431,20 @@ footer {
 input, select {
   border: none;
   height: 25px;
-  width: 90%; }
+  width: 90%;
+  font-family: "Adamina", serif;
+  font-size: 1rem;
+  color: #5b6972; }
   input:focus, select:focus {
     outline: none;
     border: 1px solid #d7dee1; }
 
 textarea {
   border: none;
-  width: 90%; }
+  width: 90%;
+  font-family: "Adamina", serif;
+  font-size: 1rem;
+  color: #5b6972; }
   textarea:focus {
     outline: none;
     border: 1px solid #d7dee1; }
@@ -448,13 +460,16 @@ textarea {
   width: 50%;
   background-color: #f2f4f3;
   padding: 25px;
-  color: black;
   line-height: 40px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center; }
+  .formulario__contacto label {
+    font-family: "Adamina", serif;
+    font-size: 1.1rem;
+    color: #5b6972; }
 
 .flex-newsletter {
   display: flex;
@@ -477,17 +492,16 @@ textarea {
   background-color: #5b6972;
   color: #f2f4f3;
   border: none;
+  border-radius: 2px;
   text-decoration: none;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 0px;
-  padding-bottom: 5px;
   font-family: 'Adamina', serif;
   font-size: 1.0rem;
   font-weight: 400;
   width: 70px;
-  height: 30px;
+  height: 38px;
   align-self: flex-end; }
 
 /*fin reglas especiales contacto*/
