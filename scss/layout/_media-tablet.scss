@@ -1,0 +1,89 @@
+@media (max-width: 768px) {  /***  RESPONSIVE A TABLET  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-font-size: 1.2rem;
+        --bs-dropdown-border-color:transparent;
+        --bs-dropdown-margin:0;
+    }
+    
+    /*fin reglas del nav TABLET*/
+
+
+    /*REGLAS ESPECIALES INDEX - TABLET*/
+    .container-index { /***  G R I D S  ***/
+        height: 100vh;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(12,1fr);
+        align-items: center;
+    }
+    .adam {
+        letter-spacing: 1.5rem;
+        font-size: 4.2rem;
+        color: $color-1;
+        grid-column: 3/5;
+        grid-row: 9/11;
+    }
+    .feiguin {
+        letter-spacing: 1.3rem;
+        font-size: 3.0rem;
+        color:$color-1;
+        grid-column: 4/8;
+        grid-row: 10/12;
+    }
+    .index__nav__a {
+        font-size: 1.0rem;
+    }
+    /*fin reglas especiales index - TABLET */
+
+    
+    /*REGLAS ESPECIALES GALERIA - TABLET*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 180px);
+        row-gap: 3px;
+        column-gap: 3px;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 170px;
+    } 
+    .container-videos { /***  F L E X B O X  ***/
+        @include flex (column,center);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .video__styling {    
+        width:500px; 
+    }
+    /*Fin reglas especiales galeria TABLET*/
+
+
+    /*REGLAS ESPECIALES AGENDA - TABLET*/
+    .contenedor-agenda { /***  F L E X B O X  ***/
+        row-gap: 25px;
+        margin-bottom: 25px;
+    }
+    .card__workshop {
+        width: 290px;
+        font-size: 0.9rem;
+    }
+    .img__workshop {
+        width: 280px;
+    }
+    .button-info {
+        font-size: 0.9rem;
+    }
+    /*Fin reglas especiales agenda TABLET*/
+
+    /*REGLAS ESPECIALES CONTACTO - TABLET*/
+    .formulario__contacto { /***  F L E X B O X  ***/
+        width:80vw; 
+    }
+
+}

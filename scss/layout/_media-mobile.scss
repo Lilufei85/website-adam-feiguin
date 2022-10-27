@@ -1,0 +1,126 @@
+@media (max-width: 576px) {   /***  RESPONSIVE A MOBILE  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+    .navbar {
+        font-size: 1.0rem;
+        li:hover { /***  T R A N S I C I O N  ***/
+            transform: scale(1.01); 
+        }
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-font-size: 0.8rem;
+        --bs-dropdown-border-color:transparent;
+        --bs-dropdown-margin:1.5;
+    }
+    
+    /*fin reglas del nav MOBILE*/  
+
+    
+    /*REGLAS DEL BODY - MOBILE*/
+    h1 {
+        padding: 30px;
+        font-size: 2.0rem;
+        letter-spacing: 0.6rem;
+    }
+    /*fin reglas del body -MOBILE */
+
+
+    /*REGLAS DEL FOOTER - MOBILE*/
+    footer {
+        padding: 15px;
+        font-size: 0.7rem;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        ul { /***  F L E X B O X  ***/
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    /*fin reglas especiales footer MOBILE*/
+
+
+    /*REGLAS ESPECIALES INDEX - MOBILE*/
+    .background__index {
+        background-color: $color-3;
+        background-image: url(../assets/img/mobile/fotoindex-mobile-1.jpg);
+        object-fit: fill;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .container-index { /***  G R I D S  ***/
+        height: 100vh;
+        width: 100%;
+    }
+    .adam {
+        /*letter-spacing: 1.5rem;
+        font-size: 4.2rem;
+        color: #5b6972;
+        grid-column: 3/5;
+        grid-row: 9/11;*/
+        display: none;
+    }
+    .feiguin {
+        /*letter-spacing: 1.3rem;
+        font-size: 3.0rem;
+        color:#5b6972;
+        grid-column: 4/8;
+        grid-row: 10/12;*/
+        display: none;
+    }
+    .index__nav__a {
+        font-size: 1.0rem;
+    }
+    /*fin reglas especiales index - MOBILE */
+
+
+    /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
+    .texto-bio {
+        margin: 40px;
+        margin-bottom: 2.0rem;
+    }
+    /*fin reglas especiales sobre-mi - MOBILE */
+
+
+    /*REGLAS ESPECIALES GALERIA - MOBILE*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 130px);
+        row-gap: 2px;
+        column-gap: 1px;
+        justify-content: center;
+        justify-items: center;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 120px;
+    } 
+    .video__styling {    
+        width:380px; 
+        height: auto;
+    }
+    /*Fin reglas especiales galeria MOBILE*/
+
+    
+
+
+    /*REGLAS ESPECIALES AGENDA - MOBILE*/
+    .card__workshop {
+        width: 260px;
+        font-size: 0.8rem;
+    }
+    .img__workshop {
+        width: 250px;
+    }
+    .button-info {
+        font-size: 0.7rem;
+    }
+    /*Fin reglas especiales agenda MOBILE*/
+
+
+    
+    /*REGLAS ESPECIALES CONTACTO - MOBILE*/
+    .formulario__contacto { /***  F L E X B O X  ***/
+        width:90vw; 
+    }
+}

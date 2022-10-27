@@ -1,0 +1,77 @@
+/*REGLAS ESPECIALES CONTACTO*/
+
+
+input {
+    border: none;
+    height: 25px;
+    width: 90%;
+    &:focus {
+        @include focus-formulario;
+    }
+}
+
+textarea {
+    border: none;
+    width: 90%;
+    &:focus {
+        @include focus-formulario;
+    }
+}
+
+select {
+    @extend input;
+}
+
+.contendor-formulario { /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulario__contacto { /***  F L E X B O X  ***/
+    width:50%; 
+    background-color: $color-4;
+    padding: 25px;
+    color: black;
+    line-height: 40px;
+    text-align: left;   
+    @include flex (column,space-evenly);
+    align-content: center;
+}
+
+.flex-newsletter {
+    @include flex (row,center);
+    align-items: center;
+}
+
+.label-newsletter {
+    white-space: nowrap; /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/
+}
+
+.checkbox {
+    width: auto;
+    margin-left: 5px;
+}
+
+.newsletter {
+    align-self: center;
+}
+
+.button-contacto {
+    background-color: $color-1;
+    color: $color-4;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    font-family: 'Adamina', serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+    width: 70px;
+    height: 30px;
+    align-self: flex-end;
+}
+/*fin reglas especiales contacto*/

@@ -1,0 +1,37 @@
+.header-pages {
+    position: sticky;
+    z-index: 2;
+}
+
+/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
+.navbar {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;  
+    font-size: 1.9rem;
+    li {
+        transition: transform 700ms 0s;
+        &:hover { /***  T R A N S I C I O N  ***/
+            transform: scale(1.1); 
+        }
+    }
+}
+
+.navbar-nav {
+    --bs-navbar-color: #5b6972;
+    --bs-navbar-hover-color: #5b6972;
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color:  #153c50;
+}
+
+.dropdown-menu {
+    --bs-dropdown-font-size: 1.4rem;
+    --bs-dropdown-border-color:transparent;
+    --bs-dropdown-margin:0;
+}
+
+.dropdown-item {
+    --bs-dropdown-link-color: #5b6972;
+    --bs-dropdown-link-hover-color: #5b6972;
+    --bs-dropdown-link-active-bg: transparent;
+    --bs-dropdown-link-hover-bg: transparent;
+}

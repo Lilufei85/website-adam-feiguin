@@ -1,0 +1,47 @@
+
+@mixin focus-formulario {
+    outline: none;
+    border: 1px solid #d7dee1;  
+}   
+
+@mixin m-fotos ($area) {
+    grid-area: $area;
+    transition: transform 700ms 0s;
+}
+
+@mixin flex ($direction,$justify){
+    display: flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+}
+
+@mixin grid ($col,$row) {
+    display: grid;
+    grid-template-columns:$col;
+    grid-template-rows:$row;
+}
+
+@mixin animation-nav-index ($delay) {
+    animation-delay: $delay;
+    animation-fill-mode: both;
+}
+
+@mixin styling-postal ($radius, $padding, $width) {
+    border: 1px solid #ddd;
+    border-radius: $radius;
+    padding: $padding;
+    width: $width;
+}
+
+@mixin medidas ($width, $height, $padd, $margin){
+    width: $width;
+    height: $height;
+    padding: $padd;
+    margin: $margin;
+}
+/*los mixins se agregan con @include nombre-mixin;*/
+/*@extend .clase  = copia las propiedades q se repiten de otra clase!*/
+
+
+
+

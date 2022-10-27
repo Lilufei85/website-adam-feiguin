@@ -1,0 +1,30 @@
+/*REGLAS DEL BODY*/
+
+h1 {
+    text-align: center; /*titulos de las paginas centrados */
+    padding: 30px;
+    font-family: $font-1;
+    font-weight: 500; 
+    font-size: 3.0rem;
+    color: $color-2; 
+    letter-spacing: 15px;
+}
+
+div h2 {
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: $font-2;
+    font-weight: lighter;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: $font-3;
+    color:$color-1;
+}
+/*fin reglas del body*/

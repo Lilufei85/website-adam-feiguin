@@ -1,0 +1,23 @@
+/*REGLAS DEL FOOTER*/
+
+footer {
+    color: #153c50;
+    background-color: $color-4;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Adamina', serif;  
+    margin-top: 30px;
+    ul { /***  F L E X B O X  ***/
+        @include flex (row,center);
+        flex-wrap: nowrap;
+        gap: 20px;
+        text-align: center;
+        size: adjust 100px; 
+        list-style: none;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none; 
+        }
+    }
+}
+/*fin reglas del footer*/

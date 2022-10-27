@@ -1,0 +1,96 @@
+/*REGLAS ESPECIALES INDEX*/
+
+.background__index {
+    background-color: $color-3;
+    background-image: url(../assets/img/desktop/foto2.jpg);
+    object-fit: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-index { /***  G R I D S  ***/
+    height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.adam {
+    letter-spacing: 14px;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 8.2rem;
+    color: $color-3;
+    border: 1px solid black;
+    grid-column: 2/6;
+    grid-row: 6/8;
+}
+
+.feiguin {
+    letter-spacing: 16px;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 5.1rem;
+    color: $color-3;
+    border: 1px solid black;
+    grid-column: 2/6;
+    grid-row: 8/9;
+}
+
+
+.nav-index { /***  F L E X B O X  ***/
+    width: 100%;
+    padding: 5px;
+    padding-top: 7px;
+    margin: 0px;
+    background-color: #f2f4f3;
+    opacity: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    a {
+        color: $color-2;
+        font-family: 'Rubik Dirt', cursive;
+        font-size: 2.0rem;
+        text-align: center;
+        text-decoration: none;
+        animation-name: zoomInIndex;
+        animation-duration: 3s;
+    }
+}
+
+.link-2 {
+    @include animation-nav-index (1000ms);
+}
+.link-3 {
+    @include animation-nav-index (2000ms);
+}
+.link-4 {
+    @include animation-nav-index (3000ms);
+}
+.link-5 {  
+    @include animation-nav-index (4000ms);
+}
+
+
+
+@-webkit-keyframes zoomInIndex {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes zoomInIndex {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(5.3, 5.3, 5.3);
+    transform: scale3d(0, 0, 0 );
+    }
+    50% {
+    opacity: 1;
+    }
+}
+/*fin reglas especiales index*/

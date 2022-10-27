@@ -1,0 +1,39 @@
+/*REGLAS ESPECIALES AGENDA*/
+
+.contenedor-agenda { /***  F L E X B O X  ***/
+    @include flex (row,space-evenly);
+    flex-wrap: wrap;
+    row-gap: 25px;
+    margin-bottom: 25px;
+}
+
+.card__workshop {
+    @include styling-postal (8px, 5px, 310px);
+    font-family: 'Adamina', serif;
+    color: #5b6972;
+}
+
+.img__workshop {
+    width: 300px;
+}
+
+.contenedor-button { /***  F L E X B O X  ***/
+    @include flex (row,flex-end);
+    flex-wrap: wrap;
+}
+
+.button-info {
+    background-color: $color-4;
+    color: $color-2;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Adamina', serif;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+/*Fin reglas especiales agenda*/

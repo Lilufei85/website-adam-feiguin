@@ -1,0 +1,76 @@
+/*REGLAS ESPECIALES SOBRE MI*/
+.container-bio { /***  F L E X B O X  ***/
+    @include flex (column,center);
+}
+
+.foto-bio {
+    width: 100%;
+    align-self: center;
+    animation-name: slideInBio;
+    animation-duration: 3s;
+}
+
+.slideInUpBio { /*** A N I M A C I O N    F O T O    B I O ***/
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slideInBio { /*** A N I M A C I O N    F O T O    B I O ***/
+    0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    }
+    100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    }
+}
+
+.texto-bio {
+    align-self: flex-start;
+    margin: 80px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 2.0rem;
+}
+
+
+.download-cv {
+    align-self: flex-start;
+    margin-left: 80px;
+    animation-name: vibrarCv; /*** A N I M A C I O N   D E S C A R G A    C V ***/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    background-color: #5b69722b;
+    color: $color-4;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+@keyframes vibrarCv { /*** A N I M A C I O N   D E S C A R G A    C V ***/
+    0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+    20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+    }
+    40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+    }
+    60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+    }
+    80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+    }
+    100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    }
+}
+/*Fin reglas especiales sobre mi*/

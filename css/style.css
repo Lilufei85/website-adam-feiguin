@@ -1,0 +1,688 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*p, borders img, video y cards de agenda, titulos card agenda, background boton contact form*/
+/*a index, texto h1, text button agenda*/
+/*background index, nombre index*/
+/*backgrounds: footer, download cv, button info agenda, contact form, button contacto, */
+/*nav index, h1 pages*/
+/*nav pages, titulos card agenda*/
+/*p*/
+/*bs no me admitió variables, OJO! Cambiar a mano*/
+/*los mixins se agregan con @include nombre-mixin;*/
+/*@extend .clase  = copia las propiedades q se repiten de otra clase!*/
+/*REGLAS DEL BODY*/
+h1 {
+  text-align: center;
+  /*titulos de las paginas centrados */
+  padding: 30px;
+  font-family: "Rubik Dirt", cursive;
+  font-weight: 500;
+  font-size: 3.0rem;
+  color: #153c50;
+  letter-spacing: 15px; }
+
+div h2 {
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Anton", sans-serif;
+  font-weight: lighter;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+p {
+  font-family: "Adamina", serif;
+  color: #5b6972; }
+
+/*fin reglas del body*/
+/*REGLAS DEL FOOTER*/
+footer {
+  color: #153c50;
+  background-color: #f2f4f3;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Adamina', serif;
+  margin-top: 30px; }
+  footer ul {
+    /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    text-align: center;
+    size: adjust 100px;
+    list-style: none;
+    margin-bottom: 10px; }
+    footer ul a {
+      text-decoration: none; }
+
+/*fin reglas del footer*/
+/*REGLAS ESPECIALES INDEX*/
+.background__index {
+  background-color: #0b1f2a;
+  background-image: url(../assets/img/desktop/foto2.jpg);
+  object-fit: contain;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.container-index {
+  /***  G R I D S  ***/
+  height: 930px;
+  /*definí un altura de main para que se vea la imagen completa del background*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); }
+
+.adam {
+  letter-spacing: 14px;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 8.2rem;
+  color: #0b1f2a;
+  border: 1px solid black;
+  grid-column: 2/6;
+  grid-row: 6/8; }
+
+.feiguin {
+  letter-spacing: 16px;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 5.1rem;
+  color: #0b1f2a;
+  border: 1px solid black;
+  grid-column: 2/6;
+  grid-row: 8/9; }
+
+.nav-index {
+  /***  F L E X B O X  ***/
+  width: 100%;
+  padding: 5px;
+  padding-top: 7px;
+  margin: 0px;
+  background-color: #f2f4f3;
+  opacity: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .nav-index a {
+    color: #153c50;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2.0rem;
+    text-align: center;
+    text-decoration: none;
+    animation-name: zoomInIndex;
+    animation-duration: 3s; }
+
+.link-2 {
+  animation-delay: 1000ms;
+  animation-fill-mode: both; }
+
+.link-3 {
+  animation-delay: 2000ms;
+  animation-fill-mode: both; }
+
+.link-4 {
+  animation-delay: 3000ms;
+  animation-fill-mode: both; }
+
+.link-5 {
+  animation-delay: 4000ms;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomInIndex {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0, 0, 0); }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoomInIndex {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(5.3, 5.3, 5.3);
+    transform: scale3d(0, 0, 0); }
+  50% {
+    opacity: 1; } }
+
+/*fin reglas especiales index*/
+/*REGLAS ESPECIALES SOBRE MI*/
+.container-bio {
+  /***  F L E X B O X  ***/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.foto-bio {
+  width: 100%;
+  align-self: center;
+  animation-name: slideInBio;
+  animation-duration: 3s; }
+
+.slideInUpBio {
+  /*** A N I M A C I O N    F O T O    B I O ***/
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes slideInBio {
+  /*** A N I M A C I O N    F O T O    B I O ***/
+  0% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+.texto-bio {
+  align-self: flex-start;
+  margin: 80px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 2.0rem; }
+
+.download-cv {
+  align-self: flex-start;
+  margin-left: 80px;
+  animation-name: vibrarCv;
+  /*** A N I M A C I O N   D E S C A R G A    C V ***/
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-color: #5b69722b;
+  color: #f2f4f3;
+  padding: 5px;
+  border-radius: 3px; }
+
+@keyframes vibrarCv {
+  /*** A N I M A C I O N   D E S C A R G A    C V ***/
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+/*Fin reglas especiales sobre mi*/
+/*REGLAS ESPECIALES GALERIA*/
+.imgGallery h2 {
+  text-align: center; }
+
+.container-fotos {
+  /***  G R I D S  ***/
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: auto;
+  row-gap: 10px;
+  column-gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas: "foto-1 foto-2 foto-3"  "foto-4 foto-5 foto-6" "foto-7 foto-8 foto-9" "foto-10 foto-11 foto-12" "foto-13 foto-14 foto-15" "foto-16 foto-17 foto-18" "foto-19 foto-20 foto-21" "foto-22 foto-23 foto-24"; }
+  .container-fotos img:hover {
+    /***  T R A N S I C I O N  ***/
+    transform: scale(1.1);
+    /*-webkit-animation: 700ms ease-in;
+        animation: 700ms ease-in both;*/ }
+
+.foto {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px; }
+
+.foto-1 {
+  grid-area: foto-1;
+  transition: transform 700ms 0s;
+  /*esta transition afecta al transform, tiempo de duracion, delay*/
+  /*background-image: url("../assets/img/desktop/domo1.jpg");*/ }
+
+.foto-2 {
+  grid-area: foto-2;
+  transition: transform 700ms 0s; }
+
+.foto-3 {
+  grid-area: foto-3;
+  transition: transform 700ms 0s; }
+
+.foto-4 {
+  grid-area: foto-4;
+  transition: transform 700ms 0s; }
+
+.foto-5 {
+  grid-area: foto-5;
+  transition: transform 700ms 0s; }
+
+.foto-6 {
+  grid-area: foto-6;
+  transition: transform 700ms 0s; }
+
+.foto-7 {
+  grid-area: foto-7;
+  transition: transform 700ms 0s; }
+
+.foto-8 {
+  grid-area: foto-8;
+  transition: transform 700ms 0s; }
+
+.foto-9 {
+  grid-area: foto-9;
+  transition: transform 700ms 0s; }
+
+.foto-10 {
+  grid-area: foto-10;
+  transition: transform 700ms 0s; }
+
+.foto-11 {
+  grid-area: foto-11;
+  transition: transform 700ms 0s; }
+
+.foto-12 {
+  grid-area: foto-12;
+  transition: transform 700ms 0s; }
+
+.foto-13 {
+  grid-area: foto-13;
+  transition: transform 700ms 0s; }
+
+.foto-14 {
+  grid-area: foto-14;
+  transition: transform 700ms 0s; }
+
+.foto-15 {
+  grid-area: foto-15;
+  transition: transform 700ms 0s; }
+
+.foto-16 {
+  grid-area: foto-16;
+  transition: transform 700ms 0s; }
+
+.foto-17 {
+  grid-area: foto-17;
+  transition: transform 700ms 0s; }
+
+.foto-18 {
+  grid-area: foto-18;
+  transition: transform 700ms 0s; }
+
+.foto-19 {
+  grid-area: foto-19;
+  transition: transform 700ms 0s; }
+
+.foto-20 {
+  grid-area: foto-20;
+  transition: transform 700ms 0s; }
+
+.foto-21 {
+  grid-area: foto-21;
+  transition: transform 700ms 0s; }
+
+.foto-22 {
+  grid-area: foto-22;
+  transition: transform 700ms 0s; }
+
+.foto-23 {
+  grid-area: foto-23;
+  transition: transform 700ms 0s; }
+
+.foto-24 {
+  grid-area: foto-24;
+  transition: transform 700ms 0s; }
+
+.container-videos {
+  /***  G R I D S  ***/
+  display: grid;
+  grid-template-columns: repeat(2, 250);
+  grid-template-rows: auto;
+  width: 100%;
+  row-gap: 5px;
+  column-gap: 8px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas: "video-1 video-2"  "video-3 video-4"; }
+
+.video-1 {
+  grid-area: video-1; }
+
+.video-2 {
+  grid-area: video-2; }
+
+.video-3 {
+  grid-area: video-3; }
+
+.video-4 {
+  grid-area: video-4; }
+
+.video__styling {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 600px;
+  height: 326px;
+  margin: 5px; }
+
+/*Fin reglas especiales galeria*/
+/*REGLAS ESPECIALES AGENDA*/
+.contenedor-agenda {
+  /***  F L E X B O X  ***/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  margin-bottom: 25px; }
+
+.card__workshop {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 310px;
+  font-family: 'Adamina', serif;
+  color: #5b6972; }
+
+.img__workshop {
+  width: 300px; }
+
+.contenedor-button {
+  /***  F L E X B O X  ***/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
+
+.button-info {
+  background-color: #f2f4f3;
+  color: #153c50;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Adamina', serif;
+  font-size: 1.0rem;
+  font-weight: 700; }
+
+/*Fin reglas especiales agenda*/
+/*REGLAS ESPECIALES CONTACTO*/
+input, select {
+  border: none;
+  height: 25px;
+  width: 90%; }
+  input:focus, select:focus {
+    outline: none;
+    border: 1px solid #d7dee1; }
+
+textarea {
+  border: none;
+  width: 90%; }
+  textarea:focus {
+    outline: none;
+    border: 1px solid #d7dee1; }
+
+.contendor-formulario {
+  /***  F L E X B O X  ***/
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.formulario__contacto {
+  /***  F L E X B O X  ***/
+  width: 50%;
+  background-color: #f2f4f3;
+  padding: 25px;
+  color: black;
+  line-height: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center; }
+
+.flex-newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.label-newsletter {
+  white-space: nowrap;
+  /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/ }
+
+.checkbox {
+  width: auto;
+  margin-left: 5px; }
+
+.newsletter {
+  align-self: center; }
+
+.button-contacto {
+  background-color: #5b6972;
+  color: #f2f4f3;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  font-family: 'Adamina', serif;
+  font-size: 1.0rem;
+  font-weight: 400;
+  width: 70px;
+  height: 30px;
+  align-self: flex-end; }
+
+/*fin reglas especiales contacto*/
+.header-pages {
+  position: sticky;
+  z-index: 2; }
+
+/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
+.navbar {
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.9rem; }
+  .navbar li {
+    transition: transform 700ms 0s; }
+    .navbar li:hover {
+      /***  T R A N S I C I O N  ***/
+      transform: scale(1.1); }
+
+.navbar-nav {
+  --bs-navbar-color: #5b6972;
+  --bs-navbar-hover-color: #5b6972;
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color:  #153c50; }
+
+.dropdown-menu {
+  --bs-dropdown-font-size: 1.4rem;
+  --bs-dropdown-border-color:transparent;
+  --bs-dropdown-margin:0; }
+
+.dropdown-item {
+  --bs-dropdown-link-color: #5b6972;
+  --bs-dropdown-link-hover-color: #5b6972;
+  --bs-dropdown-link-active-bg: transparent;
+  --bs-dropdown-link-hover-bg: transparent; }
+
+@media (max-width: 768px) {
+  /***  RESPONSIVE A TABLET  ***/
+  /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+  .navbar {
+    font-size: 1.5rem; }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 1.2rem;
+    --bs-dropdown-border-color:transparent;
+    --bs-dropdown-margin:0; }
+  /*fin reglas del nav TABLET*/
+  /*REGLAS ESPECIALES INDEX - TABLET*/
+  .container-index {
+    /***  G R I D S  ***/
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    align-items: center; }
+  .adam {
+    letter-spacing: 1.5rem;
+    font-size: 4.2rem;
+    color: #5b6972;
+    grid-column: 3/5;
+    grid-row: 9/11; }
+  .feiguin {
+    letter-spacing: 1.3rem;
+    font-size: 3.0rem;
+    color: #5b6972;
+    grid-column: 4/8;
+    grid-row: 10/12; }
+  .index__nav__a {
+    font-size: 1.0rem; }
+  /*fin reglas especiales index - TABLET */
+  /*REGLAS ESPECIALES GALERIA - TABLET*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 180px);
+    row-gap: 3px;
+    column-gap: 3px; }
+  .foto {
+    padding: 3px;
+    width: 170px; }
+  .container-videos {
+    /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+    align-items: center; }
+  .video__styling {
+    width: 500px; }
+  /*Fin reglas especiales galeria TABLET*/
+  /*REGLAS ESPECIALES AGENDA - TABLET*/
+  .contenedor-agenda {
+    /***  F L E X B O X  ***/
+    row-gap: 25px;
+    margin-bottom: 25px; }
+  .card__workshop {
+    width: 290px;
+    font-size: 0.9rem; }
+  .img__workshop {
+    width: 280px; }
+  .button-info {
+    font-size: 0.9rem; }
+  /*Fin reglas especiales agenda TABLET*/
+  /*REGLAS ESPECIALES CONTACTO - TABLET*/
+  .formulario__contacto {
+    /***  F L E X B O X  ***/
+    width: 80vw; } }
+
+@media (max-width: 576px) {
+  /***  RESPONSIVE A MOBILE  ***/
+  /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+  .navbar {
+    font-size: 1.0rem; }
+    .navbar li:hover {
+      /***  T R A N S I C I O N  ***/
+      transform: scale(1.01); }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 0.8rem;
+    --bs-dropdown-border-color:transparent;
+    --bs-dropdown-margin:1.5; }
+  /*fin reglas del nav MOBILE*/
+  /*REGLAS DEL BODY - MOBILE*/
+  h1 {
+    padding: 30px;
+    font-size: 2.0rem;
+    letter-spacing: 0.6rem; }
+  /*fin reglas del body -MOBILE */
+  /*REGLAS DEL FOOTER - MOBILE*/
+  footer {
+    padding: 15px;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    padding-bottom: 5px; }
+    footer ul {
+      /***  F L E X B O X  ***/
+      gap: 20px;
+      margin-bottom: 10px; }
+  /*fin reglas especiales footer MOBILE*/
+  /*REGLAS ESPECIALES INDEX - MOBILE*/
+  .background__index {
+    background-color: #0b1f2a;
+    background-image: url(../assets/img/mobile/fotoindex-mobile-1.jpg);
+    object-fit: fill;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .container-index {
+    /***  G R I D S  ***/
+    height: 100vh;
+    width: 100%; }
+  .adam {
+    /*letter-spacing: 1.5rem;
+        font-size: 4.2rem;
+        color: #5b6972;
+        grid-column: 3/5;
+        grid-row: 9/11;*/
+    display: none; }
+  .feiguin {
+    /*letter-spacing: 1.3rem;
+        font-size: 3.0rem;
+        color:#5b6972;
+        grid-column: 4/8;
+        grid-row: 10/12;*/
+    display: none; }
+  .index__nav__a {
+    font-size: 1.0rem; }
+  /*fin reglas especiales index - MOBILE */
+  /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
+  .texto-bio {
+    margin: 40px;
+    margin-bottom: 2.0rem; }
+  /*fin reglas especiales sobre-mi - MOBILE */
+  /*REGLAS ESPECIALES GALERIA - MOBILE*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 130px);
+    row-gap: 2px;
+    column-gap: 1px;
+    justify-content: center;
+    justify-items: center; }
+  .foto {
+    padding: 3px;
+    width: 120px; }
+  .video__styling {
+    width: 380px;
+    height: auto; }
+  /*Fin reglas especiales galeria MOBILE*/
+  /*REGLAS ESPECIALES AGENDA - MOBILE*/
+  .card__workshop {
+    width: 260px;
+    font-size: 0.8rem; }
+  .img__workshop {
+    width: 250px; }
+  .button-info {
+    font-size: 0.7rem; }
+  /*Fin reglas especiales agenda MOBILE*/
+  /*REGLAS ESPECIALES CONTACTO - MOBILE*/
+  .formulario__contacto {
+    /***  F L E X B O X  ***/
+    width: 90vw; } }
+
+/*llegue hasta 1:16 de la clase*/

@@ -1,0 +1,173 @@
+/*REGLAS ESPECIALES GALERIA*/
+
+
+.imgGallery h2 {
+    text-align: center;
+}
+
+
+.container-fotos { /***  G R I D S  ***/
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+    "foto-1 foto-2 foto-3" 
+    "foto-4 foto-5 foto-6"
+    "foto-7 foto-8 foto-9"
+    "foto-10 foto-11 foto-12"
+    "foto-13 foto-14 foto-15"
+    "foto-16 foto-17 foto-18"
+    "foto-19 foto-20 foto-21"
+    "foto-22 foto-23 foto-24"
+    ;
+    img:hover  { /***  T R A N S I C I O N  ***/
+        transform: scale(1.1);
+        /*-webkit-animation: 700ms ease-in;
+        animation: 700ms ease-in both;*/
+    }
+}
+
+.foto {
+    @include styling-postal (4px, 5px, 400px);
+} 
+
+.foto-1 { 
+    @include m-fotos (foto-1);
+    /*esta transition afecta al transform, tiempo de duracion, delay*/
+    /*background-image: url("../assets/img/desktop/domo1.jpg");*/  
+}
+
+.foto-2 {
+    @include m-fotos (foto-2);
+}
+
+.foto-3 {
+    @include m-fotos (foto-3);
+}
+
+.foto-4 {
+    @include m-fotos (foto-4);
+}
+
+.foto-5 {
+    @include m-fotos (foto-5);
+}
+
+.foto-6 {
+    @include m-fotos (foto-6);
+}
+
+.foto-7 {
+    @include m-fotos (foto-7);
+}
+
+.foto-8 {
+    @include m-fotos (foto-8);
+}
+
+.foto-9 {
+    @include m-fotos (foto-9);
+}
+
+.foto-10 {
+    @include m-fotos (foto-10);
+}
+
+.foto-11 {
+    @include m-fotos (foto-11);
+}
+
+.foto-12 {
+    @include m-fotos (foto-12);
+}
+
+.foto-13 {
+    @include m-fotos (foto-13);
+}
+
+.foto-14 {
+    @include m-fotos (foto-14);
+}
+
+.foto-15 {
+    @include m-fotos (foto-15);
+}
+
+.foto-16 {
+    @include m-fotos (foto-16);
+}
+
+.foto-17 {
+    @include m-fotos (foto-17);
+}
+
+.foto-18 {
+    @include m-fotos (foto-18);
+}
+
+.foto-19 {
+    @include m-fotos (foto-19);
+}
+
+.foto-20 {
+    @include m-fotos (foto-20);
+}
+
+.foto-21 {
+    @include m-fotos (foto-21);
+}
+
+.foto-22 {
+    @include m-fotos (foto-22);
+}
+
+.foto-23 {
+    @include m-fotos (foto-23);
+}
+
+.foto-24 {
+    @include m-fotos (foto-24);
+}
+
+
+
+.container-videos { /***  G R I D S  ***/
+    @include grid (repeat(2, 250),auto);
+    width: 100%;
+    row-gap: 5px;
+    column-gap: 8px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+    "video-1 video-2" 
+    "video-3 video-4"
+}
+
+.video-1 {
+    grid-area: video-1;
+}
+
+.video-2 {
+    grid-area: video-2;
+}
+
+.video-3 {
+    grid-area: video-3;
+}
+
+.video-4 {
+    grid-area: video-4;
+}
+
+
+.video__styling {  
+    @include styling-postal (8px, 5px, 600px); 
+    height: 326px; 
+    margin: 5px;
+}
+/*Fin reglas especiales galeria*/
