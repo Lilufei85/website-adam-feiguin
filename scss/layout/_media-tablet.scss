@@ -4,13 +4,11 @@
     .navbar {
         font-size: 1.5rem;
     }
-
     .dropdown-menu {
         --bs-dropdown-font-size: 1.2rem;
         --bs-dropdown-border-color:transparent;
         --bs-dropdown-margin:0;
     }
-    
     /*fin reglas del nav TABLET*/
 
 
@@ -35,9 +33,9 @@
         grid-column: 4/8;
         grid-row: 10/12;
     }
-    .index__nav__a {
-        font-size: 1.0rem;
-    }
+    .nav-index a{ 
+        font-size: 1.3rem;
+    }   
     /*fin reglas especiales index - TABLET */
 
     
@@ -87,3 +85,4 @@
     }
 
 }
+

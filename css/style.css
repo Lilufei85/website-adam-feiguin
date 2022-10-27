@@ -552,8 +552,8 @@ textarea {
     color: #5b6972;
     grid-column: 4/8;
     grid-row: 10/12; }
-  .index__nav__a {
-    font-size: 1.0rem; }
+  .nav-index a {
+    font-size: 1.3rem; }
   /*fin reglas especiales index - TABLET */
   /*REGLAS ESPECIALES GALERIA - TABLET*/
   .container-fotos {
@@ -648,7 +648,7 @@ textarea {
         grid-column: 4/8;
         grid-row: 10/12;*/
     display: none; }
-  .index__nav__a {
+  .nav-index a {
     font-size: 1.0rem; }
   /*fin reglas especiales index - MOBILE */
   /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
