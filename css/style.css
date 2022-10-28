@@ -140,7 +140,7 @@ footer {
 .banner-index {
   grid-column: 1/13;
   grid-row: 1/13;
-  background-image: url(../../assets/img/desktop/foto-index.jpg);
+  background-image: url(../assets/img/desktop/foto-index.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   object-fit: fill; }
@@ -573,7 +573,7 @@ textarea {
     height: 470px;
     /*align-items: center;*/ }
   .banner-index {
-    background-image: url(../../assets/img/tablet/foto-index-tablet.jpg); }
+    background-image: url(../assets/img/tablet/foto-index-tablet.jpg); }
   .adam {
     letter-spacing: 1.5rem;
     font-size: 3.2rem;
@@ -677,7 +677,7 @@ textarea {
   /*REGLAS ESPECIALES INDEX - MOBILE*/
   .background__index {
     background-color: #0b1f2a;
-    background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
+    background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
     object-fit: fill;
     background-size: 100%;
     background-repeat: no-repeat; }
