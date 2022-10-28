@@ -11,7 +11,7 @@
 .navbar {
     text-decoration: none;
     font-family:$font-2;  
-    font-size: 1.9rem;
+    font-size: 3.0rem;
     li {
         transition: transform 700ms 0s;
         &:hover { /***  T R A N S I C I O N  ***/
@@ -28,7 +28,7 @@
 }
 
 .dropdown-menu {
-    --bs-dropdown-font-size: 1.4rem;
+    --bs-dropdown-font-size: 2.0rem;
     --bs-dropdown-border-color:transparent;
     --bs-dropdown-margin:0;
 }

@@ -23,7 +23,7 @@
     opacity: 60%;
     @include flex (row, space-evenly);  
     a {
-        @include typos ($font-1, 2.0rem, $color-2);
+        @include typos ($font-1, 3.0rem, $color-2);
         text-align: center;
         text-decoration: none;
         animation-name: zoomInIndex;
@@ -33,7 +33,7 @@
 
 .adam {
     letter-spacing: 14px;
-    @include typos ($font-1, 8.2rem, $color-3);
+    @include typos ($font-1, 10.2rem, $color-3);
     /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
     grid-column: 2/6;
     grid-row: 6/8;
@@ -43,7 +43,7 @@
 
 .feiguin {
     letter-spacing: 16px;
-    @include typos ($font-1, 5.1rem, $color-3);
+    @include typos ($font-1, 6.2rem, $color-3);
     /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
     grid-column: 2/6;
     grid-row: 8/9;

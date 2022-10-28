@@ -1,7 +1,6 @@
 /*REGLAS DEL FOOTER*/
 
 footer {
-    @include typos ($font-3, 1.0rem, $color-2);
     background-color: $color-4;
     text-align: center;
     padding-top: 20px;
@@ -22,5 +21,8 @@ footer {
 
 .footer-pages {
     margin-top: 30px;
+    p {
+        @include typos ($font-3, 1.7rem, $color-2);
+    }
 }
 /*fin reglas del footer*/

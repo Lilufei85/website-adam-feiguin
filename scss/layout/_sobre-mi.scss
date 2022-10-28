@@ -47,7 +47,7 @@
     border-radius: 3px;
     a {
         text-decoration: none;
-        @include typos ($font-3, 1.0rem, $color-2);
+        @include typos ($font-3, 1.7rem, $color-2);
         font-weight: 500;
     }
 }

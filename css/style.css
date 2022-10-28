@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 /*p, borders img, video y cards de agenda, titulos card agenda, background boton contact form*/
 /*a index, texto h1, text button agenda*/
 /*background index, nombre index*/
@@ -21,7 +24,7 @@ h1 {
   padding: 30px;
   font-family: "Rubik Dirt", cursive;
   font-weight: 500;
-  font-size: 3.0rem;
+  font-size: 4.0rem;
   color: #153c50;
   letter-spacing: 15px; }
 
@@ -30,6 +33,7 @@ div h2 {
   text-align: center;
   letter-spacing: 3px;
   font-family: "Anton", sans-serif;
+  font-size: 2.0rem;
   font-weight: lighter;
   height: 100px;
   display: flex;
@@ -39,15 +43,12 @@ div h2 {
 
 p {
   font-family: "Adamina", serif;
-  font-size: 1rem;
+  font-size: 1.7rem;
   color: #5b6972; }
 
 /*fin reglas del body*/
 /*REGLAS DEL FOOTER*/
 footer {
-  font-family: "Adamina", serif;
-  font-size: 1rem;
-  color: #153c50;
   background-color: #f2f4f3;
   text-align: center;
   padding-top: 20px;
@@ -68,6 +69,10 @@ footer {
 
 .footer-pages {
   margin-top: 30px; }
+  .footer-pages p {
+    font-family: "Adamina", serif;
+    font-size: 1.7rem;
+    color: #153c50; }
 
 /*fin reglas del footer*/
 .header-pages {
@@ -78,7 +83,7 @@ footer {
 .navbar {
   text-decoration: none;
   font-family: "Anton", sans-serif;
-  font-size: 1.9rem; }
+  font-size: 3.0rem; }
   .navbar li {
     transition: transform 700ms 0s; }
     .navbar li:hover {
@@ -92,7 +97,7 @@ footer {
   --bs-navbar-active-color:  #153c50; }
 
 .dropdown-menu {
-  --bs-dropdown-font-size: 1.4rem;
+  --bs-dropdown-font-size: 2.0rem;
   --bs-dropdown-border-color:transparent;
   --bs-dropdown-margin:0; }
 
@@ -152,7 +157,7 @@ footer {
   justify-content: space-evenly; }
   .nav-index a {
     font-family: "Rubik Dirt", cursive;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #153c50;
     text-align: center;
     text-decoration: none;
@@ -162,7 +167,7 @@ footer {
 .adam {
   letter-spacing: 14px;
   font-family: "Rubik Dirt", cursive;
-  font-size: 8.2rem;
+  font-size: 10.2rem;
   color: #0b1f2a;
   /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
   grid-column: 2/6;
@@ -175,7 +180,7 @@ footer {
 .feiguin {
   letter-spacing: 16px;
   font-family: "Rubik Dirt", cursive;
-  font-size: 5.1rem;
+  font-size: 6.2rem;
   color: #0b1f2a;
   /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
   grid-column: 2/6;
@@ -270,7 +275,7 @@ footer {
   .download-cv a {
     text-decoration: none;
     font-family: "Adamina", serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: #153c50;
     font-weight: 500; }
 
@@ -468,10 +473,11 @@ footer {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 5px;
-  width: 310px;
-  font-family: "Adamina", serif;
-  font-size: 1rem;
-  color: #5b6972; }
+  width: 310px; }
+  .card__workshop p {
+    font-family: "Adamina", serif;
+    font-size: 1.8rem;
+    color: #5b6972; }
 
 .img__workshop {
   width: 300px; }
@@ -485,17 +491,17 @@ footer {
 
 .button-info {
   background-color: #f2f4f3;
-  color: #153c50;
   border: none;
   text-decoration: none;
+  font-family: "Adamina", serif;
+  font-size: 1.3rem;
+  color: #153c50;
+  font-weight: 700;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: 'Adamina', serif;
-  font-size: 1.0rem;
-  font-weight: 700; }
+  padding-bottom: 5px; }
 
 /*Fin reglas especiales agenda*/
 /*REGLAS ESPECIALES CONTACTO*/
@@ -504,7 +510,7 @@ input, select {
   height: 25px;
   width: 100%;
   font-family: "Adamina", serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #5b6972; }
   input:focus, select:focus {
     outline: none;
@@ -514,7 +520,7 @@ textarea {
   border: none;
   width: 100%;
   font-family: "Adamina", serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #5b6972; }
   textarea:focus {
     outline: none;
@@ -539,7 +545,7 @@ textarea {
   align-content: center; }
   .formulario__contacto label {
     font-family: "Adamina", serif;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     color: #5b6972; }
 
 .flex-newsletter {
@@ -551,7 +557,8 @@ textarea {
 .label-newsletter {
   white-space: nowrap;
   /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/
-  height: 25px; }
+  height: 25px;
+  font-size: 1.5rem; }
 
 .checkbox {
   width: auto;
@@ -562,7 +569,7 @@ textarea {
 
 .button-contacto {
   font-family: "Adamina", serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #f2f4f3;
   background-color: #5b6972;
   border: none;
@@ -581,9 +588,9 @@ textarea {
   /***  RESPONSIVE A TABLET  ***/
   /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
   .navbar {
-    font-size: 1.5rem; }
+    font-size: 2.0rem; }
   .dropdown-menu {
-    --bs-dropdown-font-size: 1.2rem;
+    --bs-dropdown-font-size: 1.5rem;
     --bs-dropdown-border-color:transparent;
     --bs-dropdown-margin:0; }
   /*fin reglas del nav TABLET*/
@@ -598,7 +605,7 @@ textarea {
     background-image: url(../assets/img/tablet/foto-index-tablet.jpg); }
   .adam {
     letter-spacing: 1.5rem;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     /*color: $color-1;*/
     /*grid-column: 8/13;
         grid-row: 11/13;*/
@@ -674,12 +681,12 @@ textarea {
     grid-column: 1/4;
     grid-row: 1/2; }
   .navbar {
-    font-size: 1.0rem; }
+    font-size: 1.5rem; }
     .navbar li:hover {
       /***  T R A N S I C I O N  ***/
-      transform: scale(1.01); }
+      transform: scale(1.05); }
   .dropdown-menu {
-    --bs-dropdown-font-size: 0.8rem;
+    --bs-dropdown-font-size: 1.3rem;
     --bs-dropdown-border-color:$color-4;
     --bs-dropdown-margin:1.5; }
   /*fin reglas del nav MOBILE*/
@@ -692,7 +699,7 @@ textarea {
   /*REGLAS DEL FOOTER - MOBILE*/
   footer {
     padding: 15px;
-    font-size: 0.7rem;
+    font-size: 1.0rem;
     margin-top: 20px;
     padding-bottom: 5px; }
     footer ul {
@@ -739,11 +746,11 @@ textarea {
   /*REGLAS ESPECIALES AGENDA - MOBILE*/
   .card__workshop {
     width: 260px;
-    font-size: 0.8rem; }
+    font-size: 1.3rem; }
   .img__workshop {
     width: 250px; }
   .button-info {
-    font-size: 0.7rem; }
+    font-size: 1.2rem; }
   /*Fin reglas especiales agenda MOBILE*/
   /*REGLAS ESPECIALES CONTACTO - MOBILE*/
   .formulario__contacto {

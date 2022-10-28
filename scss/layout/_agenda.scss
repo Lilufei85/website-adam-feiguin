@@ -9,7 +9,9 @@
 
 .card__workshop {
     @include styling-postal (8px, 5px, 310px);
-    @include typos ($font-3, 1.0rem, $color-1);
+    p {
+        @include typos ($font-3, 1.8rem, $color-1);
+    }
 }
 
 .img__workshop {
@@ -23,16 +25,14 @@
 
 .button-info {
     background-color: $color-4;
-    color: $color-2;
     border: none;
     text-decoration: none;
+    @include typos ($font-3, 1.3rem, $color-2);
+    font-weight: 700;
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: 'Adamina', serif;
-    font-size: 1.0rem;
-    font-weight: 700;
 }
 /*Fin reglas especiales agenda*/

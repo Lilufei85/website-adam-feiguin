@@ -13,13 +13,13 @@
         grid-row: 1/2;
     }
     .navbar {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
         li:hover { /***  T R A N S I C I O N  ***/
-            transform: scale(1.01); 
+            transform: scale(1.05); 
         }
     }
     .dropdown-menu {
-        --bs-dropdown-font-size: 0.8rem;
+        --bs-dropdown-font-size: 1.3rem;
         --bs-dropdown-border-color:$color-4;
         --bs-dropdown-margin:1.5;
     }
@@ -38,7 +38,7 @@
     /*REGLAS DEL FOOTER - MOBILE*/
     footer {
         padding: 15px;
-        font-size: 0.7rem;
+        font-size: 1.0rem;
         margin-top: 20px;
         padding-bottom: 5px;
         ul { /***  F L E X B O X  ***/
@@ -103,13 +103,13 @@
     /*REGLAS ESPECIALES AGENDA - MOBILE*/
     .card__workshop {
         width: 260px;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
     .img__workshop {
         width: 250px;
     }
     .button-info {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
     /*Fin reglas especiales agenda MOBILE*/
 
