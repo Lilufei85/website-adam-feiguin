@@ -1,12 +1,11 @@
 /*REGLAS DEL FOOTER*/
 
 footer {
-    color: #153c50;
+    @include typos ($font-3, 1.0rem, $color-2);
     background-color: $color-4;
     text-align: center;
-    padding: 20px;
-    font-family: 'Adamina', serif;  
-    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     ul { /***  F L E X B O X  ***/
         @include flex (row,center);
         flex-wrap: nowrap;
@@ -19,5 +18,9 @@ footer {
             text-decoration: none; 
         }
     }
+}
+
+.footer-pages {
+    margin-top: 30px;
 }
 /*fin reglas del footer*/

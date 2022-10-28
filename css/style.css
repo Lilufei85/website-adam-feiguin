@@ -39,17 +39,19 @@ div h2 {
 
 p {
   font-family: "Adamina", serif;
+  font-size: 1rem;
   color: #5b6972; }
 
 /*fin reglas del body*/
 /*REGLAS DEL FOOTER*/
 footer {
+  font-family: "Adamina", serif;
+  font-size: 1rem;
   color: #153c50;
   background-color: #f2f4f3;
   text-align: center;
-  padding: 20px;
-  font-family: 'Adamina', serif;
-  margin-top: 30px; }
+  padding-top: 20px;
+  padding-bottom: 5px; }
   footer ul {
     /***  F L E X B O X  ***/
     display: flex;
@@ -64,43 +66,89 @@ footer {
     footer ul a {
       text-decoration: none; }
 
+.footer-pages {
+  margin-top: 30px; }
+
 /*fin reglas del footer*/
-/*REGLAS ESPECIALES INDEX*/
-.background__index {
-  background-color: #0b1f2a;
-  background-image: url(../assets/img/desktop/foto2.jpg);
-  object-fit: contain;
-  background-size: 100%;
-  background-repeat: no-repeat; }
+.header-pages {
+  position: sticky;
+  z-index: 2; }
+
+/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
+.navbar {
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.9rem; }
+  .navbar li {
+    transition: transform 700ms 0s; }
+    .navbar li:hover {
+      /***  T R A N S I C I O N  ***/
+      transform: scale(1.1); }
+
+.navbar-nav {
+  --bs-navbar-color: #5b6972;
+  --bs-navbar-hover-color: #5b6972;
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color:  #153c50; }
+
+.dropdown-menu {
+  --bs-dropdown-font-size: 1.4rem;
+  --bs-dropdown-border-color:transparent;
+  --bs-dropdown-margin:0; }
+
+.dropdown-item {
+  --bs-dropdown-link-color: #5b6972;
+  --bs-dropdown-link-hover-color: #5b6972;
+  --bs-dropdown-link-active-bg: transparent;
+  --bs-dropdown-link-hover-bg: transparent; }
+
+/* I N D E X */
+.body-index {
+  background-color: #f2f4f3; }
 
 .container-index {
   /***  G R I D S  ***/
-  height: 930px;
-  /*definí un altura de main para que se vea la imagen completa del background*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
+.nav-hamburguesa-index {
+  display: none; }
+
 .adam {
   letter-spacing: 14px;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: "Rubik Dirt", cursive;
   font-size: 8.2rem;
   color: #0b1f2a;
-  border: 1px solid black;
+  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
   grid-column: 2/6;
-  grid-row: 6/8; }
+  grid-row: 6/8;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end; }
 
 .feiguin {
   letter-spacing: 16px;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: "Rubik Dirt", cursive;
   font-size: 5.1rem;
   color: #0b1f2a;
-  border: 1px solid black;
+  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
   grid-column: 2/6;
   grid-row: 8/9; }
 
+.banner-index {
+  grid-column: 1/13;
+  grid-row: 1/13;
+  background-image: url(../../assets/img/desktop/foto-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: fill; }
+
 .nav-index {
   /***  F L E X B O X  ***/
+  grid-column: 1/13;
+  grid-row: 1/2;
   width: 100%;
   padding: 5px;
   padding-top: 7px;
@@ -111,9 +159,9 @@ footer {
   flex-direction: row;
   justify-content: space-evenly; }
   .nav-index a {
+    font-family: "Rubik Dirt", cursive;
+    font-size: 2rem;
     color: #153c50;
-    font-family: 'Rubik Dirt', cursive;
-    font-size: 2.0rem;
     text-align: center;
     text-decoration: none;
     animation-name: zoomInIndex;
@@ -233,9 +281,9 @@ footer {
 .container-fotos {
   /***  G R I D S  ***/
   display: grid;
-  width: 100%;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
+  width: 100%;
   row-gap: 10px;
   column-gap: 15px;
   justify-content: center;
@@ -399,7 +447,8 @@ footer {
   border-radius: 8px;
   padding: 5px;
   width: 310px;
-  font-family: 'Adamina', serif;
+  font-family: "Adamina", serif;
+  font-size: 1rem;
   color: #5b6972; }
 
 .img__workshop {
@@ -479,7 +528,8 @@ textarea {
 
 .label-newsletter {
   white-space: nowrap;
-  /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/ }
+  /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/
+  height: 25px; }
 
 .checkbox {
   width: auto;
@@ -489,54 +539,22 @@ textarea {
   align-self: center; }
 
 .button-contacto {
-  background-color: #5b6972;
+  font-family: "Adamina", serif;
+  font-size: 1rem;
   color: #f2f4f3;
+  background-color: #5b6972;
   border: none;
   border-radius: 2px;
   text-decoration: none;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: 'Adamina', serif;
-  font-size: 1.0rem;
   font-weight: 400;
   width: 70px;
   height: 38px;
   align-self: flex-end; }
 
 /*fin reglas especiales contacto*/
-.header-pages {
-  position: sticky;
-  z-index: 2; }
-
-/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
-.navbar {
-  text-decoration: none;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.9rem; }
-  .navbar li {
-    transition: transform 700ms 0s; }
-    .navbar li:hover {
-      /***  T R A N S I C I O N  ***/
-      transform: scale(1.1); }
-
-.navbar-nav {
-  --bs-navbar-color: #5b6972;
-  --bs-navbar-hover-color: #5b6972;
-  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color:  #153c50; }
-
-.dropdown-menu {
-  --bs-dropdown-font-size: 1.4rem;
-  --bs-dropdown-border-color:transparent;
-  --bs-dropdown-margin:0; }
-
-.dropdown-item {
-  --bs-dropdown-link-color: #5b6972;
-  --bs-dropdown-link-hover-color: #5b6972;
-  --bs-dropdown-link-active-bg: transparent;
-  --bs-dropdown-link-hover-bg: transparent; }
-
 @media (max-width: 768px) {
   /***  RESPONSIVE A TABLET  ***/
   /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
@@ -550,24 +568,39 @@ textarea {
   /*REGLAS ESPECIALES INDEX - TABLET*/
   .container-index {
     /***  G R I D S  ***/
-    height: 100vh;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    align-items: center; }
+    height: 470px;
+    /*align-items: center;*/ }
+  .banner-index {
+    background-image: url(../../assets/img/tablet/foto-index-tablet.jpg); }
   .adam {
     letter-spacing: 1.5rem;
-    font-size: 4.2rem;
-    color: #5b6972;
-    grid-column: 3/5;
-    grid-row: 9/11; }
+    font-size: 3.2rem;
+    /*color: $color-1;*/
+    /*grid-column: 8/13;
+        grid-row: 11/13;*/
+    grid-column: 2/6;
+    grid-row: 11/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .feiguin {
-    letter-spacing: 1.3rem;
-    font-size: 3.0rem;
-    color: #5b6972;
-    grid-column: 4/8;
-    grid-row: 10/12; }
-  .nav-index a {
-    font-size: 1.3rem; }
+    display: none; }
+  .nav-index {
+    /***  F L E X B O X  ***/
+    grid-column: 11/13;
+    grid-row: 1/13;
+    width: 100%;
+    padding: 5px;
+    padding-top: 7px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .nav-index a {
+      font-size: 1.3rem; }
   /*fin reglas especiales index - TABLET */
   /*REGLAS ESPECIALES GALERIA - TABLET*/
   .container-fotos {
@@ -610,6 +643,10 @@ textarea {
 @media (max-width: 576px) {
   /***  RESPONSIVE A MOBILE  ***/
   /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+  .nav-index {
+    display: none; }
+  .nav-hamburguesa-index {
+    display: block; }
   .navbar {
     font-size: 1.0rem; }
     .navbar li:hover {
@@ -640,7 +677,7 @@ textarea {
   /*REGLAS ESPECIALES INDEX - MOBILE*/
   .background__index {
     background-color: #0b1f2a;
-    background-image: url(../assets/img/mobile/fotoindex-mobile-1.jpg);
+    background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
     object-fit: fill;
     background-size: 100%;
     background-repeat: no-repeat; }
@@ -649,18 +686,6 @@ textarea {
     height: 100vh;
     width: 100%; }
   .adam {
-    /*letter-spacing: 1.5rem;
-        font-size: 4.2rem;
-        color: #5b6972;
-        grid-column: 3/5;
-        grid-row: 9/11;*/
-    display: none; }
-  .feiguin {
-    /*letter-spacing: 1.3rem;
-        font-size: 3.0rem;
-        color:#5b6972;
-        grid-column: 4/8;
-        grid-row: 10/12;*/
     display: none; }
   .nav-index a {
     font-size: 1.0rem; }

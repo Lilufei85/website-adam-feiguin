@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*hace que todos los elementos se mantengan dentro y no se genere un scroll horizontal*/
+}
+
+/* I N D E X */
+
+.container-index { /***  G R I D S  ***/
+  height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
+  @include grid (repeat(12,1fr), repeat(12,1fr));
+}
+
+.adam {
+  letter-spacing: 14px;
+  @include typos ($font-1, 8.2rem, $color-3);
+  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
+  grid-column: 2/6;
+  grid-row: 6/8;
+}
+
+.feiguin {
+  letter-spacing: 16px;
+  @include typos ($font-1, 5.1rem, $color-3);
+  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
+  grid-column: 2/6;
+  grid-row: 8/9;
+}
+  
+  
+
+.banner-index {
+    grid-column: 1/13;
+    grid-row: 1/13;
+    background-image: url(../assets/img/desktop/foto-index-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: fill;
+}
+
+.nav-index { /***  F L E X B O X  ***/
+  width: 100%;
+  padding: 5px;
+  padding-top: 7px;
+  margin: 0px;
+  background-color: #f2f4f3;
+  opacity: 60%;
+  @include flex (row, space-evenly);
+  a {
+      @include typos ($font-1, 2.0rem, $color-2);
+      text-align: center;
+      text-decoration: none;
+      animation-name: zoomInIndex;
+      animation-duration: 3s;
+  }
+}
+  
+  .link-2 {
+    @include animation-nav-index (1000ms);
+  }
+  .link-3 {
+    @include animation-nav-index (2000ms);
+  }
+  .link-4 {
+    @include animation-nav-index (3000ms);
+  }
+  .link-5 {  
+    @include animation-nav-index (4000ms);
+  }
+
+  
+  @-webkit-keyframes zoomInIndex {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0, 0, 0); }
+    100% {
+      opacity: 1; } }
+  
+  @keyframes zoomInIndex {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(5.3, 5.3, 5.3);
+      transform: scale3d(0, 0, 0); }
+    50% {
+      opacity: 1; } }
+  
+.footer-index {
+  margin-top: 0x;
+  grid-column: 1/13;
+  grid-row: 12/13;
+  }
+  
+      /*fin reglas especiales index*/
+
+
+
+
+
+
+
+  
+
+
+/*CAROUSEL*/
+
+.bg-container-carousel {
+    --bs-bg-opacity: 0.1;
+}
+
+.color-control { /*work im progress:queriendo cambiar el color de los controles prev-next*/
+    color: #153c50;
+    --bs-button-color: #153c50;
+    --bs-span-color: #153c50;
+
+}
+
+.carousel-item {
+    width: fit-content;
+}
+
+.carousel-caption {
+    color: black;
+    background-color: whitesmoke;
+    opacity: 50%;
+    font-family: 'Anton', sans-serif; 
+    padding: 10px; 
+}
+
+.carousel-caption p {
+    margin: 0;
+}
+
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+}
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.foto {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    height: 600px;
+    width: 900px;
+} 
+
+footer {
+    z-index: 3;
+}
+
+@media (max-width: 768px) {  /***  RESPONSIVE A TABLET  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-font-size: 1.2rem;
+        --bs-dropdown-border-color:transparent;
+        --bs-dropdown-margin:0;
+    }
+    
+    /*fin reglas del nav TABLET*/
+}
+    
+
+
+@media (max-width: 576px) {   /***  RESPONSIVE A MOBILE  ***/
+
+    /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+    .navbar {
+        font-size: 1.0rem;
+        margin-left: 20px;
+    }
+
+    .navbar-nav {
+        --bs-navbar-hover-color: #153c50;
+    }
+    
+
+    .dropdown-menu {
+        --bs-dropdown-font-size: 0.9rem;
+        --bs-dropdown-border-color:transparent;
+        --bs-dropdown-margin:0;
+    }
+
+    .dropdown-item {
+        --bs-dropdown-link-hover-color: #153c50;
+    }
+
+    .navBar li:hover { /***  T R A N S I C I O N  ***/
+        transform: scale(1.01); 
+    }
+    /*fin reglas del nav MOBILE*/  
+}

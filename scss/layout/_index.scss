@@ -1,62 +1,60 @@
-/*REGLAS ESPECIALES INDEX*/
-
-.background__index {
-    background-color: $color-3;
-    background-image: url(../assets/img/desktop/foto2.jpg);
-    object-fit: contain;
-    background-size: 100%;
-    background-repeat: no-repeat;
+/* I N D E X */
+.body-index {
+    background-color: $color-4;
 }
-
 .container-index { /***  G R I D S  ***/
-    height: 930px; /*definí un altura de main para que se vea la imagen completa del background*/
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,1fr);
+    @include grid (repeat(12,1fr), repeat(12,1fr));
 }
 
+.nav-hamburguesa-index {
+    display: none;
+}
 .adam {
     letter-spacing: 14px;
-    font-family: 'Rubik Dirt', cursive;
-    font-size: 8.2rem;
-    color: $color-3;
-    border: 1px solid black;
+    @include typos ($font-1, 8.2rem, $color-3);
+    /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
     grid-column: 2/6;
     grid-row: 6/8;
+    @include flex (row, flex-start);
+    align-items:flex-end ;
 }
 
 .feiguin {
     letter-spacing: 16px;
-    font-family: 'Rubik Dirt', cursive;
-    font-size: 5.1rem;
-    color: $color-3;
-    border: 1px solid black;
+    @include typos ($font-1, 5.1rem, $color-3);
+    /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
     grid-column: 2/6;
     grid-row: 8/9;
 }
-
+    
+.banner-index {
+    grid-column: 1/13;
+    grid-row: 1/13;
+    background-image: url(../../assets/img/desktop/foto-index.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: fill;
+}
 
 .nav-index { /***  F L E X B O X  ***/
+    grid-column: 1/13;
+    grid-row: 1/2;
     width: 100%;
     padding: 5px;
     padding-top: 7px;
     margin: 0px;
     background-color: #f2f4f3;
     opacity: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex (row, space-evenly);
     a {
-        color: $color-2;
-        font-family: 'Rubik Dirt', cursive;
-        font-size: 2.0rem;
+        @include typos ($font-1, 2.0rem, $color-2);
         text-align: center;
         text-decoration: none;
         animation-name: zoomInIndex;
         animation-duration: 3s;
     }
 }
-
+    
 .link-2 {
     @include animation-nav-index (1000ms);
 }
@@ -70,27 +68,20 @@
     @include animation-nav-index (4000ms);
 }
 
-
-
+    
 @-webkit-keyframes zoomInIndex {
     0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0, 0, 0);
-    }
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0, 0, 0); }
     100% {
-    opacity: 1;
-    }
-}
-
-@keyframes zoomInIndex {
+        opacity: 1; } }
+    
+    @keyframes zoomInIndex {
     0% {
-    opacity: 0;
-    -webkit-transform: scale3d(5.3, 5.3, 5.3);
-    transform: scale3d(0, 0, 0 );
-    }
+        opacity: 0;
+        -webkit-transform: scale3d(5.3, 5.3, 5.3);
+        transform: scale3d(0, 0, 0); }
     50% {
-    opacity: 1;
-    }
-}
+        opacity: 1; } }    
 /*fin reglas especiales index*/

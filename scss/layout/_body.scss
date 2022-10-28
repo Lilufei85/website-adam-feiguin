@@ -17,14 +17,11 @@ div h2 {
     font-family: $font-2;
     font-weight: lighter;
     height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex (row,center);
     align-items: center;
 }
 
 p {
-    font-family: $font-3;
-    color:$color-1;
+    @include typos ($font-3, 1.0rem, $color-1);
 }
 /*fin reglas del body*/

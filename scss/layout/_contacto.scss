@@ -26,9 +26,7 @@ select {
 }
 
 .contendor-formulario { /***  F L E X B O X  ***/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex (row, center);
 }
 
 .formulario__contacto { /***  F L E X B O X  ***/
@@ -51,6 +49,7 @@ select {
 
 .label-newsletter {
     white-space: nowrap; /*puse esto para que no se me hagan dos renglones, elimina saltos de línea*/
+    height: 25px;
 }
 
 .checkbox {
@@ -63,16 +62,14 @@ select {
 }
 
 .button-contacto {
+    @include typos ($font-3, 1.0rem, $color-4);
     background-color: $color-1;
-    color: $color-4;
     border: none;
     border-radius: 2px;
     text-decoration: none;
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Adamina', serif;
-    font-size: 1.0rem;
     font-weight: 400;
     width: 70px;
     height: 38px;

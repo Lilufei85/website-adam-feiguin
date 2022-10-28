@@ -1,6 +1,14 @@
 @media (max-width: 576px) {   /***  RESPONSIVE A MOBILE  ***/
 
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
+    .nav-index {
+        display: none;
+    }
+
+    .nav-hamburguesa-index {
+        display: block;
+    }
+
     .navbar {
         font-size: 1.0rem;
         li:hover { /***  T R A N S I C I O N  ***/
@@ -43,7 +51,7 @@
     /*REGLAS ESPECIALES INDEX - MOBILE*/
     .background__index {
         background-color: $color-3;
-        background-image: url(../assets/img/mobile/fotoindex-mobile-1.jpg);
+        background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
         object-fit: fill;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -53,19 +61,6 @@
         width: 100%;
     }
     .adam {
-        /*letter-spacing: 1.5rem;
-        font-size: 4.2rem;
-        color: #5b6972;
-        grid-column: 3/5;
-        grid-row: 9/11;*/
-        display: none;
-    }
-    .feiguin {
-        /*letter-spacing: 1.3rem;
-        font-size: 3.0rem;
-        color:#5b6972;
-        grid-column: 4/8;
-        grid-row: 10/12;*/
         display: none;
     }
     .nav-index a{ 

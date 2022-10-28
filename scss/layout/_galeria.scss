@@ -7,10 +7,8 @@
 
 
 .container-fotos { /***  G R I D S  ***/
-    display: grid;
+    @include grid (repeat(3, 400px), auto);
     width: 100%;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: auto;
     row-gap: 10px;
     column-gap: 15px;
     justify-content: center;

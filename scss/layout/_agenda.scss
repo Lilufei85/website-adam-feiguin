@@ -9,8 +9,7 @@
 
 .card__workshop {
     @include styling-postal (8px, 5px, 310px);
-    font-family: 'Adamina', serif;
-    color: #5b6972;
+    @include typos ($font-3, 1.0rem, $color-1);
 }
 
 .img__workshop {

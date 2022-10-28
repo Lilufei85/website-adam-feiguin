@@ -14,28 +14,46 @@
 
     /*REGLAS ESPECIALES INDEX - TABLET*/
     .container-index { /***  G R I D S  ***/
-        height: 100vh;
         grid-template-columns: repeat(12,1fr);
         grid-template-rows: repeat(12,1fr);
-        align-items: center;
+        height: 470px;
+        /*align-items: center;*/
+    }
+
+    .banner-index {
+        background-image: url(../../assets/img/tablet/foto-index-tablet.jpg);
     }
     .adam {
         letter-spacing: 1.5rem;
-        font-size: 4.2rem;
-        color: $color-1;
-        grid-column: 3/5;
-        grid-row: 9/11;
+        font-size: 3.2rem;
+        /*color: $color-1;*/
+        /*grid-column: 8/13;
+        grid-row: 11/13;*/
+        grid-column: 2/6;
+        grid-row: 11/13;
+        @include flex (column,center);
+        align-items: center;
     }
     .feiguin {
-        letter-spacing: 1.3rem;
-        font-size: 3.0rem;
-        color:$color-1;
-        grid-column: 4/8;
-        grid-row: 10/12;
+        display: none;
     }
-    .nav-index a{ 
-        font-size: 1.3rem;
-    }   
+
+    .nav-index { /***  F L E X B O X  ***/
+        grid-column: 11/13;
+        grid-row: 1/13;
+        width: 100%;
+        padding: 5px;
+        padding-top: 7px;
+        margin: 0px;
+        @include flex (column, space-evenly);
+        a{ 
+            font-size: 1.3rem;
+        } 
+    }
+
+    
+    
+      
     /*fin reglas especiales index - TABLET */
 
     
