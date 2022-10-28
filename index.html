@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Feiguin</title>
     <link rel="shortcut icon" href=".assets/icons/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +16,38 @@
   <body class="body-index">
     <header></header>   
     <main class="container-index">
+      
+      <nav class="navbar navbar-expand-sm bg-light opacity-75 nav-hamburguesa-index">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center navBar" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-evenly" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="ms-2 nav-item">
+                        <a class="nav-link link-2" href="./pages/sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="ms-2 nav-item dropdown">
+                        <a class="nav-link link-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-autoclose="true" aria-expanded="false">Galería</a>
+                    <ul class="dropdown-menu dropdown-index">
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Fotos</a></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html#videos">Videos</a></li>
+                    </ul>
+                    </li>
+                    <li class="ms-2 nav-item">
+                      <a class="nav-link link-4" href="./pages/agenda.html">Agenda</a>
+                    <li class="ms-2 nav-item">                      
+                    <li class="ms-2 nav-item">
+                        <a class="nav-link link-5" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      
         <nav class="nav-index">
             <a href="index.html" class="link-1">Inicio</a>
             <a href="./pages/sobremi.html" class="link-2"> Sobre mi</a> 
@@ -41,5 +74,7 @@
       </div>  
       <p>&copy; 2022. Adam Feiguin. Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>
 </html>

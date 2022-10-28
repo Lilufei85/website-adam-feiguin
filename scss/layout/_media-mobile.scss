@@ -2,26 +2,27 @@
 
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
     .nav-index {
+        /*grid-column: 5/9;
+        justify-content: flex-start;*/
         display: none;
     }
 
     .nav-hamburguesa-index {
         display: block;
+        grid-column: 1/4;
+        grid-row: 1/2;
     }
-
     .navbar {
         font-size: 1.0rem;
         li:hover { /***  T R A N S I C I O N  ***/
             transform: scale(1.01); 
         }
     }
-
     .dropdown-menu {
         --bs-dropdown-font-size: 0.8rem;
-        --bs-dropdown-border-color:transparent;
+        --bs-dropdown-border-color:$color-4;
         --bs-dropdown-margin:1.5;
     }
-    
     /*fin reglas del nav MOBILE*/  
 
     

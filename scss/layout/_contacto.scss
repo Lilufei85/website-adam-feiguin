@@ -4,7 +4,7 @@
 input {
     border: none;
     height: 25px;
-    width: 90%;
+    width: 100%;
     @include typos ($font-3, 1.0rem, $color-1); 
     &:focus {
         @include focus-formulario;
@@ -14,7 +14,7 @@ input {
 
 textarea {
     border: none;
-    width: 90%;
+    width: 100%;
     @include typos ($font-3, 1.0rem, $color-1); 
     &:focus {
         @include focus-formulario;

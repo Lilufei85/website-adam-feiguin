@@ -3,10 +3,14 @@
     z-index: 2;
 }
 
-/*REGLAS DEL NAV, BARRA DE NAVEGACION*/
+
+
+
+
+/*REGLAS DEL NAV PAGES, BARRA DE NAVEGACION*/
 .navbar {
     text-decoration: none;
-    font-family: 'Anton', sans-serif;  
+    font-family:$font-2;  
     font-size: 1.9rem;
     li {
         transition: transform 700ms 0s;
@@ -34,4 +38,28 @@
     --bs-dropdown-link-hover-color: #5b6972;
     --bs-dropdown-link-active-bg: transparent;
     --bs-dropdown-link-hover-bg: transparent;
+}
+
+
+/*index*/
+
+.nav-hamburguesa-index {
+    text-decoration: none;
+    --bs-dropdown-bg: $color-4;
+    --bs-navbar-color: #153c50;
+    --bs-navbar-hover-color: #153c50;
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color:  #153c50;
+    @include typos ($font-1, 1.9rem, $color-2);
+    li {
+        transition: transform 700ms 0s;
+        &:hover { /***  T R A N S I C I O N  ***/
+            transform: scale(1.1); 
+        }
+    }
+}
+
+.dropdown-item-index {
+    --bs-dropdown-link-color: #153c50;
+    --bs-dropdown-link-hover-color: #153c50;
 }

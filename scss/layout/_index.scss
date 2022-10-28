@@ -9,6 +9,28 @@
 .nav-hamburguesa-index {
     display: none;
 }
+
+/*REGLAS DEL NAV INDEX*/
+
+.nav-index { /***  F L E X B O X  ***/
+    grid-column: 1/13;
+    grid-row: 1/2;
+    width: 100%;
+    padding: 5px;
+    padding-top: 7px;
+    margin: 0px;
+    background-color: #f2f4f3;
+    opacity: 60%;
+    @include flex (row, space-evenly);  
+    a {
+        @include typos ($font-1, 2.0rem, $color-2);
+        text-align: center;
+        text-decoration: none;
+        animation-name: zoomInIndex;
+        animation-duration: 3s;
+    }
+}
+
 .adam {
     letter-spacing: 14px;
     @include typos ($font-1, 8.2rem, $color-3);
@@ -31,28 +53,9 @@
     grid-column: 1/13;
     grid-row: 1/13;
     background-image: url(../assets/img/desktop/foto-index.jpg);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-position: center center;
     object-fit: fill;
-}
-
-.nav-index { /***  F L E X B O X  ***/
-    grid-column: 1/13;
-    grid-row: 1/2;
-    width: 100%;
-    padding: 5px;
-    padding-top: 7px;
-    margin: 0px;
-    background-color: #f2f4f3;
-    opacity: 60%;
-    @include flex (row, space-evenly);
-    a {
-        @include typos ($font-1, 2.0rem, $color-2);
-        text-align: center;
-        text-decoration: none;
-        animation-name: zoomInIndex;
-        animation-duration: 3s;
-    }
 }
     
 .link-2 {
