@@ -672,6 +672,11 @@ textarea {
 /*fin reglas especiales contacto*/
 @media (max-width: 768px) {
   /***  RESPONSIVE A TABLET  ***/
+  h4 {
+    letter-spacing: 3px;
+    font-size: 1.9rem;
+    margin-left: 20px;
+    margin-right: 20px; }
   /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
   .navbar {
     font-size: 2.0rem; }
@@ -717,6 +722,26 @@ textarea {
     .nav-index a {
       font-size: 1.3rem; }
   /*fin reglas especiales index - TABLET */
+  /*REGLAS ESPECIALES SOBRE MI - TABLET*/
+  .container-texto-bio {
+    flex-direction: column;
+    row-gap: 20px; }
+  .bio-1 {
+    margin-top: 20px;
+    width: 50%;
+    order: 1;
+    align-self: flex-start;
+    margin-left: 50px; }
+  .bio-2 {
+    width: 50%;
+    order: 3;
+    align-self: flex-end;
+    margin-right: 30px; }
+  .bio-3 {
+    width: 50%;
+    order: 2;
+    align-self: center; }
+  /*fin reglas especiales sobre mi - TABLET */
   /*REGLAS ESPECIALES GALERIA - TABLET*/
   .container-fotos {
     /***  G R I D S  ***/
@@ -747,13 +772,15 @@ textarea {
     font-size: 0.9rem; }
   .img__workshop {
     width: 280px; }
-  .button-info {
-    font-size: 0.9rem; }
+  /*.button-info {
+        font-size: 1.5rem;
+    }*/
   /*Fin reglas especiales agenda TABLET*/
   /*REGLAS ESPECIALES CONTACTO - TABLET*/
   .formulario__contacto {
     /***  F L E X B O X  ***/
-    width: 80vw; } }
+    width: 80vw; }
+  /*Fin reglas especiales contacto TABLET*/ }
 
 @media (max-width: 576px) {
   /***  RESPONSIVE A MOBILE  ***/
@@ -778,8 +805,9 @@ textarea {
   /*fin reglas del nav MOBILE*/
   /*REGLAS DEL BODY - MOBILE*/
   h1 {
-    padding: 30px;
-    font-size: 2.0rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2.5rem;
     letter-spacing: 0.6rem; }
   /*fin reglas del body -MOBILE */
   /*REGLAS DEL FOOTER - MOBILE*/
@@ -813,6 +841,24 @@ textarea {
   .texto-bio {
     margin: 40px;
     margin-bottom: 2.0rem; }
+  .container-texto-bio {
+    width: 90%;
+    row-gap: 25px;
+    margin-right: 10px;
+    margin-left: 10px; }
+  .bio-1 {
+    margin-top: 20px;
+    width: 90%;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .bio-2 {
+    width: 90%;
+    align-self: center;
+    margin-right: 0px;
+    margin-left: 0px; }
+  .bio-3 {
+    width: 90%; }
   /*fin reglas especiales sobre-mi - MOBILE */
   /*REGLAS ESPECIALES GALERIA - MOBILE*/
   .container-fotos {
@@ -835,8 +881,11 @@ textarea {
     font-size: 1.3rem; }
   .img__workshop {
     width: 250px; }
-  .button-info {
-    font-size: 1.2rem; }
+  .link-agenda-bio {
+    margin-left: 30px;
+    margin-right: 30px; }
+    .link-agenda-bio a {
+      font-size: 1.5rem; }
   /*Fin reglas especiales agenda MOBILE*/
   /*REGLAS ESPECIALES CONTACTO - MOBILE*/
   .formulario__contacto {

@@ -28,8 +28,9 @@
     
     /*REGLAS DEL BODY - MOBILE*/
     h1 {
-        padding: 30px;
-        font-size: 2.0rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 2.5rem;
         letter-spacing: 0.6rem;
     }
     /*fin reglas del body -MOBILE */
@@ -75,6 +76,29 @@
         margin: 40px;
         margin-bottom: 2.0rem;
     }
+
+    .container-texto-bio {
+        width: 90%;
+        row-gap: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .bio-1 {
+        margin-top: 20px;
+        width: 90%;
+        align-self: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .bio-2 {
+        width: 90%;
+        align-self: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }    
+    .bio-3 {
+        width: 90%;
+    }
     /*fin reglas especiales sobre-mi - MOBILE */
 
 
@@ -108,9 +132,13 @@
     .img__workshop {
         width: 250px;
     }
-    .button-info {
-        font-size: 1.2rem;
-    }
+    .link-agenda-bio {
+        margin-left: 30px;
+        margin-right:30px;
+        a {
+        font-size: 1.5rem;
+        }
+    }    
     /*Fin reglas especiales agenda MOBILE*/
 
 

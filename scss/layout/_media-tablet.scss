@@ -1,5 +1,13 @@
 @media (max-width: 768px) {  /***  RESPONSIVE A TABLET  ***/
 
+    
+    h4 {
+        letter-spacing: 3px;
+        font-size: 1.9rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
     .navbar {
         font-size: 2.0rem;
@@ -19,7 +27,6 @@
         height: 470px;
         /*align-items: center;*/
     }
-
     .banner-index {
         background-image: url(../assets/img/tablet/foto-index-tablet.jpg);
     }
@@ -37,7 +44,6 @@
     .feiguin {
         display: none;
     }
-
     .nav-index { /***  F L E X B O X  ***/
         grid-column: 10/13;
         grid-row: 1/13;
@@ -50,13 +56,36 @@
             font-size: 1.3rem;
         } 
     }
-
-    
-    
-      
     /*fin reglas especiales index - TABLET */
 
-    
+
+    /*REGLAS ESPECIALES SOBRE MI - TABLET*/
+    .container-texto-bio {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .bio-1 {
+        margin-top: 20px;
+        width: 50%;
+        order: 1;
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+    .bio-2 {
+        width: 50%;
+        order: 3;
+        align-self: flex-end;
+        margin-right: 30px;
+    }    
+    .bio-3 {
+        width: 50%;
+        order: 2;
+        align-self: center;
+    }
+    /*fin reglas especiales sobre mi - TABLET */
+
+
+
     /*REGLAS ESPECIALES GALERIA - TABLET*/
     .container-fotos { /***  G R I D S  ***/
         grid-template-columns: repeat(3, 180px);
@@ -92,15 +121,17 @@
     .img__workshop {
         width: 280px;
     }
-    .button-info {
-        font-size: 0.9rem;
-    }
+    /*.button-info {
+        font-size: 1.5rem;
+    }*/
     /*Fin reglas especiales agenda TABLET*/
+
 
     /*REGLAS ESPECIALES CONTACTO - TABLET*/
     .formulario__contacto { /***  F L E X B O X  ***/
         width:80vw; 
     }
+    /*Fin reglas especiales contacto TABLET*/
 
 }
 
