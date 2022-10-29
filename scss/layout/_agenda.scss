@@ -5,12 +5,13 @@
     flex-wrap: wrap;
     row-gap: 25px;
     margin-bottom: 25px;
+    margin-top: 40px
 }
 
 .card__workshop {
     @include styling-postal (8px, 5px, 310px);
     p {
-        @include typos ($font-3, 1.8rem, $color-1);
+        @include typos ($font-3, 1.6rem, $color-1);
     }
 }
 
@@ -24,15 +25,30 @@
 }
 
 .button-info {
+    @include typos ($font-3, 1.7rem, $color-2);
+    font-weight: 500;
     background-color: $color-4;
     border: none;
     text-decoration: none;
-    @include typos ($font-3, 1.3rem, $color-2);
-    font-weight: 700;
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
+}
+
+
+
+.link-agenda-bio {
+    text-align: center;
+    align-self: center;
+    a {
+    text-decoration: none;
+    @include typos ($font-3, 1.6rem, $color-1);
+    }
+    &:hover {
+        font-weight: 600;
+    }
+    
 }
 /*Fin reglas especiales agenda*/

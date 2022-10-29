@@ -1,6 +1,7 @@
 /*REGLAS ESPECIALES SOBRE MI*/
 .container-bio { /***  F L E X B O X  ***/
     @include flex (column,center);
+    row-gap: 50px;
 }
 
 .foto-bio {
@@ -26,18 +27,37 @@
     }
 }
 
+.container-texto-bio {
+    @include flex (row,space-evenly);
+    flex-wrap: wrap;
+}
+
 .texto-bio {
     align-self: flex-start;
-    margin: 80px;
     text-align: justify;
     line-height: 1.5;
     margin-bottom: 2.0rem;
+    @include typos ($font-3, 1.7rem, $color-1);
 }
 
+.bio-1 {
+    width: 25%;
+    order: 1;
+}
+.bio-2 {
+    width: 30%;
+    order: 2;
+
+}
+.bio-3 {
+    width: 25%;
+    order: 2;
+
+}
 
 .download-cv {
-    align-self: flex-start;
-    margin-left: 80px;
+    align-self: center;
+    text-align: center;
     animation-name: vibrarCv; /*** A N I M A C I O N   D E S C A R G A    C V ***/
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -49,6 +69,25 @@
         text-decoration: none;
         @include typos ($font-3, 1.7rem, $color-2);
         font-weight: 500;
+        text-align: center;
+    }
+}
+
+.link-bio-contacto{
+    animation-name: vibrarCv; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    align-self: center;
+    text-align: center;
+    background-color: $color-2;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
+    a {
+        text-decoration: none;
+        @include typos ($font-3, 1.7rem, #f3faffbd);
+        font-weight: 500;
+        text-align: center;
     }
 }
 

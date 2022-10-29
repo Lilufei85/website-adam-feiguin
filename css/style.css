@@ -13,28 +13,48 @@ html {
 /*backgrounds: footer, download cv, button info agenda, contact form, button contacto, */
 /*nav index, h1 pages*/
 /*nav pages, titulos card agenda*/
-/*p*/
+/*p* /
+
 /*bs no me admitió variables, OJO! Cambiar a mano*/
 /*los mixins se agregan con @include nombre-mixin;*/
 /*@extend .clase  = copia las propiedades q se repiten de otra clase!*/
+.negrita {
+  font: weight 600px; }
+
+.interlineado {
+  line-height: 2.5; }
+
 /*REGLAS DEL BODY*/
 h1 {
   text-align: center;
   /*titulos de las paginas centrados */
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: "Rubik Dirt", cursive;
   font-weight: 500;
   font-size: 4.0rem;
   color: #153c50;
-  letter-spacing: 15px; }
+  letter-spacing: 15px;
+  margin-bottom: 20px; }
 
-div h2 {
-  padding: 15px;
+h3 {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  color: #153c50;
+  letter-spacing: 3px; }
+
+h4 {
   text-align: center;
   letter-spacing: 3px;
-  font-family: "Anton", sans-serif;
-  font-size: 2.0rem;
-  font-weight: lighter;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  color: #153c50;
+  font-weight: 600;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -42,9 +62,7 @@ div h2 {
   align-items: center; }
 
 p {
-  font-family: "Adamina", serif;
-  font-size: 1.7rem;
-  color: #5b6972; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 /*fin reglas del body*/
 /*REGLAS DEL FOOTER*/
@@ -53,6 +71,10 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 5px; }
+  footer p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.7rem;
+    color: #153c50; }
   footer ul {
     /***  F L E X B O X  ***/
     display: flex;
@@ -68,11 +90,11 @@ footer {
       text-decoration: none; }
 
 .footer-pages {
-  margin-top: 30px; }
-  .footer-pages p {
-    font-family: "Adamina", serif;
-    font-size: 1.7rem;
-    color: #153c50; }
+  margin-top: 30px;
+  /*p {
+        @include typos ($font-3, 1.7rem, $color-2);
+        font-weight: 500;
+    }*/ }
 
 /*fin reglas del footer*/
 .header-pages {
@@ -232,7 +254,8 @@ footer {
   /***  F L E X B O X  ***/
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  row-gap: 50px; }
 
 .foto-bio {
   width: 100%;
@@ -254,16 +277,36 @@ footer {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
 
+.container-texto-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
 .texto-bio {
   align-self: flex-start;
-  margin: 80px;
   text-align: justify;
   line-height: 1.5;
-  margin-bottom: 2.0rem; }
+  margin-bottom: 2.0rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.7rem;
+  color: #5b6972; }
+
+.bio-1 {
+  width: 25%;
+  order: 1; }
+
+.bio-2 {
+  width: 30%;
+  order: 2; }
+
+.bio-3 {
+  width: 25%;
+  order: 2; }
 
 .download-cv {
-  align-self: flex-start;
-  margin-left: 80px;
+  align-self: center;
+  text-align: center;
   animation-name: vibrarCv;
   /*** A N I M A C I O N   D E S C A R G A    C V ***/
   animation-duration: 3s;
@@ -274,10 +317,29 @@ footer {
   border-radius: 3px; }
   .download-cv a {
     text-decoration: none;
-    font-family: "Adamina", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.7rem;
     color: #153c50;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: center; }
+
+.link-bio-contacto {
+  animation-name: vibrarCv;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  align-self: center;
+  text-align: center;
+  background-color: #153c50;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px; }
+  .link-bio-contacto a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.7rem;
+    color: #f3faffbd;
+    font-weight: 500;
+    text-align: center; }
 
 @keyframes vibrarCv {
   /*** A N I M A C I O N   D E S C A R G A    C V ***/
@@ -467,7 +529,8 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   row-gap: 25px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-top: 40px; }
 
 .card__workshop {
   border: 1px solid #ddd;
@@ -475,8 +538,8 @@ footer {
   padding: 5px;
   width: 310px; }
   .card__workshop p {
-    font-family: "Adamina", serif;
-    font-size: 1.8rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.6rem;
     color: #5b6972; }
 
 .img__workshop {
@@ -490,18 +553,29 @@ footer {
   flex-wrap: wrap; }
 
 .button-info {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.7rem;
+  color: #153c50;
+  font-weight: 500;
   background-color: #f2f4f3;
   border: none;
   text-decoration: none;
-  font-family: "Adamina", serif;
-  font-size: 1.3rem;
-  color: #153c50;
-  font-weight: 700;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px; }
+
+.link-agenda-bio {
+  text-align: center;
+  align-self: center; }
+  .link-agenda-bio a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.6rem;
+    color: #5b6972; }
+  .link-agenda-bio:hover {
+    font-weight: 600; }
 
 /*Fin reglas especiales agenda*/
 /*REGLAS ESPECIALES CONTACTO*/
@@ -509,7 +583,7 @@ input, select {
   border: none;
   height: 25px;
   width: 100%;
-  font-family: "Adamina", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   color: #5b6972; }
   input:focus, select:focus {
@@ -519,18 +593,30 @@ input, select {
 textarea {
   border: none;
   width: 100%;
-  font-family: "Adamina", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   color: #5b6972; }
   textarea:focus {
     outline: none;
     border: 1px solid #d7dee1; }
 
+.link-contacto-footer {
+  text-align: center;
+  align-self: center; }
+  .link-contacto-footer a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.6rem;
+    color: #5b6972; }
+  .link-contacto-footer:hover {
+    font-weight: 600; }
+
 .contendor-formulario {
   /***  F L E X B O X  ***/
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 30px; }
 
 .formulario__contacto {
   /***  F L E X B O X  ***/
@@ -544,7 +630,7 @@ textarea {
   justify-content: space-evenly;
   align-content: center; }
   .formulario__contacto label {
-    font-family: "Adamina", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.7rem;
     color: #5b6972; }
 
@@ -568,7 +654,7 @@ textarea {
   align-self: center; }
 
 .button-contacto {
-  font-family: "Adamina", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   color: #f2f4f3;
   background-color: #5b6972;
@@ -756,5 +842,3 @@ textarea {
   .formulario__contacto {
     /***  F L E X B O X  ***/
     width: 90vw; } }
-
-/*llegue hasta 1:16 de la clase*/

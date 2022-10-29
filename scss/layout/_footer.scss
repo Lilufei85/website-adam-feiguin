@@ -5,6 +5,9 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 5px;
+    p {
+        @include typos ($font-3, 1.7rem, $color-2);
+    }
     ul { /***  F L E X B O X  ***/
         @include flex (row,center);
         flex-wrap: nowrap;
@@ -21,8 +24,9 @@ footer {
 
 .footer-pages {
     margin-top: 30px;
-    p {
+    /*p {
         @include typos ($font-3, 1.7rem, $color-2);
-    }
+        font-weight: 500;
+    }*/
 }
 /*fin reglas del footer*/
