@@ -1,10 +1,8 @@
 /*REGLAS ESPECIALES GALERIA*/
 
-
 .imgGallery h2 {
     text-align: center;
 }
-
 
 .container-fotos { /***  G R I D S  ***/
     @include grid (repeat(3, 400px), auto);
@@ -37,7 +35,8 @@
 .foto-1 { 
     @include m-fotos (foto-1);
     /*esta transition afecta al transform, tiempo de duracion, delay*/
-    /*background-image: url("../assets/img/desktop/domo1.jpg");*/  
+    /*background-image: url("../assets/img/desktop/domo1-t.jpg");PARA PROBAR LUEGO DE ESTA ENTREGA!
+    z-index: 2;*/
 }
 
 .foto-2 {

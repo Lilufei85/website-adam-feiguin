@@ -53,8 +53,9 @@
     grid-column: 1/13;
     grid-row: 1/13;
     background-image: url(../assets/img/desktop/foto-index.jpg);
-    /*background-repeat: no-repeat;*/
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-position: cover;
     object-fit: fill;
 }
     

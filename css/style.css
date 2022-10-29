@@ -90,11 +90,7 @@ footer {
       text-decoration: none; }
 
 .footer-pages {
-  margin-top: 30px;
-  /*p {
-        @include typos ($font-3, 1.7rem, $color-2);
-        font-weight: 500;
-    }*/ }
+  margin-top: 30px; }
 
 /*fin reglas del footer*/
 .header-pages {
@@ -212,8 +208,9 @@ footer {
   grid-column: 1/13;
   grid-row: 1/13;
   background-image: url(../assets/img/desktop/foto-index.jpg);
-  /*background-repeat: no-repeat;*/
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position: cover;
   object-fit: fill; }
 
 .link-2 {
@@ -394,7 +391,8 @@ footer {
   grid-area: foto-1;
   transition: transform 700ms 0s;
   /*esta transition afecta al transform, tiempo de duracion, delay*/
-  /*background-image: url("../assets/img/desktop/domo1.jpg");*/ }
+  /*background-image: url("../assets/img/desktop/domo1-t.jpg");PARA PROBAR LUEGO DE ESTA ENTREGA!
+    z-index: 2;*/ }
 
 .foto-2 {
   grid-area: foto-2;
