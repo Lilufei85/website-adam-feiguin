@@ -820,12 +820,8 @@ textarea {
       margin-bottom: 10px; }
   /*fin reglas especiales footer MOBILE*/
   /*REGLAS ESPECIALES INDEX - MOBILE*/
-  .background__index {
-    background-color: #0b1f2a;
-    background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
-    object-fit: fill;
-    background-size: 100%;
-    background-repeat: no-repeat; }
+  .banner__index {
+    background-image: url(../assets/img/mobile/foto-index-mobile.jpg); }
   .container-index {
     /***  G R I D S  ***/
     height: 100vh;

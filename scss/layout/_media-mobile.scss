@@ -51,12 +51,8 @@
 
 
     /*REGLAS ESPECIALES INDEX - MOBILE*/
-    .background__index {
-        background-color: $color-3;
+    .banner__index {
         background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
-        object-fit: fill;
-        background-size: 100%;
-        background-repeat: no-repeat;
     }
     .container-index { /***  G R I D S  ***/
         height: 100vh;
