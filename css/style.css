@@ -7,13 +7,13 @@
 html {
   font-size: 62.5%; }
 
-/*p, borders img, video y cards de agenda, titulos card agenda, background boton contact form*/
-/*a index, texto h1, text button agenda*/
-/*background index, nombre index*/
-/*backgrounds: footer, download cv, button info agenda, contact form, button contacto, */
-/*nav index, h1 pages*/
-/*nav pages, titulos card agenda*/
-/*p* /
+/*$color-1: p, borders img, video y cards de agenda, titulos card agenda, background boton contact form*/
+/*$color-2: a index, texto h1, text button agenda*/
+/*$color-3: background index, nombre index*/
+/*$color-4: backgrounds: footer, download cv, button info agenda, contact form, button contacto, */
+/*$font-1: nav index, h1 pages*/
+/*$font-2: nav pages, titulos card agenda*/
+/*$font-3: p* /
 
 /*bs no me admitió variables, OJO! Cambiar a mano*/
 /*los mixins se agregan con @include nombre-mixin;*/
@@ -691,7 +691,7 @@ textarea {
     height: 470px;
     /*align-items: center;*/ }
   .banner-index {
-    background-image: url(../../assets/img/tablet/foto-index-tablet.jpg); }
+    background-image: url(../assets/img/tablet/foto-index-tablet.jpg); }
   .adam {
     letter-spacing: 1.5rem;
     font-size: 4.2rem;
@@ -821,7 +821,7 @@ textarea {
   /*fin reglas especiales footer MOBILE*/
   /*REGLAS ESPECIALES INDEX - MOBILE*/
   .banner__index {
-    background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
+    background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
     background-position: cover; }
   .container-index {
     /***  G R I D S  ***/
