@@ -40,13 +40,15 @@
 .link-agenda-bio {
     text-align: center;
     align-self: center;
+    transition: font-weight 1000ms 0s;
+    transition: transform 700ms 0s;
     a {
     text-decoration: none;
     @include typos ($font-3, 1.6rem, $color-1);
     }
     &:hover {
-        font-weight: 600;
-    }
+        font-weight: 550;
+        transform: scale(1.02);     }
     
 }
 /*Fin reglas especiales agenda*/

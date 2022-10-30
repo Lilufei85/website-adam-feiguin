@@ -566,14 +566,17 @@ footer {
 
 .link-agenda-bio {
   text-align: center;
-  align-self: center; }
+  align-self: center;
+  transition: font-weight 1000ms 0s;
+  transition: transform 700ms 0s; }
   .link-agenda-bio a {
     text-decoration: none;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.6rem;
     color: #5b6972; }
   .link-agenda-bio:hover {
-    font-weight: 600; }
+    font-weight: 550;
+    transform: scale(1.02); }
 
 /*Fin reglas especiales agenda*/
 /*REGLAS ESPECIALES CONTACTO*/
