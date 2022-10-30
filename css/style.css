@@ -691,7 +691,7 @@ textarea {
     height: 470px;
     /*align-items: center;*/ }
   .banner-index {
-    background-image: url(../assets/img/tablet/foto-index-tablet.jpg); }
+    background-image: url(../../assets/img/tablet/foto-index-tablet.jpg); }
   .adam {
     letter-spacing: 1.5rem;
     font-size: 4.2rem;
@@ -821,7 +821,8 @@ textarea {
   /*fin reglas especiales footer MOBILE*/
   /*REGLAS ESPECIALES INDEX - MOBILE*/
   .banner__index {
-    background-image: url(../assets/img/mobile/foto-index-mobile.jpg); }
+    background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
+    background-position: cover; }
   .container-index {
     /***  G R I D S  ***/
     height: 100vh;

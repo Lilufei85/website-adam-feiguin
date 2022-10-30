@@ -52,7 +52,8 @@
 
     /*REGLAS ESPECIALES INDEX - MOBILE*/
     .banner__index {
-        background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
+        background-image: url(../../assets/img/mobile/foto-index-mobile.jpg);
+        background-position: cover;
     }
     .container-index { /***  G R I D S  ***/
         height: 100vh;
