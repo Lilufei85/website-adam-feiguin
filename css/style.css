@@ -679,12 +679,23 @@ textarea {
     margin-left: 20px;
     margin-right: 20px; }
   /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+  .nav-index {
+    /***  F L E X B O X  ***/
+    grid-column: 10/13;
+    grid-row: 1/13;
+    width: 100%;
+    padding: 5px;
+    padding-top: 7px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .nav-index a {
+      font-size: 2.0rem; }
   .navbar {
     font-size: 2.0rem; }
   .dropdown-menu {
-    --bs-dropdown-font-size: 1.5rem;
-    --bs-dropdown-border-color:transparent;
-    --bs-dropdown-margin:0; }
+    --bs-dropdown-font-size: 1.5rem; }
   /*fin reglas del nav TABLET*/
   /*REGLAS ESPECIALES INDEX - TABLET*/
   .container-index {
@@ -709,24 +720,13 @@ textarea {
     align-items: center; }
   .feiguin {
     display: none; }
-  .nav-index {
-    /***  F L E X B O X  ***/
-    grid-column: 10/13;
-    grid-row: 1/13;
-    width: 100%;
-    padding: 5px;
-    padding-top: 7px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-    .nav-index a {
-      font-size: 2.0rem; }
   /*fin reglas especiales index - TABLET */
   /*REGLAS ESPECIALES SOBRE MI - TABLET*/
   .container-texto-bio {
     flex-direction: column;
     row-gap: 20px; }
+  .foto-bio {
+    margin-bottom: 10px; }
   .bio-1 {
     margin-top: 20px;
     width: 50%;
@@ -836,6 +836,11 @@ textarea {
     font-size: 1.0rem; }
   /*fin reglas especiales index - MOBILE */
   /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
+  .container-bio {
+    /***  F L E X B O X  ***/
+    row-gap: 100px; }
+  .foto-bio {
+    margin-bottom: 20px; }
   .texto-bio {
     margin: 40px;
     margin-bottom: 2.0rem; }
