@@ -9,13 +9,23 @@
     }
     
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+    .nav-index { /***  F L E X B O X  ***/
+        grid-column: 10/13;
+        grid-row: 1/13;
+        width: 100%;
+        padding: 5px;
+        padding-top: 7px;
+        margin: 0px;
+        @include flex (column, space-evenly);
+        a{ 
+            font-size: 2.0rem;
+        } 
+    }
     .navbar {
         font-size: 2.0rem;
     }
     .dropdown-menu {
         --bs-dropdown-font-size: 1.5rem;
-        --bs-dropdown-border-color:transparent;
-        --bs-dropdown-margin:0;
     }
     /*fin reglas del nav TABLET*/
 
@@ -44,18 +54,6 @@
     .feiguin {
         display: none;
     }
-    .nav-index { /***  F L E X B O X  ***/
-        grid-column: 10/13;
-        grid-row: 1/13;
-        width: 100%;
-        padding: 5px;
-        padding-top: 7px;
-        margin: 0px;
-        @include flex (column, space-evenly);
-        a{ 
-            font-size: 2.0rem;
-        } 
-    }
     /*fin reglas especiales index - TABLET */
 
 
@@ -63,6 +61,9 @@
     .container-texto-bio {
         flex-direction: column;
         row-gap: 20px;
+    }
+    .foto-bio {
+        margin-bottom: 10px;
     }
     .bio-1 {
         margin-top: 20px;
