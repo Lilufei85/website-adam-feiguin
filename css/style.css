@@ -666,6 +666,22 @@ textarea {
   align-self: flex-end; }
 
 /*fin reglas especiales contacto*/
+@media (max-width: 1140px) {
+  .adam {
+    letter-spacing: 1.5rem;
+    font-size: 9.0rem; }
+  .feiguin {
+    letter-spacing: 1.0rem;
+    font-size: 6.0rem; } }
+
+@media (max-width: 1035px) {
+  .adam {
+    letter-spacing: 1.5rem;
+    font-size: 6.0rem; }
+  .feiguin {
+    letter-spacing: 1.0rem;
+    font-size: 4.0rem; } }
+
 @media (max-width: 768px) {
   /***  RESPONSIVE A TABLET  ***/
   h4 {
