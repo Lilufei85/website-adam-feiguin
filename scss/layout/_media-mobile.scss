@@ -18,11 +18,19 @@
             transform: scale(1.05); 
         }
     }
+    .navbar-nav {
+        --bs-navbar-color: #153c50;
+        --bs-navbar-hover-color: #153c50;
+        --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+        --bs-navbar-active-color:  #153c50;
+    }
     .dropdown-menu {
         --bs-dropdown-font-size: 1.3rem;
         --bs-dropdown-border-color:$color-4;
         --bs-dropdown-margin:1.5;
     }
+
+    
     /*fin reglas del nav MOBILE*/  
 
     

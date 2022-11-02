@@ -45,11 +45,6 @@
 
 .nav-hamburguesa-index {
     text-decoration: none;
-    --bs-dropdown-bg: $color-4;
-    --bs-navbar-color: #153c50;
-    --bs-navbar-hover-color: #153c50;
-    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-    --bs-navbar-active-color:  #153c50;
     @include typos ($font-1, 1.9rem, $color-2);
     li {
         transition: transform 700ms 0s;
