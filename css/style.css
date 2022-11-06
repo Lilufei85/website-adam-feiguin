@@ -92,6 +92,10 @@ footer {
 .footer-pages {
   margin-top: 30px; }
 
+.footer-icon {
+  width: 32px;
+  height: 32px; }
+
 /*fin reglas del footer*/
 .header-pages {
   position: sticky;
@@ -546,18 +550,19 @@ footer {
   flex-wrap: wrap; }
 
 .button-info {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.7rem;
-  color: #153c50;
   font-weight: 500;
   background-color: #f2f4f3;
   border: none;
-  text-decoration: none;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px; }
+  .button-info a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.7rem;
+    color: #153c50; }
 
 .link-agenda-bio {
   text-align: center;
