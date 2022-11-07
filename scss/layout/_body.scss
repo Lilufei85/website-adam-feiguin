@@ -13,7 +13,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-h3 {
+h2 {
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -22,7 +22,7 @@ h3 {
     letter-spacing: 3px;
 }
 
-h4 {
+h3 {
     text-align: center;
     letter-spacing: 3px;
     @include typos ($font-3, 2.0rem, $color-2);
