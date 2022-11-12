@@ -1,0 +1,42 @@
+@media (max-width: 1260px) {
+         /*REGLAS ESPECIALES INDEX */
+
+    .adam {
+    }
+    .feiguin {
+        /*grid-column: 1/4;*/
+        
+    }
+
+    /*REGLAS ESPECIALES GALERIA - TABLET*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 180px);
+        row-gap: 3px;
+        column-gap: 3px;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 170px;
+        height: 113px;
+    } 
+
+    .foto-vert {
+        padding: 3px;
+        width: 170px;
+        height: 255px;
+    } 
+    
+    .container-videos { /***  F L E X B O X  ***/
+        @include flex (column,center);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .video__styling {    
+        width:500px; 
+    }
+    /*Fin reglas especiales galeria TABLET*/
+
+
+}

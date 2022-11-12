@@ -86,32 +86,8 @@
     /*fin reglas especiales sobre mi - TABLET */
 
 
-
-    /*REGLAS ESPECIALES GALERIA - TABLET*/
-    .container-fotos { /***  G R I D S  ***/
-        grid-template-columns: repeat(3, 180px);
-        row-gap: 3px;
-        column-gap: 3px;
-        ;
-    }
-    .foto {
-        padding: 3px;
-        width: 170px;
-    } 
-    .container-videos { /***  F L E X B O X  ***/
-        @include flex (column,center);
-        display: flex;
-        justify-items: center;
-        align-items: center;
-    }
-    .video__styling {    
-        width:500px; 
-    }
-    /*Fin reglas especiales galeria TABLET*/
-
-
-    /*REGLAS ESPECIALES AGENDA - TABLET*/
-    .contenedor-agenda { /***  F L E X B O X  ***/
+     /*REGLAS ESPECIALES AGENDA - TABLET*/
+     .contenedor-agenda { /***  F L E X B O X  ***/
         row-gap: 25px;
         margin-bottom: 25px;
     }
@@ -121,12 +97,12 @@
     }
     .img__workshop {
         width: 280px;
+        height: 193px;
     }
     /*.button-info {
         font-size: 1.5rem;
     }*/
-    /*Fin reglas especiales agenda TABLET*/
-
+    /*Fin reglas especiales agenda TABLET*/    
 
     /*REGLAS ESPECIALES CONTACTO - TABLET*/
     .formulario__contacto { /***  F L E X B O X  ***/

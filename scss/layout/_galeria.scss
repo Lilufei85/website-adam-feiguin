@@ -30,6 +30,12 @@
 
 .foto {
     @include styling-postal (4px, 5px, 400px);
+    height: 267px;
+} 
+
+.foto-vert {
+    @include styling-postal (4px, 5px, 400px);
+    height: 600px;
 } 
 
 .foto-1 { 

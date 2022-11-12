@@ -96,6 +96,9 @@ footer {
   width: 32px;
   height: 32px; }
 
+.footer-index {
+  background-color: black; }
+
 /*fin reglas del footer*/
 .header-pages {
   position: sticky;
@@ -153,12 +156,12 @@ footer {
   /***  G R I D S  ***/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr); }
+  grid-template-rows: repeat(7, 1fr); }
 
 .nav-hamburguesa-index {
   display: none; }
 
-/*REGLAS DEL NAV INDEX*/
+/*REGLAS DEL INDEX*/
 .nav-index {
   /***  F L E X B O X  ***/
   grid-column: 1/13;
@@ -169,6 +172,7 @@ footer {
   margin: 0px;
   background-color: #f2f4f3;
   opacity: 60%;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
@@ -184,33 +188,61 @@ footer {
 .adam {
   letter-spacing: 14px;
   font-family: "Rubik Dirt", cursive;
-  font-size: 10.2rem;
-  color: #0b1f2a;
+  font-size: 13.8rem;
+  color: #5b6972;
   /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
   grid-column: 2/6;
-  grid-row: 6/8;
+  grid-row: 4/6;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end; }
+  align-self: center; }
 
 .feiguin {
   letter-spacing: 16px;
   font-family: "Rubik Dirt", cursive;
-  font-size: 6.2rem;
-  color: #0b1f2a;
+  font-size: 8.8rem;
+  color: #5b6972;
   /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
+  align-self: center;
   grid-column: 2/6;
-  grid-row: 8/9; }
+  grid-row: 5/7; }
 
 .banner-index {
   grid-column: 1/13;
-  grid-row: 1/13;
-  background-image: url(../assets/img/desktop/foto-index.jpg);
+  grid-row: 1/9;
+  background-image: url(../assets/img/desktop/index3.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-position: cover;
   object-fit: fill; }
+
+.mask-index {
+  grid-column: 1/6;
+  grid-row: 1/9;
+  opacity: 0.6; }
+
+.redes-index-desktop {
+  grid-column: 10/13;
+  grid-row: 7/8;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  column-gap: 20px; }
+  .redes-index-desktop li {
+    list-style: none; }
+
+.derechos {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.7rem;
+  color: #153c50;
+  grid-column: 9/13;
+  grid-row: 8/9;
+  justify-self: flex-end;
+  margin-right: 15px;
+  align-self: flex-start; }
 
 .link-2 {
   animation-delay: 1000ms;
@@ -385,7 +417,15 @@ footer {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 400px; }
+  width: 400px;
+  height: 267px; }
+
+.foto-vert {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+  height: 600px; }
 
 .foto-1 {
   grid-area: foto-1;
@@ -526,7 +566,8 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  row-gap: 25px;
+  row-gap: 40px;
+  column-gap: 40px;
   margin-bottom: 25px;
   margin-top: 40px; }
 
@@ -541,7 +582,8 @@ footer {
     color: #5b6972; }
 
 .img__workshop {
-  width: 300px; }
+  width: 300px;
+  height: 200px; }
 
 .contenedor-button {
   /***  F L E X B O X  ***/
@@ -655,6 +697,11 @@ textarea {
 .newsletter {
   align-self: center; }
 
+.flex-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
 .button-contacto {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
@@ -672,13 +719,49 @@ textarea {
   align-self: flex-end; }
 
 /*fin reglas especiales contacto*/
+@media (max-width: 1260px) {
+  /*REGLAS ESPECIALES INDEX */
+  .feiguin {
+    /*grid-column: 1/4;*/ }
+  /*REGLAS ESPECIALES GALERIA - TABLET*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 180px);
+    row-gap: 3px;
+    column-gap: 3px; }
+  .foto {
+    padding: 3px;
+    width: 170px;
+    height: 113px; }
+  .foto-vert {
+    padding: 3px;
+    width: 170px;
+    height: 255px; }
+  .container-videos {
+    /***  F L E X B O X  ***/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+    align-items: center; }
+  .video__styling {
+    width: 500px; }
+  /*Fin reglas especiales galeria TABLET*/ }
+
 @media (max-width: 1140px) {
   .adam {
     letter-spacing: 1.5rem;
-    font-size: 9.0rem; }
+    font-size: 9.0rem;
+    color: #153c50; }
   .feiguin {
     letter-spacing: 1.0rem;
-    font-size: 6.0rem; } }
+    font-size: 6.0rem;
+    color: #153c50; }
+  .footer-index {
+    display: block; }
+  .banner-index {
+    background-image: url(../assets/img/desktop/foto-index.jpg); } }
 
 @media (max-width: 1035px) {
   .adam {
@@ -760,26 +843,6 @@ textarea {
     order: 2;
     align-self: center; }
   /*fin reglas especiales sobre mi - TABLET */
-  /*REGLAS ESPECIALES GALERIA - TABLET*/
-  .container-fotos {
-    /***  G R I D S  ***/
-    grid-template-columns: repeat(3, 180px);
-    row-gap: 3px;
-    column-gap: 3px; }
-  .foto {
-    padding: 3px;
-    width: 170px; }
-  .container-videos {
-    /***  F L E X B O X  ***/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    justify-items: center;
-    align-items: center; }
-  .video__styling {
-    width: 500px; }
-  /*Fin reglas especiales galeria TABLET*/
   /*REGLAS ESPECIALES AGENDA - TABLET*/
   .contenedor-agenda {
     /***  F L E X B O X  ***/
@@ -789,7 +852,8 @@ textarea {
     width: 290px;
     font-size: 0.9rem; }
   .img__workshop {
-    width: 280px; }
+    width: 280px;
+    height: 193px; }
   /*.button-info {
         font-size: 1.5rem;
     }*/
@@ -894,18 +958,26 @@ textarea {
     justify-content: center;
     justify-items: center; }
   .foto {
-    padding: 3px;
-    width: 120px; }
+    width: 120px;
+    height: 80px; }
+  .foto-vert {
+    width: 120px;
+    height: 180px; }
   .video__styling {
     width: 380px;
     height: auto; }
   /*Fin reglas especiales galeria MOBILE*/
   /*REGLAS ESPECIALES AGENDA - MOBILE*/
+  .contenedor-agenda {
+    /***  F L E X B O X  ***/
+    flex-wrap: wrap;
+    column-gap: 40px; }
   .card__workshop {
     width: 260px;
     font-size: 1.3rem; }
   .img__workshop {
-    width: 250px; }
+    width: 250px;
+    height: 167px; }
   .link-agenda-bio {
     margin-left: 30px;
     margin-right: 30px; }

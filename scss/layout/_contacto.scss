@@ -74,7 +74,9 @@ select {
 .newsletter {
     align-self: center;
 }
-
+.flex-button {
+    @include flex (row,flex-end);
+}
 .button-contacto {
     @include typos ($font-3, 1.5rem, $color-4);
     background-color: $color-1;
