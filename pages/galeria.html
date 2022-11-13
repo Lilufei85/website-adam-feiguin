@@ -61,7 +61,7 @@
       <section class="imgGallery">
         <!--seccion fotos-->
         <section class="container-fotos">
-          <div> <img src="../assets/img/desktop/domo1.jpg" alt="bailarín haciendo break dance"  class="foto foto-1"/> </div>
+          <div> <img id="buttonModal" src="../assets/img/desktop/domo1.jpg" alt="bailarín haciendo break dance"  class="foto foto-1" /> </div>
           <div> <img src="../assets/img/desktop/domo2.jpg" alt="bailarín trepado a una estructura"  class="foto foto-2"/> </div>
           <div> <img src="../assets/img/desktop/domo3.jpg" alt="bailarín haciendo un salto estilo Superman" class="foto foto-3"/> </div>
           <div> <img src="../assets/img/desktop/campo1.jpg" alt="bailarín danzando en el campo" class="foto foto-4"/> </div>
@@ -113,9 +113,12 @@
       </section>
 
       <!--slide para ventana modal-->
-      <section class="section-c" >
-        <div class="container-c modal" >
-            <div class="carousel">
+      <section class="section-c modal-container" id="myModal">
+        <div class="container-c modal-content" >
+            <div>
+              <span class="close"> X </span>
+            </div>
+            <div class="carousel">  
                 <input type="radio" name="slides" checked="checked" id="slide-1">
                 <input type="radio" name="slides" id="slide-2">
                 <input type="radio" name="slides" id="slide-3">
