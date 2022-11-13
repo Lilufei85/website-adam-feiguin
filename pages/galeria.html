@@ -55,13 +55,14 @@
             </div>
         </nav>
         <h1> AUDIO VISUALES </h1>
+        <h2 id="ButtonModal"> Hacé click aquí para ver el slideshow de imágenes</h2>
     </header>
 
     <main>
       <section class="imgGallery">
         <!--seccion fotos-->
         <section class="container-fotos">
-          <div> <img id="buttonModal" src="../assets/img/desktop/domo1.jpg" alt="bailarín haciendo break dance"  class="foto foto-1" /> </div>
+          <div> <img src="../assets/img/desktop/domo1.jpg" alt="bailarín haciendo break dance"  class="foto foto-1" /> </div>
           <div> <img src="../assets/img/desktop/domo2.jpg" alt="bailarín trepado a una estructura"  class="foto foto-2"/> </div>
           <div> <img src="../assets/img/desktop/domo3.jpg" alt="bailarín haciendo un salto estilo Superman" class="foto foto-3"/> </div>
           <div> <img src="../assets/img/desktop/campo1.jpg" alt="bailarín danzando en el campo" class="foto foto-4"/> </div>
@@ -113,11 +114,9 @@
       </section>
 
       <!--slide para ventana modal-->
-      <section class="section-c modal-container" id="myModal">
-        <div class="container-c modal-content" >
-            <div>
-              <span class="close"> X </span>
-            </div>
+      <section class="section-c modalContainer" id="myModal">
+        <div class="container-c modalContent" >
+            <span class="close"> X </span>
             <div class="carousel">  
                 <input type="radio" name="slides" checked="checked" id="slide-1">
                 <input type="radio" name="slides" id="slide-2">
@@ -234,7 +233,7 @@
       </div>  
       <p>&copy; 2022. Adam Feiguin. Todos los derechos reservados</p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>

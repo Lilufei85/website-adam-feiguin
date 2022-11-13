@@ -402,20 +402,10 @@ footer {
   column-gap: 15px;
   justify-content: center;
   justify-items: center;
-  grid-template-areas: "foto-1 foto-2 foto-3" 
- "foto-4 foto-5 foto-6"
- "foto-7 foto-8 foto-9"
- "foto-10 foto-11 foto-12"
- "foto-13 foto-14 foto-15"
- "foto-16 foto-17 foto-18"
- "foto-19 foto-20 foto-21"
- "foto-22 foto-23 foto-24"; }
+  grid-template-areas: "foto-1 foto-2 foto-3"  "foto-4 foto-5 foto-6" "foto-7 foto-8 foto-9" "foto-10 foto-11 foto-12" "foto-13 foto-14 foto-15" "foto-16 foto-17 foto-18" "foto-19 foto-20 foto-21" "foto-22 foto-23 foto-24"; }
   .container-fotos img:hover {
     /***  T R A N S I C I O N  ***/
-    transform: scale(1.1);
-    cursor: pointer;
-    /*-webkit-animation: 700ms ease-in;
-        animation: 700ms ease-in both;*/ }
+    transform: scale(1.1); }
 
 .foto {
   border: 1px solid #ddd;
@@ -433,10 +423,7 @@ footer {
 
 .foto-1 {
   grid-area: foto-1;
-  transition: transform 700ms 0s;
-  /*esta transition afecta al transform, tiempo de duracion, delay*/
-  /*background-image: url("../assets/img/desktop/domo1-t.jpg");PARA PROBAR LUEGO DE ESTA ENTREGA!
-    z-index: 2;*/ }
+  transition: transform 700ms 0s; }
 
 .foto-2 {
   grid-area: foto-2;
@@ -521,20 +508,14 @@ footer {
 .foto-22 {
   grid-area: foto-22;
   transition: transform 700ms 0s; }
-  .foto-22:hover {
-    cursor: none; }
 
 .foto-23 {
   grid-area: foto-23;
   transition: transform 700ms 0s; }
-  .foto-23:hover {
-    cursor: none; }
 
 .foto-24 {
   grid-area: foto-24;
   transition: transform 700ms 0s; }
-  .foto-24:hover {
-    cursor: none; }
 
 .container-videos {
   /***  G R I D S  ***/
@@ -546,8 +527,7 @@ footer {
   column-gap: 8px;
   justify-content: center;
   justify-items: center;
-  grid-template-areas: "video-1 video-2" 
- "video-3 video-4"; }
+  grid-template-areas: "video-1 video-2"  "video-3 video-4"; }
 
 .video-1 {
   grid-area: video-1; }
@@ -732,80 +712,52 @@ footer {
     width: 100%;
     height: 100%; }
 
-.modal-container {
+#ButtonModal:hover {
+  cursor: pointer;
+  transition: transform 700ms 0s;
+  transform: scale(1.05); }
+
+.modalContainer {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   padding-top: 100px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; }
-
-.modal-container .modal-content {
+  overflow: auto;
   margin: auto;
   padding: 25px;
   width: 100%; }
-  .modal-container .modal-content .close {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #0b1f2a;
-    padding: 10px 30px;
-    border: 1px solid;
-    border-radius: 6px;
-    float: right;
-    font-size: 26px;
-    font-weight: bolder;
-    transition: background-color .3s; }
-  .modal-container .modal-content:hover {
-    color: #0b1f2a;
-    background-color: white; }
-  .modal-container .modal-content:focus {
-    color: #0b1f2a;
-    background-color: white; }
 
-/*.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-    background-color: #0b1f2a;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    gap: 20px;
-    opacity: 0;
-    pointer-events: none;
-}
+.modalContent {
+  margin: auto;
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
-.modal-close {
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #0b1f2a;
-    padding: 10px 30px;
-    border: 1px solid ;
-    border-radius: 6px;
-    font-weight: 300;
-    display: inline-block;
-    transition: background-color .3s;
-}
-
-
-.modal-close:hover {
-    color: #0b1f2a;
+.close {
+  /*float: right;*/
+  align-self: flex-end;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #153c50;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: 300;
+  display: inline-block;
+  transition: background-color .3s; }
+  .close:hover {
+    cursor: pointer;
+    color: #153c50;
     background-color: white;
-}
+    border: 1px solid #bcbcbc;
+    transform: scale(1.03); }
 
-
-.modal-show {
-    opacity: 1;
-    pointer-events: unset;
-}*/
 /*REGLAS ESPECIALES AGENDA*/
 .contenedor-agenda {
   /***  F L E X B O X  ***/
