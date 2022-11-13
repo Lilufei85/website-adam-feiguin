@@ -16,8 +16,6 @@ html {
 /*$font-3: p* /
 
 /*bs no me admitió variables, OJO! Cambiar a mano*/
-/*los mixins se agregan con @include nombre-mixin;*/
-/*@extend .clase  = copia las propiedades q se repiten de otra clase!*/
 .negrita {
   font: weight 600px; }
 
@@ -156,7 +154,7 @@ footer {
   /***  G R I D S  ***/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(7, 1fr); }
+  grid-template-rows: repeat(9, 1fr); }
 
 .nav-hamburguesa-index {
   display: none; }
@@ -185,46 +183,42 @@ footer {
     animation-name: zoomInIndex;
     animation-duration: 3s; }
 
+.nombre {
+  grid-column: 2/6;
+  grid-row: 5/7;
+  /* From https://css.glass */
+  background: rgba(11, 31, 42, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  padding-left: 15px;
+  line-height: 45px; }
+
 .adam {
   letter-spacing: 14px;
   font-family: "Rubik Dirt", cursive;
   font-size: 13.8rem;
-  color: #5b6972;
-  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
-  grid-column: 2/6;
-  grid-row: 4/6;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: center; }
+  color: #5b6972; }
 
 .feiguin {
   letter-spacing: 16px;
   font-family: "Rubik Dirt", cursive;
   font-size: 8.8rem;
-  color: #5b6972;
-  /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
-  align-self: center;
-  grid-column: 2/6;
-  grid-row: 5/7; }
+  color: #5b6972; }
 
 .banner-index {
   grid-column: 1/13;
-  grid-row: 1/9;
+  grid-row: 1/10;
   background-image: url(../assets/img/desktop/index3.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-position: cover;
   object-fit: fill; }
 
-.mask-index {
-  grid-column: 1/6;
-  grid-row: 1/9;
-  opacity: 0.6; }
-
 .redes-index-desktop {
   grid-column: 10/13;
-  grid-row: 7/8;
+  grid-row: 8/9;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -239,7 +233,7 @@ footer {
   font-size: 1.7rem;
   color: #153c50;
   grid-column: 9/13;
-  grid-row: 8/9;
+  grid-row: 9/10;
   justify-self: flex-end;
   margin-right: 15px;
   align-self: flex-start; }

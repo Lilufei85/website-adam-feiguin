@@ -3,7 +3,7 @@
     background-color: $color-4;
 }
 .container-index { /***  G R I D S  ***/
-    @include grid (repeat(12,1fr), repeat(7,1fr));
+    @include grid (repeat(12,1fr), repeat(9,1fr));
 }
 
 .nav-hamburguesa-index {
@@ -32,28 +32,32 @@
     }
 }
 
+.nombre {
+    grid-column: 2/6;
+    grid-row: 5/7;
+    /* From https://css.glass */
+    background: rgba(11, 31, 42, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    padding-left: 15px;
+    line-height: 45px;
+}
+
 .adam {
     letter-spacing: 14px;
     @include typos ($font-1, 13.8rem, $color-1);
-    /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
-    grid-column: 2/6;
-    grid-row: 4/6;
-    @include flex (row, flex-start);
-    align-self: center ;
 }
 
 .feiguin {
     letter-spacing: 16px;
     @include typos ($font-1, 8.8rem, $color-1);
-    /*border: 1px solid black; lo dejo para centrar el elemento con el cliente*/
-    align-self: center;
-    grid-column: 2/6;
-    grid-row: 5/7;
 }
     
 .banner-index {
     grid-column: 1/13;
-    grid-row: 1/9;
+    grid-row: 1/10;
     background-image: url(../assets/img/desktop/index3.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -61,15 +65,9 @@
     object-fit: fill;
 }
 
-.mask-index {
-    grid-column: 1/6;
-    grid-row: 1/9;
-    opacity: 0.6;
-}
-
 .redes-index-desktop {
     grid-column: 10/13;
-    grid-row: 7/8;
+    grid-row: 8/9;
     @include flex (row, flex-end);
     justify-content: space-evenly;
     align-items: flex-start;
@@ -81,7 +79,7 @@
 .derechos {
     @include typos ($font-3, 1.7rem, $color-2);
     grid-column: 9/13;
-    grid-row: 8/9;
+    grid-row: 9/10;
     justify-self: flex-end;
     margin-right: 15px;
     align-self: flex-start;
