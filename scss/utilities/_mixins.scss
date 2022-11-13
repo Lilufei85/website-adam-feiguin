@@ -46,18 +46,6 @@
     margin: $margin;
 }
 
-@mixin aspect-ratio($width, $height) {
-    position: relative;
-      
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: ($height / $width) * 100%;
-    }
+
 /*los mixins se agregan con @include nombre-mixin;*/
 /*@extend .clase  = copia las propiedades q se repiten de otra clase!*/
-
-}
-
-

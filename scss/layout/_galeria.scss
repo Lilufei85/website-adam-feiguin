@@ -23,6 +23,7 @@
     ;
     img:hover  { /***  T R A N S I C I O N  ***/
         transform: scale(1.1);
+        cursor: pointer;
         /*-webkit-animation: 700ms ease-in;
         animation: 700ms ease-in both;*/
     }
@@ -127,14 +128,23 @@
 
 .foto-22 {
     @include m-fotos (foto-22);
+    &:hover {
+        cursor: none; 
+    }
 }
 
 .foto-23 {
     @include m-fotos (foto-23);
+    &:hover {
+        cursor: none; 
+    }
 }
 
 .foto-24 {
     @include m-fotos (foto-24);
+    &:hover {
+        cursor: none; 
+    }
 }
 
 

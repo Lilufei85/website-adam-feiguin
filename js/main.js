@@ -6,6 +6,7 @@ const closeModal = document.querySelector('.modal-close');
 openModal.addEventListener('click', (e)=> {
     e.preventDefault();
     modal.classList.add('modal-show')
+    
 });
 /**cuando se hace click en el elemento se ejecuta esa fx*/
 

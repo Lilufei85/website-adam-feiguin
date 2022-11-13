@@ -1,0 +1,40 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: #0b1f2a;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-close {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #0b1f2a;
+    padding: 10px 30px;
+    border: 1px solid ;
+    border-radius: 6px;
+    font-weight: 300;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+
+.modal-close:hover {
+    color: #0b1f2a;
+    background-color: white;
+}
+
+
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+}
