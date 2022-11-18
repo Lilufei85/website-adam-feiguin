@@ -10,12 +10,10 @@
     
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
     .nav-index { /***  F L E X B O X  ***/
-        grid-column: 10/13;
-        grid-row: 1/13;
-        width: 100%;
+        width: 33%;
+        height: 100vh;
         padding: 5px;
         padding-top: 7px;
-        margin: 0px;
         @include flex (column, space-evenly);
         a{ 
             font-size: 2.0rem;
@@ -31,26 +29,49 @@
 
 
     /*REGLAS ESPECIALES INDEX - TABLET*/
-    .container-index { /***  G R I D S  ***/
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(12,1fr);
-        height: 470px;
-        /*align-items: center;*/
+    
+    .body-index {
+        background-image: url(../assets/img/desktop/foto-index.jpg);
+        background-position: center;
+        @include grid (repeat(3,1fr),repeat(11,1fr) 100px);
     }
-    .banner-index {
-        background-image: url(../assets/img/tablet/foto-index-tablet.jpg);
+
+    .header-index {
+        grid-column: 3/4;
+        grid-row: 1/11;
     }
-    .adam {
-        letter-spacing: 1.5rem;
-        font-size: 4.2rem;
-        /*color: $color-1;*/
-        /*grid-column: 8/13;
-        grid-row: 11/13;*/
-        grid-column: 2/6;
-        grid-row: 11/13;
-        @include flex (column,center);
+
+    .main-index {
+        grid-row: 1/11;
+        grid-column: 1/2; 
         align-items: center;
     }
+    .h1-index {
+        margin-left: 20px;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 0px 0px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+        width: 250px;
+        padding-left: 15px;
+        line-height: 80px;
+        letter-spacing: 14px;
+        @include typos ($font-1, 6.8rem, $color-3);
+    }
+    
+    .main-index {
+        grid-area: "main-index";
+        display: flex;
+    }
+    
+    .footer-index-d {
+        grid-column: 1/2;
+        grid-row: 12/13;
+        align-items: flex-start;
+    }
+
+
     .feiguin {
         display: none;
     }

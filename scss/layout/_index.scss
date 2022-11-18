@@ -2,9 +2,6 @@
 .body-index {
     background-color: $color-4;
 }
-.container-index { /***  G R I D S  ***/
-    @include grid (repeat(12,1fr), repeat(9,1fr));
-}
 
 .nav-hamburguesa-index {
     display: none;
@@ -12,9 +9,84 @@
 
 /*REGLAS DEL INDEX*/
 
+.body-index {
+    background-image: url(../assets/img/desktop/index-d.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    @include grid (1fr,repeat(2,1fr) 100px);
+    grid-template-areas: 
+    "header-index"
+    "main-index"
+    "footer-index-d";
+}
+
+.header-index {
+    grid-area: "header-index";
+}
+
+.main-index {
+    grid-area: "main-index";
+    @include grid (repeat(12,1fr),repeat(12,1fr))
+}
+
+.h1-index {
+    grid-row: 6/11;
+    grid-column: 3/4; 
+    background: rgba( 11, 31, 42, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    width: 500px;
+    padding-left: 15px;
+    line-height: 80px;
+    letter-spacing: 14px;
+    @include typos ($font-1, 13.8rem, $color-1);
+}
+
+.feiguin {
+    letter-spacing: 16px;
+    @include typos ($font-1, 8.8rem, $color-1);
+}
+
+.footer-index-d {
+    grid-area: "footer-index-d";
+    background-color: transparent;
+    @include flex (column, flex-end);
+    justify-content: flex-end;
+    align-items: flex-end;
+    column-gap: 20px;
+    margin-right: 20px;
+        li {
+            list-style: none;
+        }
+}
+
+.footer-index-s {
+    display: none;
+    background-color: $color-4;
+    text-align: center;
+    padding: 5px;
+    padding-top: 20px;
+    p {
+        @include typos ($font-3, 1.7rem, $color-2);
+    }
+    ul { /***  F L E X B O X  ***/
+        @include flex (row,center);
+        flex-wrap: nowrap;
+        gap: 20px;
+        text-align: center;
+        size: adjust 100px; 
+        list-style: none;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none; 
+        }
+    }
+}
+
 .nav-index { /***  F L E X B O X  ***/
-    grid-column: 1/13;
-    grid-row: 1/2;
     width: 100%;
     padding: 5px;
     padding-top: 7px;
@@ -32,58 +104,6 @@
     }
 }
 
-.nombre {
-    grid-column: 2/6;
-    grid-row: 5/7;
-    /* From https://css.glass */
-    background: rgba(11, 31, 42, 0.45);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(11.6px);
-    -webkit-backdrop-filter: blur(11.6px);
-    padding-left: 15px;
-    line-height: 45px;
-}
-
-.adam {
-    letter-spacing: 14px;
-    @include typos ($font-1, 13.8rem, $color-1);
-}
-
-.feiguin {
-    letter-spacing: 16px;
-    @include typos ($font-1, 8.8rem, $color-1);
-}
-    
-.banner-index {
-    grid-column: 1/13;
-    grid-row: 1/10;
-    background-image: url(../assets/img/desktop/index3.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-position: cover;
-    object-fit: fill;
-}
-
-.redes-index-desktop {
-    grid-column: 10/13;
-    grid-row: 8/9;
-    @include flex (row, flex-end);
-    justify-content: space-evenly;
-    align-items: flex-start;
-    column-gap: 20px;
-    li {
-        list-style: none;
-    }
-}
-.derechos {
-    @include typos ($font-3, 1.7rem, $color-2);
-    grid-column: 9/13;
-    grid-row: 9/10;
-    justify-self: flex-end;
-    margin-right: 15px;
-    align-self: flex-start;
-}
     
 .link-2 {
     @include animation-nav-index (1000ms);

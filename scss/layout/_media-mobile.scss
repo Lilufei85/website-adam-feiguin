@@ -2,8 +2,6 @@
 
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - MOBILE*/
     .nav-index {
-        /*grid-column: 5/9;
-        justify-content: flex-start;*/
         display: none;
     }
 
@@ -60,20 +58,26 @@
 
     /*REGLAS ESPECIALES INDEX - MOBILE*/
 
-    .banner-index {
-        background-image: url(../assets/img/mobile/foto-index-mobile.jpg);
-        object-fit: fill;
+    .body-index {
+        background-image: url(../assets/img/desktop/foto-index.jpg);
+        background-position: center;
+        @include grid (1fr,repeat(2,1fr) 100px);
     }
-    .container-index { /***  G R I D S  ***/
-        height: 100vh;
-        width: 100%;
+
+    .footer-index-d {
+        grid-row: 3/4;
     }
-    .adam {
+
+    .header-index {
+        grid-column: 1/2;
+    }
+
+    .h1-index {
         display: none;
     }
     .nav-index a{ 
         font-size: 1.0rem;
-    }   
+    }       
     /*fin reglas especiales index - MOBILE */
 
 

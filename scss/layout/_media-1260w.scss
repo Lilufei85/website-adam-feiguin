@@ -1,12 +1,23 @@
 @media (max-width: 1260px) {
-         /*REGLAS ESPECIALES INDEX */
+     /*REGLAS ESPECIALES INDEX */
 
-    .adam {
+    .body-index {
+            background-image: url(../assets/img/desktop/index-2.jpg);
+        }
+    
+    .h1-index {
+        grid-row: 6/11;
+        grid-column: 1/3; 
+        width: 350px;
+        line-height: 60px;
+        letter-spacing: 12px;
+        font-size:  9.0rem;
     }
+
     .feiguin {
-        /*grid-column: 1/4;*/
-        
-    }
+        letter-spacing: 14px;
+        font-size:  5.4rem;
+    }    
 
     /*REGLAS ESPECIALES GALERIA - TABLET*/
     .container-fotos { /***  G R I D S  ***/
@@ -27,10 +38,8 @@
         height: 255px;
     } 
     
-    .container-videos { /***  F L E X B O X  ***/
-        @include flex (column,center);
-        display: flex;
-        justify-items: center;
+    .container-videos { 
+        @include flex (column, center); 
         align-items: center;
     }
     .video__styling {    
