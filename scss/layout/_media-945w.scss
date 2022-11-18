@@ -1,0 +1,51 @@
+@media (max-width: 980px) {  
+
+
+    /*REGLAS ESPECIALES INDEX - 945w*/
+    .nav-index { /***  F L E X B O X  ***/ 
+            width: 33%;
+            height: 100vh;
+            padding: 5px;
+            padding-top: 7px;
+            @include flex (column, space-evenly);
+            a{ 
+                font-size: 2.0rem;
+            } 
+    }
+    .body-index {
+        background-image: url(../assets/img/desktop/foto-index.jpg);
+        background-position: center;
+        @include grid (repeat(3,1fr),repeat(11,1fr) 100px);
+    }
+    .header-index {
+        grid-column: 3/4;
+        grid-row: 1/11;
+    }
+    .main-index {
+        grid-row: 1/11;
+        grid-column: 1/2; 
+        align-items: center;
+    }
+    .h1-index {
+        margin-left: 20px;
+        width: 250px;
+        padding-left: 15px;
+        line-height: 80px;
+        letter-spacing: 14px;
+        font-size: 6.8rem;
+    }
+    .main-index {
+        grid-area: "main-index";
+        display: flex;
+    }
+    .footer-index-d {
+        grid-column: 1/2;
+        grid-row: 12/13;
+        align-items: flex-start;
+    }
+    .feiguin {
+        display: none;
+    }
+    /*fin reglas especiales index - 945w */    
+
+} 

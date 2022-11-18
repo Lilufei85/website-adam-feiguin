@@ -933,8 +933,8 @@ textarea {
   align-self: flex-end; }
 
 /*fin reglas especiales contacto*/
-@media (max-width: 1260px) {
-  /*REGLAS ESPECIALES INDEX */
+@media (max-width: 1400px) {
+  /*REGLAS ESPECIALES INDEX - 1400w*/
   .body-index {
     background-image: url(../assets/img/desktop/index-2.jpg); }
   .h1-index {
@@ -947,6 +947,152 @@ textarea {
   .feiguin {
     letter-spacing: 14px;
     font-size: 5.4rem; }
+  /*fin reglas del index - 1400w*/
+  /*REGLAS ESPECIALES GALERIA - 1400w*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 310px);
+    row-gap: 3px;
+    column-gap: 3px; }
+  .foto {
+    padding: 3px;
+    width: 300px;
+    height: 200px; }
+  .foto-vert {
+    padding: 3px;
+    width: 300px;
+    height: 450px; }
+  .container-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; }
+  .video__styling {
+    width: 500px; }
+  /*Fin reglas especiales galeria 1400w*/ }
+
+@media (max-width: 1100px) {
+  /*REGLAS ESPECIALES GALERIA - 1100w*/
+  .body-index {
+    background-image: url(../assets/img/desktop/foto-index.jpg);
+    background-position: center; }
+  .h1-index {
+    width: 300px;
+    line-height: 50px;
+    letter-spacing: 12px;
+    font-size: 8.0rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0px 0px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: #0b1f2a; }
+  .feiguin {
+    letter-spacing: 15px;
+    font-size: 4.4rem;
+    color: #0b1f2a; }
+  /*Fin reglas especiales index 1100w*/ }
+
+@media (max-width: 980px) {
+  /*REGLAS ESPECIALES GALERIA - 980w*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 260px);
+    row-gap: 3px;
+    column-gap: 3px; }
+  .foto {
+    padding: 3px;
+    width: 250px;
+    height: 167px; }
+  .foto-vert {
+    padding: 3px;
+    width: 250px;
+    height: 375px; }
+  .container-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; }
+  .video__styling {
+    width: 500px; }
+  /*Fin reglas especiales galeria 980w*/ }
+
+@media (max-width: 980px) {
+  /*REGLAS ESPECIALES INDEX - 945w*/
+  .nav-index {
+    /***  F L E X B O X  ***/
+    width: 33%;
+    height: 100vh;
+    padding: 5px;
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .nav-index a {
+      font-size: 2.0rem; }
+  .body-index {
+    background-image: url(../assets/img/desktop/foto-index.jpg);
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr) 100px; }
+  .header-index {
+    grid-column: 3/4;
+    grid-row: 1/11; }
+  .main-index {
+    grid-row: 1/11;
+    grid-column: 1/2;
+    align-items: center; }
+  .h1-index {
+    margin-left: 20px;
+    width: 250px;
+    padding-left: 15px;
+    line-height: 80px;
+    letter-spacing: 14px;
+    font-size: 6.8rem; }
+  .main-index {
+    grid-area: "main-index";
+    display: flex; }
+  .footer-index-d {
+    grid-column: 1/2;
+    grid-row: 12/13;
+    align-items: flex-start; }
+  .feiguin {
+    display: none; }
+  /*fin reglas especiales index - 945w */ }
+
+@media (max-width: 830px) {
+  /*REGLAS ESPECIALES GALERIA - 800w*/
+  .container-fotos {
+    /***  G R I D S  ***/
+    grid-template-columns: repeat(3, 200px);
+    row-gap: 3px;
+    column-gap: 3px; }
+  .foto {
+    padding: 3px;
+    width: 190px;
+    height: 127px; }
+  .foto-vert {
+    padding: 3px;
+    width: 190px;
+    height: 285px; }
+  /*fin reglas especiales galeria - 800w */ }
+
+@media (max-width: 680px) {
+  /***  RESPONSIVE A TABLET  ***/
+  h4 {
+    letter-spacing: 3px;
+    font-size: 1.9rem;
+    margin-left: 20px;
+    margin-right: 20px; }
+  /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
+  .navbar {
+    font-size: 2.0rem; }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 1.5rem; }
+  /*fin reglas del nav TABLET*/
   /*REGLAS ESPECIALES GALERIA - TABLET*/
   .container-fotos {
     /***  G R I D S  ***/
@@ -968,80 +1114,7 @@ textarea {
     align-items: center; }
   .video__styling {
     width: 500px; }
-  /*Fin reglas especiales galeria TABLET*/ }
-
-@media (max-width: 1100px) {
-  .h1-index {
-    width: 300px;
-    line-height: 50px;
-    letter-spacing: 12px;
-    font-size: 8.0rem; }
-  .feiguin {
-    letter-spacing: 15px;
-    font-size: 4.4rem; } }
-
-@media (max-width: 768px) {
-  /***  RESPONSIVE A TABLET  ***/
-  h4 {
-    letter-spacing: 3px;
-    font-size: 1.9rem;
-    margin-left: 20px;
-    margin-right: 20px; }
-  /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
-  .nav-index {
-    /***  F L E X B O X  ***/
-    width: 33%;
-    height: 100vh;
-    padding: 5px;
-    padding-top: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-    .nav-index a {
-      font-size: 2.0rem; }
-  .navbar {
-    font-size: 2.0rem; }
-  .dropdown-menu {
-    --bs-dropdown-font-size: 1.5rem; }
-  /*fin reglas del nav TABLET*/
-  /*REGLAS ESPECIALES INDEX - TABLET*/
-  .body-index {
-    background-image: url(../assets/img/desktop/foto-index.jpg);
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(11, 1fr) 100px; }
-  .header-index {
-    grid-column: 3/4;
-    grid-row: 1/11; }
-  .main-index {
-    grid-row: 1/11;
-    grid-column: 1/2;
-    align-items: center; }
-  .h1-index {
-    margin-left: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0px 0px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 10px;
-    width: 250px;
-    padding-left: 15px;
-    line-height: 80px;
-    letter-spacing: 14px;
-    font-family: "Rubik Dirt", cursive;
-    font-size: 6.8rem;
-    color: #0b1f2a; }
-  .main-index {
-    grid-area: "main-index";
-    display: flex; }
-  .footer-index-d {
-    grid-column: 1/2;
-    grid-row: 12/13;
-    align-items: flex-start; }
-  .feiguin {
-    display: none; }
-  /*fin reglas especiales index - TABLET */
+  /*Fin reglas especiales galeria TABLET*/
   /*REGLAS ESPECIALES SOBRE MI - TABLET*/
   .container-texto-bio {
     flex-direction: column;
@@ -1075,9 +1148,6 @@ textarea {
   .img__workshop {
     width: 280px;
     height: 193px; }
-  /*.button-info {
-        font-size: 1.5rem;
-    }*/
   /*Fin reglas especiales agenda TABLET*/
   /*REGLAS ESPECIALES CONTACTO - TABLET*/
   .formulario__contacto {
@@ -1086,12 +1156,14 @@ textarea {
   /*Fin reglas especiales contacto TABLET*/ }
 
 @media (max-width: 635px) {
+  /*REGLAS ESPECIALES INDEX - 635w*/
   .h1-index {
     font-size: 5.0rem; }
   .footer-index-d {
     display: none; }
   .footer-index-s {
-    display: block; } }
+    display: block; }
+  /*fin reglas del index - 635w*/ }
 
 @media (max-width: 576px) {
   /***  RESPONSIVE A MOBILE  ***/

@@ -1,4 +1,4 @@
-@media (max-width: 768px) {  /***  RESPONSIVE A TABLET  ***/
+@media (max-width: 680px) {  /***  RESPONSIVE A TABLET  ***/
 
     
     h4 {
@@ -9,16 +9,7 @@
     }
     
     /*REGLAS DEL NAV, BARRA DE NAVEGACION - TABLET*/
-    .nav-index { /***  F L E X B O X  ***/
-        width: 33%;
-        height: 100vh;
-        padding: 5px;
-        padding-top: 7px;
-        @include flex (column, space-evenly);
-        a{ 
-            font-size: 2.0rem;
-        } 
-    }
+    
     .navbar {
         font-size: 2.0rem;
     }
@@ -28,55 +19,33 @@
     /*fin reglas del nav TABLET*/
 
 
-    /*REGLAS ESPECIALES INDEX - TABLET*/
+    /*REGLAS ESPECIALES GALERIA - TABLET*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 180px);
+        row-gap: 3px;
+        column-gap: 3px;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 170px;
+        height: 113px;
+    } 
+
+    .foto-vert {
+        padding: 3px;
+        width: 170px;
+        height: 255px;
+    } 
     
-    .body-index {
-        background-image: url(../assets/img/desktop/foto-index.jpg);
-        background-position: center;
-        @include grid (repeat(3,1fr),repeat(11,1fr) 100px);
-    }
-
-    .header-index {
-        grid-column: 3/4;
-        grid-row: 1/11;
-    }
-
-    .main-index {
-        grid-row: 1/11;
-        grid-column: 1/2; 
+    .container-videos { 
+        @include flex (column, center); 
         align-items: center;
     }
-    .h1-index {
-        margin-left: 20px;
-        background: rgba( 255, 255, 255, 0.05 );
-        box-shadow: 0 0px 0px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 2px );
-        -webkit-backdrop-filter: blur( 2px );
-        border-radius: 10px;
-        width: 250px;
-        padding-left: 15px;
-        line-height: 80px;
-        letter-spacing: 14px;
-        @include typos ($font-1, 6.8rem, $color-3);
+    .video__styling {    
+        width:500px; 
     }
-    
-    .main-index {
-        grid-area: "main-index";
-        display: flex;
-    }
-    
-    .footer-index-d {
-        grid-column: 1/2;
-        grid-row: 12/13;
-        align-items: flex-start;
-    }
-
-
-    .feiguin {
-        display: none;
-    }
-    /*fin reglas especiales index - TABLET */
-
+    /*Fin reglas especiales galeria TABLET*/
 
     /*REGLAS ESPECIALES SOBRE MI - TABLET*/
     .container-texto-bio {
@@ -107,7 +76,10 @@
     /*fin reglas especiales sobre mi - TABLET */
 
 
-     /*REGLAS ESPECIALES AGENDA - TABLET*/
+    
+
+
+    /*REGLAS ESPECIALES AGENDA - TABLET*/
      .contenedor-agenda { /***  F L E X B O X  ***/
         row-gap: 25px;
         margin-bottom: 25px;
@@ -120,9 +92,7 @@
         width: 280px;
         height: 193px;
     }
-    /*.button-info {
-        font-size: 1.5rem;
-    }*/
+
     /*Fin reglas especiales agenda TABLET*/    
 
     /*REGLAS ESPECIALES CONTACTO - TABLET*/

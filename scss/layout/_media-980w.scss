@@ -1,0 +1,30 @@
+@media (max-width: 980px) {
+
+    /*REGLAS ESPECIALES GALERIA - 980w*/
+    .container-fotos { /***  G R I D S  ***/
+        grid-template-columns: repeat(3, 260px);
+        row-gap: 3px;
+        column-gap: 3px;
+        ;
+    }
+    .foto {
+        padding: 3px;
+        width: 250px;
+        height: 167px;
+    } 
+    .foto-vert {
+        padding: 3px;
+        width: 250px;
+        height: 375px;
+    } 
+    .container-videos { 
+        @include flex (row, center); 
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .video__styling {    
+        width:500px; 
+    }
+    /*Fin reglas especiales galeria 980w*/   
+    
+}
