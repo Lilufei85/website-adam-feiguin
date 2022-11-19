@@ -66,53 +66,54 @@
       </div>
       <section class="contendor-formulario">
         <form action="" class="formulario__contacto">
-          <div>
-            <label for="nombrecompleto" class="label-nombre">Nombre Completo:</label> 
-            <input type="text"name="nombrecompleto" class="input-nombre"/> 
-          </div>
-          <div>
-            <label for="residencia" class="label-residencia">Lugar de Residencia</label>
-            <select name="residencia" id="residencia" class="select-residencia">
-            Lugar de Residencia
-            <option value="caba">Ciudad Autonoma de Bs As</option>
-            <option value="granbsas">Provincia de Buenos Aires</option>
-            <option value="otroarg">Otras pronvicias de Argentina</option>
-            <option value="otropais">Otro pais que no es Argentina</option>
-            </select>
-          </div>
-          <div> <label for="email" class="label-email">E-mail:</label> </div>
-          <div>
-            <input type="email" id="email" name="email" class="input-email"/>
-          </div>
-          <div>
-            <label for="mensaje" class="label-msje">Mensaje: </label> 
-          <div>
-            <textarea name="mensaje" id="" cols="30" rows="10" class="text-msje"></textarea> 
-          </div>
-          <div class="flex-newsletter">
-            <p class="label-newsletter">Deseo recibir el newsletter</p>
-            <label for="newsletter" class="label-newsletter"></label>
-            <input type="checkbox" name="newsletter" id="1" class="checkbox"/> 
-          </div>
+            <label for="nombrecompleto" class="label-nombre">
+              <span>Nombre Completo: </span>
+              <input type="text"name="nombrecompleto" class="input-nombre" autocomplete="name" required/> 
+            </label> 
+            <label for="residencia" class="label-residencia" required>
+              <span>Lugar de Residencia</span>
+              <select name="residencia" id="residencia" class="select-residencia">
+                <span>Lugar de Residencia</span>
+                <option value="caba">Ciudad Autonoma de Bs As</option>
+                <option value="granbsas">Provincia de Buenos Aires</option>
+                <option value="otroarg">Otras pronvicias de Argentina</option>
+                <option value="otropais">Otro pais que no es Argentina</option>
+                </select>
+            </label>
+            <label for="email" class="label-email">E-mail: 
+              <input type="email" id="email" name="email" class="input-email" autocomplete="email" required/>  
+            </label>  
+            <label for="mensaje" class="label-msje">
+              <span>Mensaje:</span>
+              <textarea name="mensaje" id="" cols="30" rows="10" class="text-msje" required></textarea> 
+            </label> 
+            </div>
+            <div class="flex-newsletter">
+              <p class="label-newsletter">Deseo recibir el newsletter</p>
+              <label for="newsletter" class="label-newsletter">
+                <input type="checkbox" name="newsletter" id="1" class="checkbox"/>
+              </label> 
+            </div>
           <div class="flex-button">
             <button type="submit" class="button-contacto">Enviar</button>
           </div>
         </form>
       </section>
-      
-      <footer class="footer-pages" id="footer-contacto">
-        <div> <!--div iconos redes-->
-          <ul>
-            <li><a target="_blank" href="https://instagram.com/adamfeiguin?igshid=NmNmNjAwNzg="><img src="../assets/icons/instagram.png" alt="Instagram" class="footer-icon"> </a></li>   
-            <li><a target="_blank" href="https://www.facebook.com/adam.feiguin"> <img src="../assets/icons/facebook.png" alt="Facebook" class="footer-icon"> </a></li>
-            <li><a target="_blank" href="mailto:adamfeiguin@gmail.com"> <img src="../assets/icons/email.png" alt="Email" class="footer-icon"> </a></li>
-            <li><a target="_blank" href="https://wa.me/5491160104592?text=Hola"> <img src="../assets/icons/whatsapp.png" alt="Whatsapp" class="footer-icon"> </a></li>
-          </ul>
-        </div>  
-        <p>&copy; 2022. Adam Feiguin. Todos los derechos reservados</p>
-      </footer> 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-      </body>  
+    </main> 
+    
+    <footer class="footer-pages" id="footer-contacto">
+      <div> <!--div iconos redes-->
+        <ul>
+          <li><a target="_blank" href="https://instagram.com/adamfeiguin?igshid=NmNmNjAwNzg="><img src="../assets/icons/instagram.png" alt="Instagram" class="footer-icon"> </a></li>   
+          <li><a target="_blank" href="https://www.facebook.com/adam.feiguin"> <img src="../assets/icons/facebook.png" alt="Facebook" class="footer-icon"> </a></li>
+          <li><a target="_blank" href="mailto:adamfeiguin@gmail.com"> <img src="../assets/icons/email.png" alt="Email" class="footer-icon"> </a></li>
+          <li><a target="_blank" href="https://wa.me/5491160104592?text=Hola"> <img src="../assets/icons/whatsapp.png" alt="Whatsapp" class="footer-icon"> </a></li>
+        </ul>
+      </div>  
+      <p>&copy; 2022. Adam Feiguin. Todos los derechos reservados</p>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>  
   </body>
 </html>
