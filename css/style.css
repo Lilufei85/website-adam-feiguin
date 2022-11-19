@@ -25,6 +25,9 @@ html {
   line-height: 2.5; }
 
 /*REGLAS DEL BODY*/
+header {
+  margin-bottom: 30px; }
+
 h1 {
   text-align: center;
   /*titulos de las paginas centrados */
@@ -100,9 +103,10 @@ footer {
   background-color: black; }
 
 /*fin reglas del footer*/
-.header-pages {
-  position: sticky;
-  z-index: 2; }
+.position-nav {
+  top: 0;
+  position: fixed;
+  width: 100%; }
 
 /*REGLAS DEL NAV PAGES, BARRA DE NAVEGACION*/
 .navbar {
@@ -775,7 +779,7 @@ footer {
     .carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
       cursor: pointer; }
       .carousel__thumbnails label:hover img, .carousel__thumbnails label:focus img {
-        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 0px 1px #0b1f2a;
         transition: all 300ms ease-in-out; }
   .carousel__thumbnails img {
     display: block;
@@ -1331,10 +1335,10 @@ textarea {
     row-gap: 2px;
     column-gap: 1px;
     justify-content: center;
-    justify-items: center; }
-    .container-fotos img:hover {
-      /***  T R A N S I C I O N  ***/
-      transform: scale(2); }
+    justify-items: center;
+    /*img:hover  {
+            transform: scale(2.0);
+        }*/ }
   .foto {
     width: 120px;
     height: 80px; }

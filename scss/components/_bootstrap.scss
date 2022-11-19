@@ -1,11 +1,10 @@
-.header-pages {
-    position: sticky;
-    z-index: 2;
+
+
+.position-nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
-
-
-
-
 
 /*REGLAS DEL NAV PAGES, BARRA DE NAVEGACION*/
 .navbar {
