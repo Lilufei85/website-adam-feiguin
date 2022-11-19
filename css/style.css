@@ -1303,7 +1303,8 @@ textarea {
   /*REGLAS ESPECIALES SOBRE MI - MOBILE*/
   .container-bio {
     /***  F L E X B O X  ***/
-    row-gap: 100px; }
+    row-gap: 40px;
+    margin-top: 5px; }
   .foto-bio {
     margin-top: 20px;
     margin-bottom: 0px; }
