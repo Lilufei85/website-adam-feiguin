@@ -1329,25 +1329,24 @@ textarea {
     width: 90%; }
   /*fin reglas especiales sobre-mi - MOBILE */
   /*REGLAS ESPECIALES GALERIA - MOBILE*/
+  #ButtonModal {
+    display: none; }
   .container-fotos {
     /***  G R I D S  ***/
-    grid-template-columns: repeat(3, 130px);
-    row-gap: 2px;
-    column-gap: 1px;
-    justify-content: center;
-    justify-items: center;
-    /*img:hover  {
-            transform: scale(2.0);
-        }*/ }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-fotos img:hover {
+      transform: scale(1.01); }
   .foto {
-    width: 120px;
-    height: 80px; }
+    width: 400px;
+    height: 267px; }
   .foto-vert {
-    width: 120px;
-    height: 180px; }
+    width: 400px;
+    height: 600px; }
   .video__styling {
-    width: 380px;
-    height: auto; }
+    width: 400px;
+    height: 267px; }
   /*Fin reglas especiales galeria MOBILE*/
   /*REGLAS ESPECIALES AGENDA - MOBILE*/
   .contenedor-agenda {
