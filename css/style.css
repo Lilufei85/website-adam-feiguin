@@ -1332,6 +1332,9 @@ textarea {
     column-gap: 1px;
     justify-content: center;
     justify-items: center; }
+    .container-fotos img:hover {
+      /***  T R A N S I C I O N  ***/
+      transform: scale(2); }
   .foto {
     width: 120px;
     height: 80px; }
