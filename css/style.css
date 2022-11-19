@@ -1337,7 +1337,7 @@ textarea {
     flex-direction: column;
     align-items: center; }
     .container-fotos img:hover {
-      transform: scale(1.01); }
+      transform: scale(1.2); }
   .foto {
     width: 300px;
     height: 200px; }
