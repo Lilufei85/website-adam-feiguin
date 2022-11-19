@@ -62,6 +62,7 @@
         background-image: url(../assets/img/desktop/foto-index.jpg);
         background-position: center;
         @include grid (1fr,repeat(2,1fr) 100px);
+        height: 90vh;
     }
 
     .footer-index-d {

@@ -1285,7 +1285,8 @@ textarea {
     background-position: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr) 100px; }
+    grid-template-rows: repeat(2, 1fr) 100px;
+    height: 90vh; }
   .footer-index-d {
     grid-row: 3/4; }
   .header-index {
