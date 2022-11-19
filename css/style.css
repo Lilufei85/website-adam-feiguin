@@ -1315,7 +1315,6 @@ textarea {
     margin-right: 10px;
     margin-left: 10px; }
   .bio-1 {
-    margin-top: 20px;
     width: 90%;
     align-self: center;
     margin-left: 0px;
@@ -1339,14 +1338,14 @@ textarea {
     .container-fotos img:hover {
       transform: scale(1.01); }
   .foto {
-    width: 400px;
-    height: 267px; }
+    width: 250px;
+    height: 167px; }
   .foto-vert {
-    width: 400px;
-    height: 600px; }
+    width: 250px;
+    height: 375px; }
   .video__styling {
-    width: 400px;
-    height: 267px; }
+    width: 250px;
+    height: 375px; }
   /*Fin reglas especiales galeria MOBILE*/
   /*REGLAS ESPECIALES AGENDA - MOBILE*/
   .contenedor-agenda {
