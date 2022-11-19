@@ -1,4 +1,4 @@
-/**TEST CAROUSELLLLLL*/
+/**CAROUSEL*/
 
 @mixin aspect-ratio ($width, $height) {
     position: relative;
@@ -49,6 +49,26 @@
         padding: 0;
         position: absolute;
         
+        
+        
+        &:nth-of-type(24):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -2300%; }
+        &:nth-of-type(23):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -2200%; }
+        &:nth-of-type(22):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -2100%; }
+        &:nth-of-type(21):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -2000% }        
+        &:nth-of-type(20):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1900%; }
+        &:nth-of-type(19):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1800%; }
+        &:nth-of-type(18):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1700%; }
+        &:nth-of-type(17):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1600%; }
+        &:nth-of-type(16):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1500%; }
+        &:nth-of-type(15):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1400%; }
+        &:nth-of-type(14):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1300%; }
+        &:nth-of-type(13):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1200%; }
+        &:nth-of-type(12):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1100%; }        
+        &:nth-of-type(11):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -1000%; }
+        &:nth-of-type(10):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -900%; }
+        &:nth-of-type(9):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -800%; }
+        &:nth-of-type(8):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -700%; }
+        &:nth-of-type(7):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -600%; }
         &:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; }
         &:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -400%; }
         &:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
@@ -62,6 +82,24 @@
         &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
         &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
         &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(10) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(11):checked ~ .carousel__thumbnails li:nth-of-type(11) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(12):checked ~ .carousel__thumbnails li:nth-of-type(12) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(13):checked ~ .carousel__thumbnails li:nth-of-type(13) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(14):checked ~ .carousel__thumbnails li:nth-of-type(14) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(15):checked ~ .carousel__thumbnails li:nth-of-type(15) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(16):checked ~ .carousel__thumbnails li:nth-of-type(16) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(17):checked ~ .carousel__thumbnails li:nth-of-type(17) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(18):checked ~ .carousel__thumbnails li:nth-of-type(18) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(19):checked ~ .carousel__thumbnails li:nth-of-type(19) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(20):checked ~ .carousel__thumbnails li:nth-of-type(20) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(21):checked ~ .carousel__thumbnails li:nth-of-type(21) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(22):checked ~ .carousel__thumbnails li:nth-of-type(22) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(23):checked ~ .carousel__thumbnails li:nth-of-type(23) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(24):checked ~ .carousel__thumbnails li:nth-of-type(24) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
     }
 }
 
